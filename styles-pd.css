@@ -94,7 +94,7 @@ input, button, select, textarea, optgroup, option {
   }
   a.nav-link {
     color: var(--clr-dark) !important;
-    font-size: 15px;
+    font-size: 18px;
     transition: background-color 0.3s;
   }
   a.nav-link:hover {
@@ -103,6 +103,13 @@ input, button, select, textarea, optgroup, option {
   a.disabled{
     background-color: var(--clr-light);
     pointer-events: none;
+  }
+  #login{
+    background-color: var(--clr-dark);
+    color: white !important
+  }
+  #login:hover{
+    background-color: var(--clr-btnHov);
   }
   #PDSubNav{
     position: fixed;

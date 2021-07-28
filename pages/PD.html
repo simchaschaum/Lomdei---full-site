@@ -1,0 +1,718 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Lomdei - Blended and Personalized Learning Professional Development</title>
+  <link rel="shortcut icon" href="https://images.squarespace-cdn.com/content/v1/5e73d22e4df9007170bfabac/1584713631516-0KPJGLN16KRE0A4B7F8U/ke17ZwdGBToddI8pDm48kMpagLdZPgiW6yD5i4KsS9VZw-zPPgdn4jUwVcJE1ZvW3Ek6fZXYmUh2T6pKy8CAPiJz4vYg48fcPCuGX417dnZuUf97iszYYQLvux8ZVj2OCZHlFJ3B6MstDcgnpkF-Jiqa9MJYUWOzdYdgr30K9JE/favicon.ico?format=50w">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="./../styles-pd.css">
+</head>
+<body>
+  <div id="pageContainer">
+  
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./../index.html">
+          <img src="https://static1.squarespace.com/static/5e73d22e4df9007170bfabac/t/60184ec5771dd6651c6c7499/1614965138939/?format=1500w" alt="Lomdei Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./video.html">Video Tutorials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="javsascript:void(0)">Professional Development</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./grants.html">Government Grants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./schools.html">Lomdei Schools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="login" href="https://thumbprintapp.org/webapp2/index.html">Log in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav id="PDSubNav">
+      <!-- 'page contents menu dropdown - only appears on narrow screens' -->
+      <div class="btn-group" id="PDSubNavDropdown">
+        <button  class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Page Contents
+        </button>
+        <ul class="dropdown-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#intro">Back to Top</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Brochures</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./Lomdei Blended Learning Brochure.pdf" target="_blank" download="Lomdei_PD_Brochure">Lomdei Professional Development Brochure</a></li>
+              <li><a class="dropdown-item" href="./Blended Learning Coaching Brochure.pdf" target="_blank">Professional Development Programs</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lomdeiAdvAnchor">The Lomdei Advantage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicesAnchor">Professional Development</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blended & Personalized Learning
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#bplInfoAnchor">Personalized Learning</a></li>
+              <li><a class="dropdown-item" href="#blendLearnInfoAnchor">Blended Learning</a></li>
+              <li><a class="dropdown-item" href="#bplExamplesAnchor">Examples</a></li>
+              <li><a class="dropdown-item" href="#resourcesAnchor">Further Resources on BPL</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gvtGrantsAnchor">Government Grants</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+            <ul class="dropdown-menu dropdown-menu-end right-side-menu" aria-labelledby="navbarDropdown">
+              <!-- <li><a class="dropdown-item"href="#teamAnchor">Our Team</a></li> -->
+              <li><a class="dropdown-item"href="#contactUsAnchor">Contact Us</a></li>
+              <li><a class="dropdown-item"href="https://thumbprintapp.org/webapp2/index.html">Lomdei Educational App</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- sub navbar - only appears on wider screens -->
+      <ul id="PDSubNavList">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Brochures</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./Lomdei Blended Learning Brochure.pdf" target="_blank" download="Lomdei_PD_Brochure">Lomdei Professional Development Brochure</a></li>
+            <li><a class="dropdown-item" href="./Blended Learning Coaching Brochure.pdf" target="_blank">Professional Development Programs</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#lomdeiAdvAnchor">The Lomdei Advantage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicesAnchor">Professional Development</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blended & Personalized Learning
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#bplInfoAnchor">Personalized Learning</a></li>
+            <li><a class="dropdown-item" href="#blendLearnInfoAnchor">Blended Learning</a></li>
+            <li><a class="dropdown-item" href="#bplExamplesAnchor">Examples</a></li>
+            <li><a class="dropdown-item" href="#resourcesAnchor">Further Resources on BPL</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gvtGrantsAnchor">Government Grants</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+          <ul class="dropdown-menu dropdown-menu-end right-side-menu" aria-labelledby="navbarDropdown">
+            <!-- <li><a class="dropdown-item"href="#teamAnchor">Our Team</a></li> -->
+            <li><a class="dropdown-item"href="#contactUsAnchor">Contact Us</a></li>
+            <li><a class="dropdown-item"href="https://thumbprintapp.org/webapp2/index.html">Lomdei Educational App</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="intro">
+      <!-- Background video -->
+      <!-- <div class="bg-video">
+        <div class="overlay"></div>
+        <div id="player"></div>
+      </div> -->
+      <div id="title">
+        <h1>Professional Developement for Blended and Personalized Learning <br><strong>Tailored to Limudei Kodesh</strong></h1>
+        <a href="#lomdeiAdvAnchor"><button id="brochure" class="learnMoreBtn">Learn More</button></a>
+      </div>
+    </section>
+
+    <!-- Lomdei Advantage Section -->
+    <section id="lomdeiAdv" class="text-left">
+      <div class="text">
+        <h2>
+          <span id="lomdeiAdvAnchor" class="anchor"></span>
+          The Lomdei Advantage
+        </h2>
+        <h6>
+          Lomdei's Professional Development in Blended and Personalized Learning is geared 
+          toward the <strong>specific needs and religious values of Limudei Kodesh (Judaic Studies).</strong>
+        </h6>
+        <button id="lomdeiAdvBtn" class="learnMoreBtn">Learn More</button>
+      </div>
+      <div class="picture">
+        <img src="./../pics/lomdei_pic_2.JPG" alt="Child Learning Torah">
+      </div>
+    </section>
+    <!-- Hidden info -->
+    <div id="lomdeiAdvTxt" class="hiddenTxt learnMoreTxt">
+      <div class="learnMoreInner">
+        <span id="lomdeiAdvTxtAnchor" class="lomdeiAdvTxtAnchor anchor"></span>
+        <h4>
+          Lomdei’s Customized PD Advantage
+        </h4>
+        <!-- <h5>
+          The Need for Professional Development Tailored for Limudei Kodesh
+        </h5> -->
+        <p>
+          In recent years, the benefits of Blended and Personalized Learning have become clear to an ever-increasing number of educators and educational institutions across the spectrum.  
+          While there are many professional development companies that offer training in Blended and Personalized Learning, <strong>very few of them are familiar with the specific needs and methods of Limudei Kodesh (Jewish studies)</strong>.
+          As a result, a rebbe or morah (Judaic teacher) who strives to develop knowledge and expertise in this new educational method is often left stranded as they struggle to apply this method without guidance or examples specifically geared to Torah study.  Additionally, these professional development companies may not appreciate a yeshiva’s specific religious values, such as the need to limit, or eliminate, the use of the internet or computer technology in general. 
+        </p>
+        <p>
+          <strong>Lomdei is here to fill the gap. </strong> 
+        </p>
+        <!-- <h5>
+          Benefits of Lomdei’s Professional Development in Blended and Personalized Learning 
+        </h5> -->
+        <p>
+          Lomdei’s background in, and familiarity with, frum learning environments makes it particularly equipped to introduce the methods of Blended and Personalized Learning to schools who teach Limudei Kodesh and who aim to impart the Torah’s rich values and lifestyle.  
+          Lomdei’s program is developed and implemented by teachers with many years’ experience teaching a range of subjects in Limudei Kodesh, along with the training necessary to implement Blended and Personalized Learning in the class.  
+          Our intimate <strong>familiarity with Limudei Kodesh</strong> allows us to provide specific, concrete, and complete <strong>examples of lesson units</strong> in all areas of Limudei Kodesh.  
+          Additionally, we are  able to provide specific, concrete, and personal <strong>support</strong> to each rebbe and morah as they plan and implement their lessons using Blended and Personalized Learning. 
+          These <strong>concrete examples</strong> and <strong>specific support</strong> are often crucial to becoming comfortable and familiar with the goals and the implementation of new educational methods such as Personalized or Blended Learning.  
+          Furthermore, we are able to understand and identify with the many nuanced cultural and religious considerations of frum schools, and are more able to find solutions that fit these considerations and needs. 
+        </p>
+        
+      </div>
+      <div>
+        <button id="lomdeiAdvHideBtn" class="hideBtn">Hide Text</button>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Our Services Section -->
+    <section id="services">
+  <h2>
+    <span id="servicesAnchor" class="anchor"></span>
+      Lomdei’s Professional Development in Action
+  </h2>
+  <div class="text-right">
+    <div class="text">
+      <p>
+        Lomdei’s coaches and facilitators are Limudei Kodesh teachers themselves, who have been trained and coached in the methods of Blended and Personalized Learning.
+        They have implemented Blended and Personalized Learning in their own classrooms through years of trial and error and reflection on best practices. 
+        They have also become facilitators, coaches, and mentors for other Limudei Kodesh teachers striving to do the same in their own classrooms. 
+      </p>
+      <p>
+        Lomdei’s professional development program includes group training sessions over the course of the school year as well as one-on-one coaching sessions throughout the year, ensuring optimal chance of success.  
+      </p>
+      <p>To learn more about how Lomdei’s PD Division can benefit your school and teachers, please contact Raphael Alter at <a class="link" href="mailto:ralph@lomdei.com" target="_blank">ralph@lomdei.com</a>.</p>
+    </div>
+    <div class="picture">
+      <img src="./../pics/boy using lomdei cropped pic.jpg" alt="Child Learning torah">
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="learnMoreBtn" data-bs-toggle="modal" data-bs-target="#groupTrainingModal">Group Training</button>
+    <button class="learnMoreBtn" data-bs-toggle="modal" data-bs-target="#coachingSessionsModal">Coaching Sessions</button>
+    <button class="learnMoreBtn" data-bs-toggle="modal" data-bs-target="#packagesModal">Packages</button>
+  </div>
+    </section>
+    <!-- Modals: -->
+    <div class="modal fade" id="groupTrainingModal" tabindex="-1" aria-labelledby="groupTrainingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="groupTrainingModalLabel">Group Training</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          The group training sessions provide the cohort of selected teachers with the knowledge and the ability to implement Blended and Personalized Learning in their classrooms.  
+          Blended and Personalized Learning theories will be explored and modeled throughout the training sessions. 
+          Teachers will be able to walk away from the training sessions with specific, and relevant techniques, tools, and examples of lessons and units 
+          (that have been implemented in real Limudei Kodesh classrooms) that can be used immediately in their own classrooms.  
+          Additionally, all teachers in the cohort will be provided with ongoing support and guidance in planning lessons that are tailored specifically to the required grade level 
+          and subject area that they are teaching. 
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <div class="modal fade" id="coachingSessionsModal" tabindex="-1" aria-labelledby="coachingSessionsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="coachingSessionsModalLabel">Coaching Sessions</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>During our one-on-one coaching sessions, a coach meets with our trainees individually 
+          to support their ongoing implementation of Blended and Personalized Learning.  
+          During these sessions, the coach and rebbe or morah reviews successes and challenges they have had, 
+          discusses ways to improve and grow, and plans for future teaching units.  
+        </p>
+        <p>
+          In addition, each trainee rebbe or morah will have access to the resources found on our website.
+          This includes articles, sample lessons and materials, a live community of Lomdei trainees, 
+          and Lomdei’s own learning platform for Limudei Kodesh.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <div class="modal fade" id="packagesModal" tabindex="-1" aria-labelledby="packagesModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="packagesModalLabel">Professional Development Packages</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Our professional development will train a cohort of teachers over the course of a school year. 
+          A second cohort of teachers can be added in the following school year with the additional options below. 
+        </p>
+        <h5>
+          Basic Training Package
+        </h5>
+        <p>
+          <strong>Training:</strong>
+          10 hours of training over 3 sessions during the first 4 months of school 
+          for the selected cohort of teachers. <br>
+          <strong>Coaching/Mentoring:</strong>
+          8 half-hour monthly follow-up coaching/mentoring sessions for each teacher in the cohort
+        </p>
+        <h5>
+          Advanced Training Package
+        </h5>
+        <p>
+          <strong>Training:</strong>
+          10 hours of training over 3 sessions during the first 4 months of school 
+          for the selected cohort of teachers. <br>
+          <strong>Coaching/Mentoring:</strong>
+          16 half-hour bi-monthly follow-up coaching/mentoring sessions for each teacher in the cohort
+          The option of in-person meeting and classroom observations is available as well. 
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <hr>
+
+    <!-- Personalized Learning - Info section -->
+  <section id="persInfo" class="text-right">
+    <div class="text">
+      <h2>
+        <span id="bplInfoAnchor" class="anchor"></span>
+        Benefits of Personalized Learning
+      </h2>
+      <h6>Optimized toward students as <strong>individuals</strong>, Personalized Learning is
+        <strong>more engaging</strong> for students while making <strong>classroom management significantly easier</strong>.</h6>  
+        <h6>Personalized Learning promotes <strong>more meaningful teacher-student relationships</strong> and 
+        can be implemented <strong>with or without the use of computer technology</strong>.</h6>
+
+      <button id="perLearnBtn" class="learnMoreBtn">Learn More</button>
+    </div>
+    <div class="picture">
+      <img src="./../pics/lomdei_pic_3.JPG" alt="Child Learning Torah">
+    </div>
+  </section>
+  <!-- Hidden info -->
+  <div id="perLearnTxt" class="hiddenTxt learnMoreTxt">
+    <div class="learnMoreInner">
+      <span id="perLearnTxtAnchor" class="learnMoreTxtAnchor anchor"></span>
+      <h4>Personalized Learning and Its Benefits</h4>
+      <p>
+        Personalized Learning characterizes <strong>educational methods that are optimized toward the students as individuals, rather than as a group</strong>.
+        It is designed to respond, to the greatest extent possible, to each student’s learning needs and interests 
+        by encouraging students to be reflective about their learning and to take responsibility for their learning paths.  
+        Personalized Learning allows for feedback to be provided to both the teacher and student, via ongoing data collection, 
+        to further direct the student’s learning and to personalize the teacher's instruction.         
+      </p>
+      <p>
+        There are several significant <strong>advantages</strong> of Personalized Learning. 
+        Each student approaches their learning with unique strengths and weaknesses, interests and inclinations, and levels of motivation.  
+        Personalized Learning can be tailored to these differences to promote improved student learning.  
+      </p>
+      <p>
+        Additionally, Personalized Learning is more engaging for students, who are more likely to feel appropriately challenged and are more likely to receive timely and specific feedback.  
+        Personalized Learning promotes active learning by requiring students to take an active role in their learning process.  Active learning is itself more engaging to students and more effective in their growth.  
+        <strong>Classroom management is often significantly easier when students are actively engaged in the learning process, which can make the job of the rebbe or morah easier and more enjoyable.</strong>
+      </p>
+      <p>
+        Personalized Learning can create more opportunities for the rebbe or morah to meet with their students in small groups or in one-on-one settings.  
+        They can get to know their students better and develop <strong>deeper, more meaningful relationships with them</strong>.  
+      </p>
+      <p>Personalized Learning can be implemented <strong>with or without the use of computer technology</strong>.  
+        A rebbe or morah can design and implement “low-tech” personalized learning and data collection opportunities 
+        in their Limudei Kodesh classroom in a way that engages their students and promotes student growth.  
+      </p>
+    </div>
+    <div>
+      <button class="perLearnHideBtn hideBtn">Hide Text</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Blended Learning - Info section -->
+  <section id="blendInfo" class="text-left">
+    <div class="text">
+      <h2>
+        <span id="blendLearnInfoAnchor" class="anchor"></span>
+        Benefits of Blended Learning
+      </h2>
+      <h6>Blended Learning enhances student learning by "blending" the use of computer technology with traditional, face-to-face learning methods.</h6>
+      <h6>Blended Learning has several critical advantages.</h6>
+      <button id="blendLearnBtn" class="learnMoreBtn">Learn More</button>
+    </div>
+    <div class="picture">
+      <img src="./../pics/lomdei_pic_8.JPG" alt="Children Learning torah">
+    </div>
+  </section>
+  <!-- Hidden Info -->
+  <div id="blendLearnTxt" class="hiddenTxt learnMoreTxt">
+    <div class="learnMoreInner">
+      <span id="blendLearnTxtAnchor" class="learnMoreTxtAnchor anchor"></span>
+      <h4>
+        Blended Learning and Its Benefits 
+      </h4>
+      <p>
+        Personalized Learning is often facilitated by the implementation of computer technology in the classroom 
+        which can be “blended” with more traditional and lower-tech methods of learning (“Blended Learning”).  
+        Blended Learning often facilitates, augments, and enhances, student learning in several important ways.  
+      </p>
+      <p>
+        Computer technology increases access to learning resources beyond what any one teacher can offer on their own.  
+        For example, a rebbe or morah can direct students to instructional videos, learning websites, platforms, 
+        and apps, that can enable <strong>enrichment for advanced students, remediation for weaker students, and a deeper learning experience for all</strong>.  
+        These resources can be generated or curated by the rebbe or morah, or by anyone else.  
+      </p>
+      <p>
+        Blended Learning facilitates multiple modalities of learning, 
+        which is often more engaging and effective for students. 
+        For example, students can use the computer’s voice recorder to record themselves reading text.  
+        This allows more students to practice reading more text aloud, simultaneously, and even send the recordings easily to the teacher.  
+        Student engagement can also be promoted by high-interest activities such as a video or educational game.  
+      </p>
+      <p>
+        Additionally, technology  gives students the ability to create higher quality presentations, 
+        such as slideshows, drawings, cartoons, pictures, and videos.  
+        This often affords students the ability to be creative in ways that could not be accomplished without the use of computer technology.  
+        Students can display and share their creativity with a wider audience, such as the whole class (via the class’ Smartboard or projector), 
+        or the parents or wider school community (via various computer sharing mechanisms).  
+      </p>
+      <p>
+        Technology often facilitates a tighter “feedback-loop,” which can be crucial for student success. 
+        For example, a student can practice a skill such as interpreting a Hebrew text and receive timely feedback on his work; 
+        he can then edit his work using the feedback he receives, and continue to get more feedback, until mastery is achieved. 
+        Attempting this process of multiple revisions is typically too difficult using paper. 
+      </p>
+    </div>
+    <div>
+      <button class="hideBtn" id="blendLearnHideBtn">Hide Text</button>
+    </div>
+  </div>
+
+  <hr>
+
+<!-- BPL Examples Section -->
+<section id="examples">
+  <h2>
+    <span id="bplExamplesAnchor" class="anchor"></span>
+    Examples of Blended and Personalized Learning <br>
+    in Limudei Kodesh
+  </h2>
+  <div id="examplesDiv">
+    <div class="exampleDiv" data-bs-toggle="modal" data-bs-target="#example1">
+      <h4>Station Rotation</h4>
+      <img src="./../pics/station rotation pic.JPG" alt="diagram of station rotation model">
+      <button class="learnMoreBtn" >Learn More</button>
+    </div>
+    <div class="exampleDiv" data-bs-toggle="modal" data-bs-target="#example2">
+      <h4><em>Chavrusa</em> Reading</h4>
+      <img src="./../pics/lomdei_pic_3.JPG" alt="diagram of station rotation model">
+      <button class="learnMoreBtn">Learn More</button>
+    </div>
+    <div class="exampleDiv" data-bs-toggle="modal" data-bs-target="#example3">
+      <h4><em>Kriah</em> practice</h4>
+      <img src="./../pics/lomdei_pic_7.JPG" alt="diagram of station rotation model">
+      <button class="learnMoreBtn">Learn More</button>
+    </div>
+    <div class="exampleDiv" data-bs-toggle="modal" data-bs-target="#example4">
+      <h4>Skill Building Formative or Summative Assessments</h4>
+      <img src="./../pics/student_data_pic.JPG" alt="diagram of station rotation model">
+      <button class="learnMoreBtn">Learn More</button>
+    </div>
+    <div class="exampleDiv" data-bs-toggle="modal" data-bs-target="#example5">
+      <h4>Deeper Knowledge of the Text</h4>
+      <img src="./../pics/lomdei_pic_6.JPG" alt="diagram of station rotation model">
+      <button class="learnMoreBtn">Learn More</button>
+    </div>
+    <div class="exampleDiv" data-bs-toggle="modal" data-bs-target="#example6">
+      <h4>Self-Paced Class</h4>
+      <img src="./../pics/lomdei_pic_4.JPG" alt="diagram of station rotation model">
+      <button class="learnMoreBtn" >Learn More</button>
+    </div>
+  </div>
+</section>   
+<!-- Modals for example: -->
+<!-- Example 1 -->
+<div class="modal fade" id="example1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example1Label">Station Rotation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Students rotate through multiple stations that each offer a different learning activity.  
+          Some activities can be teacher-led, such as small-group instruction, or student-led, such as completing an assignment. 
+          Students can plan for, and follow, their progress on individual checklists.   
+          Teaching in small groups, the rebbe or morah can often give students more personalized attention than they would when teaching the entire class. 
+          While technology can be utilized in this model, the model can work well without it. 
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Example 2 -->
+<div class="modal fade" id="example2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example2Label"><em>Chavrusa</em> Reading</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Students can sit in pairs to read and listen to each other. 
+          The listener can provide feedback to help his or her chavrusa improve.  
+          They can chart their progress on paper and include accountability measures such as listing words they found most challenging. 
+          This opportunity allows for peer reflection and personal reflection, encouraging students to be accountable for their growth and progress in learning.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Example 3 -->
+<div class="modal fade" id="example3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example3Label"><em>Kriah</em> Practice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Students can practice reading out loud by recording themselves on a device. 
+          They can submit these recordings easily, creating accountability, 
+          and the recordings can be reviewed by a teacher, who can send feedback and offer remediation if necessary. 
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Example 4 -->
+<div class="modal fade" id="example4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example4Label">Skill Building Formative or Summative Assessments</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Students can utilize apps, such as the Lomdei app, to practice their knowledge of the translation or deeper meaning of the Hebrew Chumash text.  
+          Students receive instant feedback that engages and motivates them while helping them hone their skills.  
+          Teachers receive a report on the students’ progress that gets updated in real time. 
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Example 5 -->
+<div class="modal fade" id="example5" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example5Label">Deeper knowledge of the text</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Using the Lomdei app, students can answer questions by matching the questions 
+          with specific words and phrases from the pesukim.  
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Example 6 -->
+<div class="modal fade" id="example6" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example6Label">Self-Paced Class</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Students learning about tefillah can choose which tefillah to focus on; 
+          they can watch short videos to learn content about those tefillos; 
+          they can then answer questions based on that content and submit them easily, online; 
+          they can choose from a range of creative projects to work on.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+  <!-- Resources Section -->
+  <section id="resources" class="text-right">
+    <div class="text">
+      <h2>
+        <span id="resourcesAnchor" class="anchor"></span>
+        Further Resources on Blended and Personalized Learning
+      </h2>
+      <h6>
+        Here are links to some online materials regarding Blended and Personalized Learning.
+      </h6>
+      <button id="resourcesBtn" class="learnMoreBtn">Learn More</button>
+    </div>
+    <div class="picture">
+      <img src="./../pics/lomdei_pic_9.JPG" alt="children Learning Torah">
+    </div>
+  </section>
+  <!-- Hidden info -->
+  <div id="resourcesTxt" class="hiddenTxt learnMoreTxt">
+    <div class="learnMoreInner">
+      <span id="resourcesTxtAnchor" class="resourcesTxtAnchor anchor"></span>
+      <h4>
+        Online Resources on Blended and Personalized Learning
+      </h4>
+      <p>
+        <strong><a class="link" href="https://catlintucker.com/" target="_blank">Dr. Catlin R. Tucker's Website (catlintucker.com)</a></strong>
+        <br> 
+        <em>Dr. Tucker is a noted expert on Blended and Personalized Learning.  Her site contains resources for BPL, including her blog with articles.</em> 
+      </p>
+      <p>
+        <strong><a class="link" href="https://blog.betterlesson.com/" target="_blank">BetterLesson (blog.betterlesson.com)</a></strong>
+        <br>
+        <em>BetterLesson's site has a large amount of resources for teaching.  Their blog contains articles on Blended and Personalized Learning and many other subjects in the field of education.</em>
+      </p>
+      <p>
+        <strong><a class="link" href="https://www.iste.org/" target="_blank">The International Society for Technology in Education (iste.org)</a></strong>
+        <br>
+        <em>ISTE supports the use of technology to enhance teaching and learning and has many resources on Blended and Personalized Learning.</em>
+      </p>
+      <p>
+        <strong><a class="link" href="https://www.edutopia.org/topic/blended-learning" target="_blank">Edutopia (edutopia.org/topic/blended-learning)</a></strong>
+        <br>
+        <em>Edutopia is a popular website with many resources on many topics in education, including Blended Learning.</em>
+      </p>
+      
+    </div>
+    <div>
+      <button id="resourcesHideBtn" class="hideBtn">Hide Text</button>
+    </div>
+  </div>
+
+  <hr>
+
+<!-- Government Grants Section -->
+<section id="gvtGrants">
+  <h2>
+    <span id="gvtGrantsAnchor" class="anchor"></span>
+      Government Grants
+  </h2>
+  <div class="text-left">
+    <div class="text">
+      <p>
+        Information Coming Soon!
+      </p>
+    </div>
+    <div class="picture">
+      <img src="./../pics/lomdei_pic_3.JPG" alt="Child Learning torah">
+    </div>
+  </div>
+</section>
+
+<hr>
+
+
+<section id="contactUs">
+  <!-- <h2> -->
+    <span class="anchor" id="contactUsAnchor"></span>
+    <!-- Contact Us</h2> -->
+    <!-- <form action="https://formspree.io/f/xdoydznp" method="POST">
+      <div class="formGrp">
+        <label for="name">Your Name: </label><input id="name" type="text" placeholder="Your Name" name="name" required>
+      </div>
+      <div class="formGrp">
+        <label for="email">Your Email: </label><input id="email" type="email" placeholder="Your Email" name="_replyto">
+      </div>
+      <div class="formGrp">
+        <label for="message">Your Message: </label><textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+      </div>
+      <div class="formGrp">
+        <div></div>
+        <input type="submit">
+      </div>
+    </form> -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8XHmSJSSKx-b19lbVLORg6s9UHuUoU9k5Z-kqGZXwlwOjdw/viewform?embedded=true" width="600" height="725" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+</section>
+</div>
+<div id="footer">
+  <p>&copy;<a class="link" target="_blank" href="https://www.lomdei.com/">Lomdei</a> 2021</p>
+  <p>Icons by <a class="link" href="https://icons8.com/">icons8</a> </p>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="./../scripts/pd.js"></script>
+</body>
+
+</html>

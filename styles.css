@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,900&display=swap');
+
+html, body, form, fieldset, table, tr, td, img {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1em;
+}
+h2{
+  
+  font-size: 2.2em;
+}
+h6{
+  font-size: 1.25em;
+  line-height: 1.4;
+}
+p{
+  font-size: 1.15em;
+}
+
+input, button, select, textarea, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+
+* {
+    box-sizing: border-box;
+    color: var(--clr-dark);
+}
+  :root {
+    --clr-light: #66bfff;
+    --clr-dark: #324c5d;
+    --clr-white: #f8f9fa;
+    --clr-btnHov: #486274;
+    /* RGB: 248, 249, 250 */
+  }
+  body{
+    background: rgb(102,191,255);
+    background: linear-gradient(90deg, rgba(219,243,247,0.33657212885154064) 0%, rgba(50,76,93,0.5) 100%);
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+ 
+  hr{
+    width: 30%;
+    margin: 0 auto;
+    color: var(--clr-dark)
+  }
+
+  /* to 'help' the Bootstrap modals: */
+  .modal-backdrop{
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0 5px var(--clr-dark);
+  }
+  .navbar-nav{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar-brand > img {
+    width: 315px;
+  }
+  @media only screen and (max-width:1050px){
+    .navbar-brand > img {
+      width: 175px;
+    }
+  }
+  .bg-light {
+    background-color: var(--clr-white) !important;
+  }
+  a.nav-link {
+    color: var(--clr-dark) !important;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  a.nav-link:hover {
+    background-color: var(--clr-light);
+  }
+  a.disabled{
+    background-color: var(--clr-light);
+    pointer-events: none;
+  }
+  #login{
+    background-color: var(--clr-dark);
+    color: white !important
+  }
+  #login:hover{
+    background-color: var(--clr-btnHov);
+  }
+  
+  /* Sections*/
+  section {
+    text-align: left;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  @media only screen and (max-width: 900px) {
+    section {
+      padding: 2.5%;
+      margin-bottom: 0;
+    }
+  }
+  
+  /* To cover the image to give fade effect */
+  .whiteFadeCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+  }
+
+  section .accordion-body {
+    text-align: left;
+  }
+
+    /* All Buttons */
+.learnMoreBtn{
+  margin-top: 25px;
+  /* margin: 0 auto 0 auto; */
+  border: none;
+  border-radius: 30px;
+  color: var(--clr-white);
+  background-color: var(--clr-dark);
+  max-width: 200px;
+  min-height: 50px;
+  padding: 5px 15px;
+  font-size: 25px;
+  transition: background-color 0.3s;
+}
+.learnMoreBtn:hover{
+  background-color: var(--clr-btnHov);
+}
+
+
+.hideBtn{
+  border: none;
+  border-radius: 30px;
+  color: var(--clr-white);
+  background-color: var(--clr-dark);
+  font-size: 1.15em;
+  width: 150px;
+  height: 50px;
+  padding: 5px 15px;
+  display: block;
+  margin: auto auto;
+  position: sticky;
+  top: 68px;
+  bottom: 10px;
+  margin-right: 2%;
+}
+.hideBtn:hover{
+  background-color: var(--clr-btnHov);
+}
+/* Link Styling */
+.link{
+  color: var(--clr-dark);
+  text-decoration: none;
+}
+.link:hover{
+  color: var(--clr-dark);
+  text-decoration: underline;
+}
+
+  /* Intro Section */
+section#intro{
+    margin-top: 29px;
+    padding: 50px 20% 50px 10%;
+    display: flex;
+    height: 100vh;
+  
+    /* Add background picture! */
+    background: url(./pics/lomdei_pic_1.JPG) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    text-align: left;
+  }
+  @media only screen and (max-width:1050px){
+    section#intro{
+      padding: 0 10% 50px 5%;
+    }
+  }
+  .title{
+    margin-top: 3%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3%;
+    background-color: rgba(248, 249, 250,0.70);
+  }
+  @media only screen and (max-width:1000px){
+      .title{
+          width: 100%
+      }
+      .title h1{
+        font-size: 34px
+      }
+      .title h3{
+        font-size: 30px
+      }
+  }
+  @media only screen and (max-width:380px){
+    .title h1{
+      font-size: 22px
+    }
+    .title h3{
+      font-size: 18px
+    }
+  }
+  .title #introButtons{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .title img#logo{
+    min-width: 300px;
+    max-width: 400px;
+    object-fit: fill;
+  }
+  #brochure{
+    margin-top: 10px;
+   }
+  @media only screen and (max-width: 900px){
+    #intro button{
+      font-size: 18px;
+    }
+  }
+  div#counters{
+    background-color: var(--clr-dark);
+    display: flex;
+    justify-content: space-between;
+  }
+  div#counters div{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div#counters *{
+    color: var(--clr-white)
+  }
+  @media only screen and (max-width:550px){
+    div#counters{
+      margin-bottom: 5%;
+    }
+    div#counters h3{
+      font-size: 22px;
+    }
+    div#counters h5{
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  @media only screen and (max-width:290px){
+    div#counters h3{
+      font-size: 18px;
+    }
+    div#counters h5{
+      font-size: 10px;
+      margin: 0;
+    }
+  }
+  #infoAnchor{
+    position: absolute;
+    left: 0;
+    top: -85;
+  }
+
+  /* Subsequent Sections */
+  .text-right{
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+  }
+  .text-left{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .picture{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    height: 300px;
+  }
+  .text{
+    min-height: 400px;
+    padding: 5%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .picture img{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 5px var(--clr-dark);
+  }
+  @media only screen and (max-width: 900px){
+    .picture img{
+      width:90%;
+    }
+  }
+  .learnMoreTxt{
+      background-color: var(--clr-white);
+      position: relative;
+      margin: 10px 0px;
+      box-shadow: 
+        inset 0 11px 8px -10px var(--clr-dark),
+        inset 0 -11px 8px -10px var(--clr-dark);
+      display: flex;
+  }
+  @media only screen and (max-width: 900px){
+    .learnMoreBtn{
+      padding: 2% 5%;
+    }
+  }
+  .learnMoreInner{
+    width: 60%;
+    margin: 0 auto;
+    padding: 5% 
+  }
+  .learnMoreTxt div:last-of-type{
+    display: flex;
+    align-items: center;
+  }
+  /* Hidden Text */
+.hiddenTxt{
+  display: none;
+}
+/* Info Section */
+#info h4{
+  width: 90%;
+  margin: 0 auto;
+}
+div.infoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 90%;
+    margin: 0 auto;
+}
+div.info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+div.infoBox{
+    margin-bottom: 2.5%;
+    width: 100% !important;
+}
+@media only screen and (max-width: 900px) {
+    div.infoContainer   {
+        flex-direction: column;
+        align-items: center;
+    }
+    div.info{
+        width: 95%
+    }
+}
+
+div.infoBox>div{
+    width: 100%;
+    font-size: 1.5em;
+
+}
+div.infoBox>div>button{
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+div.infoBox>div>button:hover{
+    background-color: var(--clr-dark);
+    color: var(--clr-white)
+}
+button.infoTitle{
+    border: none;
+    width: 100%;
+}
+div.collapse{
+    width: 100%;
+}
+.bigbold{
+    font-weight: 900;
+    font-size: 1.75em;
+    transform: translateY(-3px);
+    margin-right: 5px;
+}
+div.infoBox>div>button:hover .bigbold{
+    color: var(--clr-white)
+}
+.card{
+    font-size: .75em;
+}
+/* Examples Section */
+section#examples{
+  text-align: center;
+  margin-top: 150px;
+}
+@media only screen and (max-width:900px){
+  #examples{
+    margin-top: 50px;
+  }
+}
+#bplExamplesAnchor{
+  margin-top: -78px;
+}
+#examples h2{
+  margin-bottom: 50px;
+}
+#examplesDiv{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.exampleDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 350px;
+  height: 300px;
+  /* border-radius: 3px; */
+  margin: 5px 5px 50px 5px;
+  padding: 10px;
+  box-shadow: 0 0 5px var(--clr-dark);
+}
+.exampleDiv:hover{
+  cursor: pointer;
+}
+.exampleDiv:hover .learnMoreBtn{
+  background-color: var(--clr-btnHov);
+}
+.exampleDiv img{
+  width: 180px;
+  height: 140px;
+  object-fit: cover
+}
+.exampleDiv h4{
+  margin-top: 5px
+}
+.exampleDiv button{
+  margin-bottom: 5px;
+}
+
+/* Team Section */
+section#team{
+  margin-top: 78px;
+  text-align: center;
+}
+#team img{
+  max-width: 200px;
+  height: 260px;
+  object-fit: cover;
+}
+#team .anchor{
+  padding: 0;
+}
+#teamContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.teamCard{
+  position: relative;
+  margin: 5px;
+  padding: 10px;
+  max-width: 325px;
+  transition: box-shadow 0.3s;
+}
+.teamCard:hover{
+  cursor: pointer;
+  box-shadow: 0 0 5px var(--clr-dark);
+}
+.teamCard p{
+  margin-bottom: 30px;
+}
+.fullBio{
+  position: absolute;
+  width: 68px;
+  left: 50%;
+  margin-left: -34px;
+  bottom: 2px;
+  opacity:0;
+  transition: opacity 0.3s;
+}
+.teamCard:hover .fullBio{
+  opacity: 1.0;
+}
+@media only screen and (max-width: 700px){
+  #teamContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .teamCard{
+    max-width: 90%;
+    width: 90%;
+  }
+}
+@media only screen and (max-width:800px){
+  .teamCard{
+    box-shadow: 0 0 5px var(--clr-dark);
+  }
+  .fullBio{
+    opacity: 1.0;
+  }
+}
+.modal-body{
+  text-align: justify;
+}
+
+
+/* Footer */
+.pageContainer{
+  padding-bottom: 2.5rem;
+  min-height: 90vh;
+  width: 100%;
+}
+
+#footer{
+  position: absolute;
+  height: 2.5rem;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#footer p{
+  margin: 0
+}
+
+/* ABOUT PAGE */
+.anchor{
+    position: absolute;
+    left: 0;
+    top: -65px;
+}
+section#aboutLomdei{
+    margin-top: 58px;
+    padding: 50px 20% 50px 10%;
+    min-height: 100vh;
+  
+    /* Add background picture! */
+    background: url(./pics/lomdei_pic_8.JPG) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    text-align: left;
+}
+  @media only screen and (max-width: 700px){
+    section#aboutLomdei{
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+}
+section#aboutLomdei .title>div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section#promoVideos{
+    display: flex;
+    justify-content: space-around;
+}
+@media only screen and (max-width:900px){
+    section#promoVideos{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.link{
+  color: var(--clr-dark);
+  text-decoration: underline;
+}
+.link:hover{
+  color: var(--clr-dark);
+  text-decoration: none;
+}
+iframe.video{
+    height: 80vh;
+    width: 48%;
+    box-shadow: 0 0 5px var(--clr-dark);
+}
+@media only screen and (max-width:900px){
+    iframe.video{
+        width: 95%;
+        margin-bottom: 5%;
+    }
+}
+
+/* Videos page */
+/* HeaderSection is used by the headers for Videos, Schools */
+.headerSection{
+  margin-top: 61px;
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-light);
+}
+.list-group{
+  width: 30%;
+  float: right;
+  position: sticky;
+  top: 100px;
+  margin-right: 2.5%;
+}
+.showIt{
+  display: none !important;
+}
+#contentsDropup{
+  display: none;
+  position: fixed;
+  z-index: 99;
+  bottom: 2.5%;
+  right: 2.5%;
+  box-shadow: 0 0 5px var(--clr-dark);
+  border-radius: .25rem;
+}
+#dropupButton{
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+}
+#dropupButton:hover{
+  background-color: var(--clr-btnHov);
+}
+
+@media only screen and (max-width: 700px){
+  .list-group{
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0px;
+  }
+  hr.dropdown-divider{
+    display: none;
+  }
+  .showIt{
+    display: block !important;
+  }
+}
+.list-group-item{
+  background-color: var(--clr-dark);
+  color: var(--clr-white)
+}
+span.videoAnchor{
+  margin-top: -78px;
+  padding-bottom: 78px;
+}
+section#tVideos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.videoContainer{
+  margin-bottom: 5%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+iframe.tVideo{
+  width: 100%;
+  height: 500px;
+}
+@media only screen and (max-width:700px){
+  .videoContainer{
+    width: 95%;
+  }
+  iframe.tVideo{
+    height: 250px;
+  }
+}
+
+/* Schools Section */
+section#schools{
+  width: 90%;
+  min-height: 1000px;
+  margin: 0 auto;
+}
+div#schoolsDiv{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+div#schoolsDiv div{
+  margin-bottom: 5%;
+  width:300px;
+}
+div#schoolsDiv li{
+  list-style: none;
+}
+.country{
+  font-weight: 900;
+}
+/* Grants Section */
+section#grants{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+section#grants h3{
+  margin:5% 0;
+}
+/* Contact Us Page */
+section#contactUs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#contactUs div{
+  width: 90%;
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+div#contactPeople{
+  display: flex;
+  justify-content: space-between;
+}
+div#contactPeople>div{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}

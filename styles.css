@@ -772,3 +772,32 @@ div#contactPeople>div{
   display: flex;
   flex-direction: column;
 }
+/* Contact us */
+#contactUs{
+  /* background-color: var(--clr-light); */
+  color: var(--clr-dark);
+  text-align: center;
+  font-size: 1.15em;
+  margin-top: 78px;
+}
+#contactUs form{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+@media only screen and (max-width:1000px){
+  #contactUs form{
+    width: 75%
+  }
+}
+@media only screen and (max-width:700px){
+  #contactUs form{
+    width: 90%
+  }
+}
+/* For Google form */
+iframe{
+  height: 1000px;
+  margin: 25px;
+}

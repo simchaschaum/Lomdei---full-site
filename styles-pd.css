@@ -285,7 +285,7 @@ section#intro{
       width: 100%
     }
     #title h1{
-      font-size: 45px
+      /* font-size: px */
     }
   }
   #title img#logo{

@@ -220,11 +220,11 @@ input, button, select, textarea, optgroup, option {
 /* Link Styling */
 .link{
   color: var(--clr-dark);
-  text-decoration: none;
+  text-decoration: underline;
 }
 .link:hover{
   color: var(--clr-dark);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
   /* Intro Section */

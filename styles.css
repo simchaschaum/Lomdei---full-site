@@ -186,7 +186,7 @@ section#intro{
     margin-top: 29px;
     padding: 50px 20% 50px 10%;
     display: flex;
-    height: 100vh;
+    height: 650px;
   
     /* Add background picture! */
     background: url(./pics/lomdei_pic_1.JPG) no-repeat center center fixed;
@@ -204,6 +204,7 @@ section#intro{
   }
   .title{
     margin-top: 3%;
+    min-height: 90%;
     width: 70%;
     display: flex;
     flex-direction: column;

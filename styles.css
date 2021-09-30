@@ -217,7 +217,7 @@ section#intro{
           width: 100%;
       }
       .title h3{
-        font-size: 30px
+        /* font-size: 30px */
       }
   }
   @media only screen and (max-width:380px){

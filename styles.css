@@ -199,7 +199,7 @@ section#intro{
   }
   @media only screen and (max-width:1050px){
     section#intro{
-      padding: 0 10% 50px 5%;
+      padding: 0;
     }
   }
   .title{
@@ -214,10 +214,7 @@ section#intro{
   }
   @media only screen and (max-width:1000px){
       .title{
-          width: 100%
-      }
-      .title h1{
-        /* font-size: 34px */
+          width: 100%;
       }
       .title h3{
         font-size: 30px

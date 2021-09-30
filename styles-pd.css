@@ -101,6 +101,8 @@ input, button, select, textarea, optgroup, option {
   .links-title{
     padding: 4px 16px;
     margin-bottom: 0;
+    font-size: 18px;
+    font-style: italic;
   }
   a.nav-link:hover {
     background-color: var(--clr-light);

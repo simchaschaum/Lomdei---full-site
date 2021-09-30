@@ -96,6 +96,11 @@ input, button, select, textarea, optgroup, option {
     color: var(--clr-dark) !important;
     font-size: 18px;
     transition: background-color 0.3s;
+    padding: 4px 16px;
+  }
+  .links-title{
+    padding: 4px 16px;
+    margin-bottom: 0;
   }
   a.nav-link:hover {
     background-color: var(--clr-light);
@@ -133,6 +138,10 @@ input, button, select, textarea, optgroup, option {
   #PDSubNavDropdown{
     display: none;
   }
+  .dropdown-menu{
+    min-width: 250px !important;
+    overflow-y: auto !important;
+  }  
   .btn-secondary{
     color: var(--clr-white);
     background-color: var(--clr-dark)
@@ -150,6 +159,10 @@ input, button, select, textarea, optgroup, option {
     }
     #PDSubNavDropdown{
       display: block;
+    }
+    .sub-list{
+      list-style-type: none;
+      line-height: 100%;
     }
   }
   /* Sections*/

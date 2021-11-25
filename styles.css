@@ -97,6 +97,9 @@ input, button, select, textarea, optgroup, option {
     background-color: var(--clr-light);
     pointer-events: none;
   }
+  #linkedin{
+    width: 40px
+  }
   #login{
     background-color: var(--clr-dark);
     color: white !important
@@ -104,17 +107,17 @@ input, button, select, textarea, optgroup, option {
   #login:hover{
     background-color: var(--clr-btnHov);
   }
+
   
   /* Sections*/
   section {
     text-align: left;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   @media only screen and (max-width: 900px) {
     section {
       padding: 2.5%;
-      margin-bottom: 0;
     }
   }
   
@@ -553,16 +556,28 @@ section#team{
 
 #footer{
   position: absolute;
-  height: 2.5rem;
+  height: 2.5em;
   bottom: 0;
-  width: 100%;
+  width: 90%;
   display: flex;
-  padding: 0 20px;
-  align-items: flex-end;
-  justify-content: space-between;
+  margin: 20px auto;
+  padding: 0 5%;
+  align-items: center;
+  justify-content: flex-start;
 }
+
+#footer>*{
+  margin-right: 30px;
+}x
 #footer p{
-  margin: 0
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+#footer-logo{
+  width: 100px
+}
+#linkedin{
+  width: 50px
 }
 
 /* ABOUT PAGE */

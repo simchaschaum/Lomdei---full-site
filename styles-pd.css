@@ -689,15 +689,26 @@ iframe{
 
 #footer{
   position: absolute;
-  height: 2.5rem;
+  height: 2.5em;
   bottom: 0;
-  width: 100%;
+  width: 90%;
   display: flex;
-  padding: 0 20px;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-#footer p{
-  margin: 0
+  margin: 20px auto;
+  padding: 0 5%;
+  align-items: center;
+  justify-content: flex-start;
 }
 
+#footer>*{
+  margin-right: 30px;
+}x
+#footer p{
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+#footer-logo{
+  width: 100px
+}
+#linkedin{
+  width: 50px
+}

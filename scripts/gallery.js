@@ -15,8 +15,6 @@ const pictures = [
     }
 ]
 
-console.log("Does this even work?")
-
 const gallery = document.querySelector('#gallery-container');
 const lightbox = document.querySelector('#lightbox');
 const lightboxPic = document.querySelector('#lightboxPic');
@@ -70,4 +68,19 @@ function picAdvance(adv){
     } else {
         lightboxCap.textContent = ""
     }
+}
+
+function fullSize(){
+    if( lightboxPic.style.height === "100vh"){
+        lightboxPic.style.height = "400px";
+        lightboxPic.style.maxWidth = "60%";
+        document.querySelectorAll('.slide-arrow').forEach(item => item.style.display = "block");
+        lightboxCap.style.display = "inline-block";
+    } else {
+        lightboxPic.style.height = "100vh";
+        lightboxPic.style.maxWidth = "100vw";
+        document.querySelectorAll('.slide-arrow').forEach(item => item.style.display = "none");
+        lightboxCap.style.display = "none";
+    }
+   
 }

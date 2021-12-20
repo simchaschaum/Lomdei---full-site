@@ -15,6 +15,7 @@ const pictures = [
     }
 ]
 
+console.log("Does this even work?")
 
 const gallery = document.querySelector('#gallery-container');
 const lightbox = document.querySelector('#lightbox');

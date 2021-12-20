@@ -586,6 +586,7 @@ section#gallery-section{
 }
 #modal-content img{
   height: 400px;
+  max-width: 60%;
   object-fit: cover;
 }
 #modal-caption{
@@ -593,11 +594,19 @@ section#gallery-section{
 }
 .slide-arrow{
   font-size: 100px;
-  margin-top: 10%;
   text-decoration: none;
   color: white;
   cursor: pointer;
   height: fit-content;
+
+  position: fixed;
+  top: 40%;
+}
+.next{
+  right: 100px;
+}
+.prev{
+  left: 100px
 }
 .slide-arrow:hover,
 .close-modal:hover{

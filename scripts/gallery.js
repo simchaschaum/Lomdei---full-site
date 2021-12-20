@@ -2,11 +2,16 @@ const pictures = [
     {
         url: '../pics/headshots/Simcha Schaum Headshot.jpg',
         alt: "Simcha Schaum's Headshot",
-        caption: "Simcha Schaum is the best part of Lomdei!"
+        caption: "Simcha Schaum made this website!"
     },
     {
         url: '../pics/headshots/Raphael Alter Headshot.jpeg',
-        alt: "Raphael's Headshot"
+        alt: "Raphael's Headshot",
+        caption: "This guy runs the show."
+    },
+    {
+        url: '../pics/lomdei classroom pic.jpg',
+        alt: "Lomdei Classroom in Action"
     }
 ]
 

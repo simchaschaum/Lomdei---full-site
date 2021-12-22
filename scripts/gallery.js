@@ -1,167 +1,9 @@
-const pictures = [
-    // pictures 1-35 - HALB Visit, Dec 13th, 2021
-    {
-        url: '../pics/HALB Visit/IMG_0591.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0594.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0595.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0596.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0597.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0598.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0599.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0600.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0601.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0603.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0604.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0605.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0606.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0607.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0608.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0609.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0610.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0611.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0612.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0613.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0614.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0615.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0616.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0617.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0618.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0619.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0620.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0621.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0624.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0625.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0626.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0628.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0629.jpg',
-        alt: "HALB Visit",
-    },
-    {
-        url: '../pics/HALB Visit/IMG_0630.jpg',
-        alt: "HALB Visit",
-    },
-    // Dec 7th visit: pics 36-42
-    {
-        url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (1).jpeg',
-        alt: "Lomdei Visits HALB on December 7th"
-    },
-    {
-        url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (2).jpeg',
-        alt: "Lomdei Visits HALB on December 7th"
-    },
-    {
-        url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (3).jpeg',
-        alt: "Lomdei Visits HALB on December 7th"
-    },
-    {
-        url:'../pics/Dec 7 Visit/HALBVisit12_7_21 (4).jpeg',
-        alt: "Lomdei Visits HALB on December 7th"
-    },
-    {
-        url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (5).jpeg',
-        alt: "Lomdei Visits HALB on December 7th"
-    },
-    {
-        url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (7).jpeg',
-        alt: "Lomdei Visits HALB on December 7th"
-    }
-]
+import {pictures} from './pictures.js';
+
+// Titles:
+const halbTitle = document.querySelector('#halb-visit-title');
+const dec7Title = document.querySelector('#dec7-title');
+
 
 // Galleries:
 const halbGallery = document.querySelector('#halb-container');
@@ -170,31 +12,63 @@ const lightbox = document.querySelector('#lightbox');
 const lightboxPic = document.querySelector('#lightboxPic');
 const lightboxCap = document.querySelector('#modal-caption');
 
+// Dropdown button:
+const dropdown = document.querySelector('#gallery-dropdown');
+
+
+// Populate the gallery:
 let currentPic = 0;
+let currentEventIndex = 0;
+let currentEvent = ""
 
 function makeGallery(){
-    pictures.forEach((item,index) => {
-        let pic = document.createElement("IMG");
-        pic.setAttribute("src",pictures[index].url);
-        pic.setAttribute("alt",pictures[index].alt);
-        pic.setAttribute("loading","lazy");
-        pic.setAttribute("onclick",`openLightbox(${index})`)
-        if(index < 35){
-            halbGallery.appendChild(pic);
-        } else if(index < 42){
-            dec7Gallery.appendChild(pic);
+    pictures.forEach((eventObj,eventIndex) => {
+        let e = Object.keys(pictures[eventIndex]);
+        let title = pictures[eventIndex][e].title;
+        if(e[0] === "halb"){
+            halbTitle.textContent = title;
+        } else if (e[0] === "dec7"){
+            dec7Title.textContent = title
         }
+        let link = document.createElement("LI");
+        let anchor = document.createElement("A");
+        anchor.setAttribute("class","dropdown-item");
+        anchor.setAttribute("href",`#${e[0]}-anchor`);
+        anchor.textContent = pictures[eventIndex][e].shortTitle;
+        link.appendChild(anchor);
+        dropdown.appendChild(link);
+        for(var item in eventObj){   
+                eventObj[item].pics.forEach((a,index) => {
+                    let pic = document.createElement("IMG");
+                    pic.setAttribute("src",eventObj[item].pics[index].url);
+                    pic.setAttribute("alt",eventObj[item].pics[index].alt);
+                    pic.setAttribute("loading","lazy");
+                    pic.setAttribute("onclick",`openLightbox("${item}",${index},${eventIndex})`)
+                    if(item === "halb"){
+                        halbGallery.appendChild(pic);
+                    } else if(item === "dec7"){
+                        dec7Gallery.appendChild(pic);
+                    }
+                })
+            }
     })
+    
 }
 makeGallery();
 
-function openLightbox(num){
+
+function openLightbox(ev,num,eventInd){
+    // KEY: ev = event (e.g. 'dec7' or 'halb'); num = the index of the picture in its array album; 
+    // eventInd = the index of the album of the event the pic is from
     lightbox.style.display = "flex";
+    //set the current pic and current event index to reference this picture when advancing the slides. 
     currentPic = num;
-    lightboxPic.setAttribute("src",pictures[currentPic].url);
-    lightboxPic.setAttribute("alt",pictures[currentPic].alt);
-    if(pictures[currentPic].caption){
-        lightboxCap.textContent = pictures[currentPic].caption
+    currentEventIndex = eventInd;  
+    currentEvent = ev;
+    lightboxPic.setAttribute("src",pictures[currentEventIndex][ev].pics[currentPic].url);
+    lightboxPic.setAttribute("alt",pictures[currentEventIndex][ev].pics[currentPic].alt);
+    if(pictures[currentEventIndex][ev].pics[currentPic].caption){
+        lightboxCap.textContent = pictures[currentEventIndex][ev].pics[currentPic].caption
     }
 }
 
@@ -204,22 +78,35 @@ function closeLightbox(){
 
 function picAdvance(adv){
     if(adv==="for"){
-        if(currentPic===pictures.length-1){
-            currentPic = 0
+        if(currentPic===pictures[currentEventIndex][currentEvent].pics.length-1){
+            currentPic = 0;
+            if(currentEventIndex===pictures.length-1){
+                currentEventIndex = 0;
+            } else {
+                currentEventIndex++;
+            }
         } else {
             currentPic++
         }
+        currentEvent = Object.keys(pictures[currentEventIndex]);
     } else {
         if(currentPic === 0){
-            currentPic = pictures.length-1
+            if(currentEventIndex === 0){
+                currentEventIndex = pictures.length-1;
+                currentEvent = Object.keys(pictures[currentEventIndex]);
+            } else {
+                currentEventIndex--;
+                currentEvent = Object.keys(pictures[currentEventIndex]);
+            }
+            currentPic = pictures[currentEventIndex][currentEvent].pics.length-1
         } else {
             currentPic--
         }
     }
-    lightboxPic.setAttribute("src",pictures[currentPic].url);
-    lightboxPic.setAttribute("alt",pictures[currentPic].alt);
-    if(pictures[currentPic].caption){
-        lightboxCap.textContent = pictures[currentPic].caption
+    lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].url);
+    lightboxPic.setAttribute("alt",pictures[currentEventIndex][currentEvent].pics[currentPic].alt);
+    if(pictures[currentEventIndex][currentEvent].pics[currentPic].caption){
+        lightboxCap.textContent = pictures[currentEventIndex][currentEvent].pics[currentPic].caption
     } else {
         lightboxCap.textContent = ""
     }
@@ -239,3 +126,11 @@ function fullSize(){
     }
    
 }
+
+// Since this file is a module (type=module), every function created here only has module 
+// scope unless I give it global scope here.
+// see https://stackoverflow.com/questions/44590393/es6-modules-undefined-onclick-function-after-import
+window.openLightbox = openLightbox;
+window.fullSize = fullSize;
+window.closeLightbox = closeLightbox;
+window.picAdvance = picAdvance

@@ -547,9 +547,20 @@ section#team{
 }
 
 /* Photo Gallery and lightbox */
-#back-to-news{
-  position: absolute;
-  left: 100px
+#galleryHeader>div{
+  width: 50%;;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#galleryHeader>div>*{
+  margin-bottom: 10px;
+}
+#galleryHeader .btn-secondary{
+  background-color: var(--clr-dark);
+  border: none;
+  border-radius: 0;
+  padding: 10px
 }
 .link-button{
   text-decoration: none;
@@ -564,13 +575,17 @@ section#team{
   background-color: var(--clr-btnHov);
 }
 section#gallery-section{
-  position: relative
+  position: relative;
+  margin-bottom: 25px;
 }
 #gallery-container{
   margin: 0 auto;
   width: 90%;
   display: flex;
   flex-wrap: wrap;
+}
+#gallery-container>div{
+  margin-bottom: 50;
 }
 #gallery-container img{
   height: 200px;
@@ -581,6 +596,11 @@ section#gallery-section{
 #gallery-container img:hover{
   box-shadow: 0 0 10px var(--clr-dark);
 }
+.gallery-anchor{
+  margin-top: -78px;
+  padding-bottom: 78px
+}
+
 #lightbox{
   display: none;
   position: fixed;

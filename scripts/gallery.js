@@ -14,6 +14,22 @@ const lightboxCap = document.querySelector('#modal-caption');
 
 // Dropdown button:
 const dropdown = document.querySelector('#gallery-dropdown');
+const dropdownBtn = document.querySelector('#dropdownBtn');
+
+// Dropdown button moves on scroll
+window.onscroll = () => {
+    scrollFunction()
+}
+
+function scrollFunction(){
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+        console.log("low");
+        dropdownBtn.classList.add("show-low");
+    } else {
+        dropdownBtn.classList.remove("show-low");
+
+    }
+}
 
 
 // Populate the gallery:
@@ -75,6 +91,17 @@ function openLightbox(ev,num,eventInd){
 function closeLightbox(){
     lightbox.style.display = "none";
 }
+
+// Event listener for keypress to advance slides:
+window.addEventListener('keydown', function (event) {
+    if(lightbox.style.display === "flex"){
+        if(event.key === "ArrowRight"){
+            picAdvance("for")
+        } else if (event.key === "ArrowLeft"){
+            picAdvance("back")
+        }
+    }
+  },true);
 
 function picAdvance(adv){
     if(adv==="for"){

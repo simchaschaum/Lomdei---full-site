@@ -177,6 +177,7 @@ function makeGallery(){
         let pic = document.createElement("IMG");
         pic.setAttribute("src",pictures[index].url);
         pic.setAttribute("alt",pictures[index].alt);
+        pic.setAttribute("loading","lazy");
         pic.setAttribute("onclick",`openLightbox(${index})`)
         if(index < 35){
             halbGallery.appendChild(pic);

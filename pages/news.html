@@ -12,7 +12,6 @@
 </head>
 <body>
   <div id="pageContainer">
-
     <nav class="navbar navbar-expand-xl navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="./../index.html#intro">
@@ -50,39 +49,26 @@
   
     </nav>
 
-    <section id="galleryHeader" class="headerSection">
-        <h2>Lomdei Event Gallery</h2>
-        <a href="./news.html" id="back-to-news" class="link-button">&#10094; Back to News Page</a>
+    <section id="newsHeader" class="headerSection">
+        <h2>Lomdei News</h2>
     </section>
-    <section id="gallery-section">
-        <div id="gallery-container">
-          <div id="dec7" class="gallery-event"> 
-            <h4>December 7, 2021 - Lomdei Visit to HALB</h4>
-            <div id="dec7-container"> <img src="../pics/Dec 7 Visit/HALBVisit12_7_21 (1).jpeg" alt="">
-              <!-- Dec 7 Visit pictures go here dynamically -->
-            </div>
-          </div>
-          <div id="HALB-Visit" class="gallery-event">
-            <h4>December 13, 2021 - School Administrators Visit HALB to See BPL in Action</h4>
-            <div id="halb-container">
-              <!-- HALB visit pictures go here dynamically -->
-            </div>
-          </div>
+    <section id="news-section">
+        <div class="news-div" id="gallery-button-div">
+            <label for="gallery-button"><h2>Check Out Pictures and Videos of Blended and Personalized Learning in Action!</h2></label>
+            <a href="./gallery.html" id="gallery-button" class="link-button">Gallery</a>
         </div>
-        <div id="lightbox">
-            <span id="close-modal-wide" class="cursor close-modal" onclick="closeLightbox()">&times;</span>
-            <div id="modal-content">
-                <a class="prev slide-arrow" onclick="picAdvance('back')">&#10094;</a>
-                <img id="lightboxPic" src="" alt="" onclick="fullSize()">
-                <a class="next slide-arrow" onclick="picAdvance('for')">&#10095;</a>
-            </div>
-            <p id="modal-caption"></p>
-            <div id="mobile-slide-arrows">
-                <a class="prev slide-arrow" onclick="picAdvance('back')">&#10094;</a>
-                <span id="close-modal-mobile" class="close-modal cursor" onclick="closeLightbox()">&times;</span>
-                <a class="next slide-arrow" onclick="picAdvance('for')">&#10095;</a>
-            </div>
-        </div>
+          <div class="news-div">
+            <h3>Lomdei Principals Seminar</h3>
+            <h4>HALB</h4>
+            <p>December 13, 2021 | ט' טבת תשס"ב</p>
+            <a class="link-button" href="#" target="_blank">Read About It</a>
+          </div>
+          <div class="news-div">
+            <h3>Up Close and Personal - על פי דרכו</h3>
+            <h4>Lomdei's Newsletter</h4>
+            <p>November 2021 | כסלו תשס"ב</p>
+            <a class="link-button" target="_blank" href="./newsletters/Up Close and Personal_ Lomdei's Newsletter 1.html">Read Newsletter</a>
+          </div>
     </section>
     
 
@@ -95,7 +81,6 @@
       <img id="linkedin" src="../pics/linkedin.png" alt="linkedin">
     </a>
   </div>
-  <script src="../scripts/gallery.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

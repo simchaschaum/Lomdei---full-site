@@ -6,6 +6,7 @@ html, body, form, fieldset, table, tr, td, img {
   padding: 0;
   font-family: 'Barlow', sans-serif;
   font-size: 1em;
+  scroll-behavior: smooth;
 }
 h2{
   
@@ -567,7 +568,7 @@ section#team{
 }
 .show-low{
   position: fixed;
-  right: 10px;
+  right: 50px;
   bottom: 10px;
   z-index: 10
 }

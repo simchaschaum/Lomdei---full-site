@@ -3,10 +3,12 @@ import {pictures} from './pictures.js';
 // Titles:
 const halbTitle = document.querySelector('#halb-visit-title');
 const dec7Title = document.querySelector('#dec7-title');
+const halbVideoTitle = document.querySelector('#halb-video-title');
 
 
 // Galleries:
 const halbGallery = document.querySelector('#halb-container');
+const halbVideoGallery = document.querySelector('#halb-videos');
 const dec7Gallery = document.querySelector('#dec7-container');
 const lightbox = document.querySelector('#lightbox');
 const lightboxPic = document.querySelector('#lightboxPic');
@@ -42,7 +44,9 @@ function makeGallery(){
         if(e[0] === "halb"){
             halbTitle.textContent = title;
         } else if (e[0] === "dec7"){
-            dec7Title.textContent = title
+            dec7Title.textContent = title;
+        } else if (e[0] === "halbVideos"){
+            halbVideoTitle.textContent = title;
         }
         let link = document.createElement("LI");
         let anchor = document.createElement("A");
@@ -53,15 +57,35 @@ function makeGallery(){
         dropdown.appendChild(link);
         for(var item in eventObj){   
                 eventObj[item].pics.forEach((a,index) => {
-                    let pic = document.createElement("IMG");
-                    pic.setAttribute("src",eventObj[item].pics[index].url);
-                    pic.setAttribute("alt",eventObj[item].pics[index].alt);
-                    pic.setAttribute("loading","lazy");
-                    pic.setAttribute("onclick",`openLightbox("${item}",${index},${eventIndex})`)
-                    if(item === "halb"){
-                        halbGallery.appendChild(pic);
-                    } else if(item === "dec7"){
-                        dec7Gallery.appendChild(pic);
+                    if(eventObj[item].video){
+                        let vid = document.createElement("iframe");
+                        vid.setAttribute("class", "gallery-video");
+                        vid.setAttribute("loading","lazy");
+                        vid.setAttribute("src", eventObj[item].pics[index].url);
+                        vid.setAttribute("frameborder","0");
+                        vid.setAttribute("allow","autoplay; fullscreen; picture-in-picture");
+                        vid.setAttribute("allowfullscreen","");
+                        vid.setAttribute("title", eventObj[item].pics[index].title);
+                        let vidCap = document.createElement("p");
+                        vidCap.textContent = eventObj[item].pics[index].alt;
+                        let vidDiv = document.createElement("div");
+                        vidDiv.setAttribute("class","video-div");
+                        vidDiv.appendChild(vid);
+                        vidDiv.appendChild(vidCap);
+                        if(item === "halbVideos"){
+                            halbVideoGallery.appendChild(vidDiv);
+                        }   
+                    } else {
+                        let pic = document.createElement("IMG");
+                        pic.setAttribute("src",eventObj[item].pics[index].url);
+                        pic.setAttribute("alt",eventObj[item].pics[index].alt);
+                        pic.setAttribute("loading","lazy");
+                        pic.setAttribute("onclick",`openLightbox("${item}",${index},${eventIndex})`)
+                        if(item === "halb"){
+                            halbGallery.appendChild(pic);
+                        } else if(item === "dec7"){
+                            dec7Gallery.appendChild(pic);
+                        }
                     }
                 })
             }
@@ -79,10 +103,23 @@ function openLightbox(ev,num,eventInd){
     currentPic = num;
     currentEventIndex = eventInd;  
     currentEvent = ev;
-    lightboxPic.setAttribute("src",pictures[currentEventIndex][ev].pics[currentPic].url);
+    if(pictures[currentEventIndex][ev].video){
+        lightboxPic.setAttribute("src",pictures[currentEventIndex][ev].pics[currentPic].altUrl);
+    } else {
+        lightboxPic.setAttribute("src",pictures[currentEventIndex][ev].pics[currentPic].url);
+    }
     lightboxPic.setAttribute("alt",pictures[currentEventIndex][ev].pics[currentPic].alt);
     if(pictures[currentEventIndex][ev].pics[currentPic].caption){
-        lightboxCap.textContent = pictures[currentEventIndex][ev].pics[currentPic].caption
+        if(pictures[currentEventIndex][ev].video){
+            let a = document.createElement("a");
+            a.setAttribute("id","modal-caption");
+            a.setAttribute("target","_blank");
+            a.setAttribute("href",`${pictures[currentEventIndex][ev].pics[currentPic].url}`);
+            a.textContent = "Click here to watch the video.";
+            lightboxCap.appendChild(a);
+        } else {
+            lightboxCap.textContent = pictures[currentEventIndex][ev].pics[currentPic].caption
+        }
     }
 }
 
@@ -128,10 +165,24 @@ function picAdvance(adv){
             currentPic--
         }
     }
-    lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].url);
+    if(pictures[currentEventIndex][currentEvent].video){
+        lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].altUrl);
+    } else {
+        lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].url);
+    }
     lightboxPic.setAttribute("alt",pictures[currentEventIndex][currentEvent].pics[currentPic].alt);
     if(pictures[currentEventIndex][currentEvent].pics[currentPic].caption){
-        lightboxCap.textContent = pictures[currentEventIndex][currentEvent].pics[currentPic].caption
+        if(pictures[currentEventIndex][currentEvent].video){
+            let a = document.createElement("a");
+            a.setAttribute("id","modal-caption");
+            a.setAttribute("target","_blank");
+            a.setAttribute("href",`${pictures[currentEventIndex][currentEvent].pics[currentPic].url}`);
+            a.textContent = "Click here to watch the video.";
+            lightboxCap.textContent = "";
+            lightboxCap.appendChild(a);
+        } else {
+            lightboxCap.textContent = pictures[currentEventIndex][currentEvent].pics[currentPic].caption
+        }
     } else {
         lightboxCap.textContent = ""
     }

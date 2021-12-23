@@ -4,6 +4,7 @@ export const pictures = [
         {
             title: "December 7, 2021 - Lomdei Visit to HALB",
             shortTitle: "Lomdei Visits HALB",
+            video: false,
             pics: [
                 {
                     url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (1).jpeg',
@@ -37,6 +38,7 @@ export const pictures = [
         {
             title: "December 13, 2021 - School Administrators Visit HALB to See Lomdei BPL in Action",
             shortTitle: "BPL in Action at HALB",
+            video: false,
             pics: [
                 {
                     url: '../pics/HALB Visit/IMG_0591.jpg',
@@ -173,9 +175,33 @@ export const pictures = [
                 {
                     url: '../pics/HALB Visit/IMG_0630.jpg',
                     alt: "HALB Visit",
-                }
+                },
             ]
         },
+    },
+    {
+        halbVideos: 
+        {
+            title: "Videos from Administrators Visit to HALB to see Lomdei BPL in Action",
+            shortTitle: "Video of BPL at HALB",
+            video: true,
+            pics: [
+                {
+                    url: 'https://player.vimeo.com/video/659615125?h=68a6eb032d&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
+                    alt: "Mr. Altabe Talks Lomdei BPL at HALB",
+                    caption: "Mr. Richard Altabe, Principal of HALB, discusses the benefits of Lomdei BPL at a principals' seminar at HALB, December 13, 2021",
+                    video: true,
+                    altUrl: '../pics/HALB Visit/mr altabe video thumbnail.PNG'
+                },
+                {
+                    url: 'https://player.vimeo.com/video/659616285?h=4dfc7a16d8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
+                    caption: "Mrs. Chani Richmond presents Lomdei's PD program on BPL at a principals' seminar at HALB, December 13, 2021",
+                    alt: "Mrs. Richmond Talks Lomdei BPL at HALB",
+                    video: true,
+                    altUrl: '../pics/HALB Visit/chani video thumbnail.PNG'
+                }
+            ]
+        }
     }
 ]
 

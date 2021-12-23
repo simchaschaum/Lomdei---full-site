@@ -35,7 +35,7 @@ export const pictures = [
     {
         halb: 
         {
-            title: "December 13, 2021 - School Administrators Visit HALB to See BPL in Action",
+            title: "December 13, 2021 - School Administrators Visit HALB to See Lomdei BPL in Action",
             shortTitle: "BPL in Action at HALB",
             pics: [
                 {

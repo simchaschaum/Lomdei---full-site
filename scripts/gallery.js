@@ -23,11 +23,9 @@ window.onscroll = () => {
 
 function scrollFunction(){
     if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
-        console.log("low");
         dropdownBtn.classList.add("show-low");
     } else {
         dropdownBtn.classList.remove("show-low");
-
     }
 }
 
@@ -139,17 +137,18 @@ function picAdvance(adv){
     }
 }
 
+let fs = false;
 function fullSize(){
-    if( lightboxPic.style.height === "100vh"){
+    if(fs && screen.width>700){
         lightboxPic.style.height = "400px";
         lightboxPic.style.maxWidth = "60%";
-        document.querySelectorAll('.slide-arrow').forEach(item => item.style.display = "block");
         lightboxCap.style.display = "inline-block";
-    } else {
+        fs = false;
+    } else if (screen.width>700){
         lightboxPic.style.height = "100vh";
         lightboxPic.style.maxWidth = "100vw";
-        document.querySelectorAll('.slide-arrow').forEach(item => item.style.display = "none");
         lightboxCap.style.display = "none";
+        fs = true;
     }
    
 }

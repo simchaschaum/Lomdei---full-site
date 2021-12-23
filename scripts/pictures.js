@@ -182,7 +182,7 @@ export const pictures = [
     {
         halbVideos: 
         {
-            title: "Videos from Administrators Visit to HALB to see Lomdei BPL in Action",
+            title: "Videos of Presentations at HALB Visit",
             shortTitle: "Video of BPL at HALB",
             video: true,
             pics: [

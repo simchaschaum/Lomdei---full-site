@@ -610,6 +610,7 @@ section#gallery-section{
 }
 .gallery-event{
   margin-bottom: 100px;
+  width: 90%;
 }
 .gallery-event h4{
   font-size: 2em;
@@ -621,11 +622,13 @@ iframe.gallery-video{
   padding: 5%;
 }
 .video-container{
-  margin-top: 100px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .video-div{
+  min-width: 300px;
+  max-width: 40%;
   padding: 2.5%;
   margin: 2.5%;
   display: flex;

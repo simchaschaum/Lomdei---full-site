@@ -8,7 +8,7 @@ const halbVideoTitle = document.querySelector('#halb-video-title');
 
 // Galleries:
 const halbGallery = document.querySelector('#halb-container');
-const halbVideoGallery = document.querySelector('#halb-videos');
+const halbVideoGallery = document.querySelector('#halb-video-inner');
 const dec7Gallery = document.querySelector('#dec7-container');
 const lightbox = document.querySelector('#lightbox');
 const lightboxPic = document.querySelector('#lightboxPic');
@@ -103,28 +103,53 @@ function openLightbox(ev,num,eventInd){
     currentPic = num;
     currentEventIndex = eventInd;  
     currentEvent = ev;
-    if(pictures[currentEventIndex][ev].video){
-        lightboxPic.setAttribute("src",pictures[currentEventIndex][ev].pics[currentPic].altUrl);
-    } else {
-        lightboxPic.setAttribute("src",pictures[currentEventIndex][ev].pics[currentPic].url);
-    }
-    lightboxPic.setAttribute("alt",pictures[currentEventIndex][ev].pics[currentPic].alt);
-    if(pictures[currentEventIndex][ev].pics[currentPic].caption){
-        if(pictures[currentEventIndex][ev].video){
-            let a = document.createElement("a");
-            a.setAttribute("id","modal-caption");
-            a.setAttribute("target","_blank");
-            a.setAttribute("href",`${pictures[currentEventIndex][ev].pics[currentPic].url}`);
-            a.textContent = "Click here to watch the video.";
-            lightboxCap.appendChild(a);
-        } else {
-            lightboxCap.textContent = pictures[currentEventIndex][ev].pics[currentPic].caption
-        }
-    }
+    // if(pictures[currentEventIndex][ev].video){
+    //     lightboxPic.setAttribute("src",pictures[currentEventIndex][ev].pics[currentPic].altUrl);
+    // } else {
+    //     lightboxPic.setAttribute("src",pictures[currentEventIndex][ev].pics[currentPic].url);
+    // }
+    // lightboxPic.setAttribute("alt",pictures[currentEventIndex][ev].pics[currentPic].alt);
+    // if(pictures[currentEventIndex][ev].pics[currentPic].caption){
+    //     if(pictures[currentEventIndex][ev].video){
+    //         let a = document.createElement("a");
+    //         a.setAttribute("id","modal-caption");
+    //         a.setAttribute("target","_blank");
+    //         a.setAttribute("href",`${pictures[currentEventIndex][ev].pics[currentPic].url}`);
+    //         a.textContent = "Click here to watch the video.";
+    //         lightboxCap.appendChild(a);
+    //     } else {
+    //         lightboxCap.textContent = pictures[currentEventIndex][ev].pics[currentPic].caption
+    //     }
+    // }
+    makeLightbox();
 }
 
 function closeLightbox(){
     lightbox.style.display = "none";
+}
+
+function makeLightbox(){
+    if(pictures[currentEventIndex][currentEvent].video){
+        lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].altUrl);
+    } else {
+        lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].url);
+    }
+    lightboxPic.setAttribute("alt",pictures[currentEventIndex][currentEvent].pics[currentPic].alt);
+    if(pictures[currentEventIndex][currentEvent].pics[currentPic].caption){
+        if(pictures[currentEventIndex][currentEvent].video){
+            let a = document.createElement("a");
+            a.setAttribute("id","modal-caption");
+            a.setAttribute("target","_blank");
+            a.setAttribute("href",`${pictures[currentEventIndex][currentEvent].pics[currentPic].url}`);
+            a.textContent = "Click here to watch the video.";
+            lightboxCap.textContent = "";
+            lightboxCap.appendChild(a);
+        } else {
+            lightboxCap.textContent = pictures[currentEventIndex][currentEvent].pics[currentPic].caption
+        }
+    } else {
+        lightboxCap.textContent = ""
+    }
 }
 
 // Event listener for keypress to advance slides:
@@ -165,27 +190,28 @@ function picAdvance(adv){
             currentPic--
         }
     }
-    if(pictures[currentEventIndex][currentEvent].video){
-        lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].altUrl);
-    } else {
-        lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].url);
-    }
-    lightboxPic.setAttribute("alt",pictures[currentEventIndex][currentEvent].pics[currentPic].alt);
-    if(pictures[currentEventIndex][currentEvent].pics[currentPic].caption){
-        if(pictures[currentEventIndex][currentEvent].video){
-            let a = document.createElement("a");
-            a.setAttribute("id","modal-caption");
-            a.setAttribute("target","_blank");
-            a.setAttribute("href",`${pictures[currentEventIndex][currentEvent].pics[currentPic].url}`);
-            a.textContent = "Click here to watch the video.";
-            lightboxCap.textContent = "";
-            lightboxCap.appendChild(a);
-        } else {
-            lightboxCap.textContent = pictures[currentEventIndex][currentEvent].pics[currentPic].caption
-        }
-    } else {
-        lightboxCap.textContent = ""
-    }
+    // if(pictures[currentEventIndex][currentEvent].video){
+    //     lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].altUrl);
+    // } else {
+    //     lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].url);
+    // }
+    // lightboxPic.setAttribute("alt",pictures[currentEventIndex][currentEvent].pics[currentPic].alt);
+    // if(pictures[currentEventIndex][currentEvent].pics[currentPic].caption){
+    //     if(pictures[currentEventIndex][currentEvent].video){
+    //         let a = document.createElement("a");
+    //         a.setAttribute("id","modal-caption");
+    //         a.setAttribute("target","_blank");
+    //         a.setAttribute("href",`${pictures[currentEventIndex][currentEvent].pics[currentPic].url}`);
+    //         a.textContent = "Click here to watch the video.";
+    //         lightboxCap.textContent = "";
+    //         lightboxCap.appendChild(a);
+    //     } else {
+    //         lightboxCap.textContent = pictures[currentEventIndex][currentEvent].pics[currentPic].caption
+    //     }
+    // } else {
+    //     lightboxCap.textContent = ""
+    // }
+    makeLightbox();
 }
 
 let fs = false;

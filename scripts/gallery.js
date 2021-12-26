@@ -16,7 +16,8 @@ const lightboxCap = document.querySelector('#modal-caption');
 
 // Dropdown button:
 const dropdown = document.querySelector('#gallery-dropdown');
-const dropdownBtn = document.querySelector('#dropdownBtn');
+const lowDropdown = document.querySelector('#low-gallery-dropdown');
+const lowDropdownBtn = document.querySelector('#lowDropdownBtn');
 
 // Dropdown button moves on scroll
 window.onscroll = () => {
@@ -24,10 +25,10 @@ window.onscroll = () => {
 }
 
 function scrollFunction(){
-    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
-        dropdownBtn.classList.add("show-low");
+    if(document.body.scrollTop > 350 || document.documentElement.scrollTop > 350){
+        lowDropdownBtn.classList.add("show-low");
     } else {
-        dropdownBtn.classList.remove("show-low");
+        lowDropdownBtn.classList.remove("show-low");
     }
 }
 
@@ -54,7 +55,10 @@ function makeGallery(){
         anchor.setAttribute("href",`#${e[0]}-anchor`);
         anchor.textContent = pictures[eventIndex][e].shortTitle;
         link.appendChild(anchor);
-        dropdown.appendChild(link);
+        let lowLink = link.cloneNode(true);
+        dropdown.append(link);
+        lowDropdown.appendChild(lowLink);
+
         for(var item in eventObj){   
                 eventObj[item].pics.forEach((a,index) => {
                     if(eventObj[item].video){
@@ -103,24 +107,6 @@ function openLightbox(ev,num,eventInd){
     currentPic = num;
     currentEventIndex = eventInd;  
     currentEvent = ev;
-    // if(pictures[currentEventIndex][ev].video){
-    //     lightboxPic.setAttribute("src",pictures[currentEventIndex][ev].pics[currentPic].altUrl);
-    // } else {
-    //     lightboxPic.setAttribute("src",pictures[currentEventIndex][ev].pics[currentPic].url);
-    // }
-    // lightboxPic.setAttribute("alt",pictures[currentEventIndex][ev].pics[currentPic].alt);
-    // if(pictures[currentEventIndex][ev].pics[currentPic].caption){
-    //     if(pictures[currentEventIndex][ev].video){
-    //         let a = document.createElement("a");
-    //         a.setAttribute("id","modal-caption");
-    //         a.setAttribute("target","_blank");
-    //         a.setAttribute("href",`${pictures[currentEventIndex][ev].pics[currentPic].url}`);
-    //         a.textContent = "Click here to watch the video.";
-    //         lightboxCap.appendChild(a);
-    //     } else {
-    //         lightboxCap.textContent = pictures[currentEventIndex][ev].pics[currentPic].caption
-    //     }
-    // }
     makeLightbox();
 }
 
@@ -190,27 +176,6 @@ function picAdvance(adv){
             currentPic--
         }
     }
-    // if(pictures[currentEventIndex][currentEvent].video){
-    //     lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].altUrl);
-    // } else {
-    //     lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].url);
-    // }
-    // lightboxPic.setAttribute("alt",pictures[currentEventIndex][currentEvent].pics[currentPic].alt);
-    // if(pictures[currentEventIndex][currentEvent].pics[currentPic].caption){
-    //     if(pictures[currentEventIndex][currentEvent].video){
-    //         let a = document.createElement("a");
-    //         a.setAttribute("id","modal-caption");
-    //         a.setAttribute("target","_blank");
-    //         a.setAttribute("href",`${pictures[currentEventIndex][currentEvent].pics[currentPic].url}`);
-    //         a.textContent = "Click here to watch the video.";
-    //         lightboxCap.textContent = "";
-    //         lightboxCap.appendChild(a);
-    //     } else {
-    //         lightboxCap.textContent = pictures[currentEventIndex][currentEvent].pics[currentPic].caption
-    //     }
-    // } else {
-    //     lightboxCap.textContent = ""
-    // }
     makeLightbox();
 }
 

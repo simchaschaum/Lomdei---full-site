@@ -49,22 +49,30 @@
       </div>
   
     </nav>
+    <!-- Low Dropdown Button - only available on scroll -->
+    <div class="dropdown" id="lowDropdownBtn">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        All Events
+      </button>
+      <ul id="low-gallery-dropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+        <li><a href="#gallery-section" class="dropdown-item">Back to Top</a></li>
+        <!-- Dropdown items added dynamically -->
+      </ul>
+    </div>
 
     <section id="galleryHeader" class="headerSection">
         <h2>Lomdei Event Gallery</h2>
-        <div>
-          <a href="./news.html" id="back-to-news" class="link-button">&#10094; Back to News Page</a>
-          <div class="dropdown" id="dropdownBtn">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Lomdei Events
-            </button>
-            <ul id="gallery-dropdown" class="dropdown-menu show-low" aria-labelledby="dropdownMenuButton1">
-              <!-- Dropdown items added dynamically -->
-            </ul>
-          </div>
-        </div>
+        <a href="./news.html" id="back-to-news" class="link-button">&#10094; Back to News Page</a>
     </section>
     <section id="gallery-section">
+      <div class="dropdown" id="dropdownBtn">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Click Here for All Lomdei Events
+        </button>
+        <ul id="gallery-dropdown" class="dropdown-menu show-low" aria-labelledby="dropdownMenuButton1">
+          <!-- Dropdown items added dynamically -->
+        </ul>
+      </div>
         <div id="gallery-container">
           <div id="halb" class="gallery-event">
             <span id="halb-anchor" class="gallery-anchor"></span>

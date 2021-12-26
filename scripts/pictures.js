@@ -1,39 +1,5 @@
 export const pictures = [
     {
-        dec7: 
-        {
-            title: "December 7, 2021 - Lomdei Visit to HALB",
-            shortTitle: "Lomdei Visits HALB",
-            video: false,
-            pics: [
-                {
-                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (1).jpeg',
-                    alt: "Lomdei Visits HALB on December 7th"
-                },
-                {
-                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (2).jpeg',
-                    alt: "Lomdei Visits HALB on December 7th"
-                },
-                {
-                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (3).jpeg',
-                    alt: "Lomdei Visits HALB on December 7th"
-                },
-                {
-                    url:'../pics/Dec 7 Visit/HALBVisit12_7_21 (4).jpeg',
-                    alt: "Lomdei Visits HALB on December 7th"
-                },
-                {
-                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (5).jpeg',
-                    alt: "Lomdei Visits HALB on December 7th"
-                },
-                {
-                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (7).jpeg',
-                    alt: "Lomdei Visits HALB on December 7th"
-                }
-            ]
-        }    
-    },
-    {
         halb: 
         {
             title: "December 13, 2021 - School Administrators Visit HALB to See Lomdei BPL in Action",
@@ -202,6 +168,40 @@ export const pictures = [
                 }
             ]
         }
+    },
+    {
+        dec7: 
+        {
+            title: "December 7, 2021 - Lomdei Visit to HALB",
+            shortTitle: "Lomdei Visits HALB",
+            video: false,
+            pics: [
+                {
+                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (1).jpeg',
+                    alt: "Lomdei Visits HALB on December 7th"
+                },
+                {
+                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (2).jpeg',
+                    alt: "Lomdei Visits HALB on December 7th"
+                },
+                {
+                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (3).jpeg',
+                    alt: "Lomdei Visits HALB on December 7th"
+                },
+                {
+                    url:'../pics/Dec 7 Visit/HALBVisit12_7_21 (4).jpeg',
+                    alt: "Lomdei Visits HALB on December 7th"
+                },
+                {
+                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (5).jpeg',
+                    alt: "Lomdei Visits HALB on December 7th"
+                },
+                {
+                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (7).jpeg',
+                    alt: "Lomdei Visits HALB on December 7th"
+                }
+            ]
+        }    
     }
 ]
 

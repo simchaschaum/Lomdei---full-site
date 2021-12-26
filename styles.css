@@ -772,6 +772,10 @@ a#modal-caption:hover{
     width: 100vw;
     max-width: 100%;
   }
+  #gallery-container img:hover,
+  #gallery-container img:focus{
+    box-shadow: none;
+  }
 }
 
 /* News Page */

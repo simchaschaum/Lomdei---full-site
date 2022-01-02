@@ -5,46 +5,57 @@ export const pictures = [
             title: "December 13, 2021 - School Administrators Visit HALB to See Lomdei BPL in Action",
             shortTitle: "BPL in Action at HALB",
             video: false,
+            // first 10 pics have load: true - loads right away, never gets 'lazy' class
             pics: [
                 {
                     url: '../pics/HALB Visit/IMG_0591.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0594.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0595.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0596.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0597.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0598.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0599.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0600.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0601.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0603.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0604.jpg',

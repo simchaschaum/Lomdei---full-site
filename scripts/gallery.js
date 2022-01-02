@@ -1,4 +1,4 @@
-import {pictures} from './pictures.js';
+import {pictures} from './pictures.js'; 
 
 // Titles:
 const halbTitle = document.querySelector('#halb-visit-title');
@@ -81,9 +81,15 @@ function makeGallery(){
                         }   
                     } else {
                         let pic = document.createElement("IMG");
-                        pic.setAttribute("src",eventObj[item].pics[index].url);
-                        pic.setAttribute("alt",eventObj[item].pics[index].alt);
-                        pic.setAttribute("loading","lazy");
+                        // first 10 or so pics have loading:true attribute; rest get lazy loaded
+                        if(eventObj[item].pics[index].load){
+                            pic.setAttribute("src",eventObj[item].pics[index].url);
+                            pic.setAttribute("alt",eventObj[item].pics[index].alt);
+                        } else {
+                            pic.setAttribute("class","lazy");
+                            pic.setAttribute("data-src",eventObj[item].pics[index].url);
+                            pic.setAttribute("data-alt", eventObj[item].pics[index].alt )
+                        }
                         pic.setAttribute("onclick",`openLightbox("${item}",${index},${eventIndex})`)
                         if(item === "halb"){
                             halbGallery.appendChild(pic);
@@ -97,6 +103,39 @@ function makeGallery(){
     
 }
 makeGallery();
+
+// Lazy Loading gallery:
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyloadImages = document.querySelectorAll("img.lazy");    
+    var lazyloadThrottleTimeout;
+    
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
+      }    
+    //   console.log(lazyloadImages); // <-- 
+      lazyloadThrottleTimeout = setTimeout(function() {
+          var scrollTop = window.pageYOffset;
+          lazyloadImages.forEach(function(img) {
+              if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+                img.alt = img.dataset.alt;
+              }
+          });
+          if(lazyloadImages.length == 0) { 
+            document.removeEventListener("scroll", lazyload);
+            window.removeEventListener("resize", lazyload);
+            window.removeEventListener("orientationChange", lazyload);
+          }
+      }, 20);
+    }
+    
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  });
+
 
 
 function openLightbox(ev,num,eventInd){

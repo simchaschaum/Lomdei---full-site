@@ -88,6 +88,8 @@ input, button, select, textarea, optgroup, option {
   }
   a.nav-link {
     color: var(--clr-dark) !important;
+    background-color: transparent;
+    border-radius: 0px;
     font-size: 18px;
     transition: background-color 0.3s;
   }
@@ -108,7 +110,7 @@ input, button, select, textarea, optgroup, option {
   #login:hover{
     background-color: var(--clr-btnHov);
   }
-
+ 
   
   /* Sections*/
   section {

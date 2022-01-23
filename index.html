@@ -5,20 +5,20 @@
     <title>Lomdei - Blended and Personalized Learning Program</title>
     <link rel="shortcut icon" href="https://images.squarespace-cdn.com/content/v1/5e73d22e4df9007170bfabac/1584713631516-0KPJGLN16KRE0A4B7F8U/ke17ZwdGBToddI8pDm48kMpagLdZPgiW6yD5i4KsS9VZw-zPPgdn4jUwVcJE1ZvW3Ek6fZXYmUh2T6pKy8CAPiJz4vYg48fcPCuGX417dnZuUf97iszYYQLvux8ZVj2OCZHlFJ3B6MstDcgnpkF-Jiqa9MJYUWOzdYdgr30K9JE/favicon.ico?format=50w">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-new.css">
   </head>
   <body>
     <div id="pageContainer">
     <nav class="navbar navbar-expand-xl navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#intro">
-          <img src="https://static1.squarespace.com/static/5e73d22e4df9007170bfabac/t/60184ec5771dd6651c6c7499/1614965138939/?format=1500w" alt="Lomdei Logo">
+          <img src="./pics/lomdei_logo.png" alt="Lomdei Logo" id="navbar-logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-ul">
             <div class="dropdown">
                 <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     About
@@ -29,23 +29,27 @@
                   <li><a class="dropdown-item nav-link" href="./pages/gallery.html">Gallery</a></li>
                 </ul>
             </div>
+            <div class="dropdown">
+                <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Lomdei Learning Platform
+                  </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item nav-link" href="./pages/about.html">About the Learning Platform</a></li>
+                  <li><a class="dropdown-item nav-link" href="./pages/video.html">Video Tutorials</a></li>
+                  <li><a class="dropdown-item nav-link" href="./pages/grants.html">Government Grants</a></li>
+                  <li><a class="dropdown-item nav-link" href="./pages/schools.html">Schools Who Use the Lomdei Platform</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Professional Development
+                  </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item nav-link" href="./pages/PD.html">About Lomdei Professional Development</a></li>
+                </ul>
+            </div>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/video.html">Video Tutorials</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/PD.html">Professional Development</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/grants.html">Government Grants</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/schools.html">Lomdei Schools</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="login" href="https://thumbprintapp.org/webapp2/index.html">Log in</a>
+              <a class="nav-link" id="login" href="https://thumbprintapp.org/webapp2/index.html">Log in to Learning Platform</a>
             </li>
           </ul>
         </div>
@@ -53,8 +57,43 @@
   
     </nav>
   
+    <!-- Intro Carousel -->
+    <section id="intro-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-slide">
+                    <div>   </div>
+                    <img src="./pics/lomdei_pic_5.JPG" class="d-block w-100" alt="A Child Learns with Lomdei">
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-slide">
+                    <div>Some Info here</div>
+                    <img src="./pics/lomdei_pic_5.JPG" class="d-block w-100" alt="A Child Learns with Lomdei">
+                </div>              </div>
+              <div class="carousel-item">
+                <div class="carousel-slide">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
     <!-- Intro section -->
-      <section id="intro">
+      <!-- <section id="intro">
         <div class="title">
             <div id="counters">
                 <div>
@@ -81,10 +120,10 @@
                 <a href="./pages/about.html#videoAnchor"><button id="promoVideo" class="learnMoreBtn">Lomdei Video</button></a>    
             </div>
         </div>
-      </section>
+      </section> -->
   
       <!-- Info Section -->
-      <section id="info">
+      <!-- <section id="info">
           <span id="infoAnchor" class="anchor"></span>
           <h4>
             <em>The Lomdei Program, highly recommended and endorsed by Torah Umesorah (<a href="./../Torah_Umesorah_Letter.pdf" class="link">Click here to view Rabbi Nojowitz's letter</a>), is aimed at delivering a simple yet powerful Limudei Kodesh educational tool focused on skill building, formative and summative assessments and rich data tracking for both teachers and their students. </em>
@@ -320,18 +359,18 @@
               </div>
       
           </div>   
-      </section>
+      </section> -->
   
 
   </div>
-  <div id="footer">
+  <footer id="footer">
     <a href="https://www.lomdei.com/index.html">
-        <img id="footer-logo" src="https://static1.squarespace.com/static/5e73d22e4df9007170bfabac/t/60184ec5771dd6651c6c7499/1614965138939/?format=1500w" alt="Lomdei Logo">
+        <img id="footer-logo" src="./pics/lomdei_logo.png" alt="Lomdei Logo">
     </a>
     <a href="https://www.linkedin.com/company/lomdei">
         <img id="linkedin" src="./pics/linkedin.png" alt="linkedin">
     </a>
-  </div>
+</footer>
   <script src="./scripts/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

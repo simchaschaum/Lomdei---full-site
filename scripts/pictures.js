@@ -40,22 +40,18 @@ export const pictures = [
                 {
                     url: '../pics/HALB Visit/IMG_0599.jpg',
                     alt: "HALB Visit",
-                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0600.jpg',
                     alt: "HALB Visit",
-                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0601.jpg',
                     alt: "HALB Visit",
-                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0603.jpg',
                     alt: "HALB Visit",
-                    load: true
                 },
                 {
                     url: '../pics/HALB Visit/IMG_0604.jpg',

@@ -64,7 +64,7 @@ function makeGallery(){
                     if(eventObj[item].video){
                         let vid = document.createElement("iframe");
                         vid.setAttribute("class", "gallery-video");
-                        vid.setAttribute("loading","lazy");
+                        // vid.setAttribute("loading","lazy");
                         vid.setAttribute("src", eventObj[item].pics[index].url);
                         vid.setAttribute("frameborder","0");
                         vid.setAttribute("allow","autoplay; fullscreen; picture-in-picture");

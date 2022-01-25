@@ -92,12 +92,35 @@ nav {
   background-color: var(--clr-dark);
 }
 .carousel-slide>div{
-  width: 60%;
+  flex-grow: 4;
+  min-width: 400px;
+  position: relative;
+  left: 5%;
+  padding: 3%;
+  background-color: rgba(248, 249, 250, 1);
 }
-.w-100{
-  width: 30% !important;
-  height: 140%;
+
+.carousel-slide>img{
+  width: 100%;
+  height: 450px;
   object-fit: cover;
+}
+/* Lomdei Tool counter display */
+.title{
+  min-height: 90%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.learnMoreBtn{
+  border: none;
+  background-color: var(--clr-dark);
+  color: white;
+  padding: 1.5%
+}
+.learnMoreBtn:hover{
+  box-shadow: 0 0 5px var(--clr-dark);
 }
 div#counters{
   background-color: var(--clr-dark);
@@ -143,8 +166,57 @@ div#counters *{
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 5%
 }
+#intro-mission>*{
+  margin-top: 2.5%
+}
+#intro-mission-inner{
+  position: static;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.intro-mission-half{
+  flex: 1;
+  position: relative;
+}
+.white-fade-cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.intro-mission-txt{
+  position: absolute;
+  top: 25%;
+  z-index: 10;
+  width: 100%;
+  height: 50%;
+  padding: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.intro-mission-txt>h2,
+.intro-mission-half>img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover ;
+}
+.intro-mission-txt>a{
+  width: fit-content;
+  text-decoration: none;
+}
+.intro-mission-txt>a:hover{
+  text-decoration: none;
+  color: white;
+}
+/* Homepage - features section */
 #intro-features{
   background-color: var(--clr-dark);
   color: white;
@@ -158,6 +230,9 @@ div#counters *{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.features-outer h2{
+  margin-bottom: 5%;
 }
 #services{
   margin-bottom: 5%;
@@ -191,6 +266,10 @@ div#counters *{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+/* Homepage - events */
+#intro-events{
+  padding: 5%
 }
 #events-inner{
   display: flex;

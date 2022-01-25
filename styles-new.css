@@ -14,7 +14,6 @@
 section{
   position: relative;
   min-height: 60vh;
-  border: 2px red solid;
 }
 /* Full page and footer*/
 #pageContainer{
@@ -137,7 +136,8 @@ div#counters *{
 }
 
 /* Homepage -  mission section*/
-#intro-mission{
+#intro-mission,
+#intro-events{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,4 +145,89 @@ div#counters *{
   text-align: center;
   padding: 5%
 }
-
+#intro-features{
+  background-color: var(--clr-dark);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+}
+.features-outer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#services{
+  margin-bottom: 5%;
+}
+.features-inner{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.provide-feature{
+  margin: 0 auto;
+  width:  30%;
+  min-width: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.provide-feature>img{
+  width: 225px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 50%;
+  /* padding: 5px; */
+  box-shadow: 0 0 5px white;
+}
+#intro-events{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#events-inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+}
+#events-inner>a{
+  width: 25%;
+  min-width: 250px;
+  text-decoration: none;    
+  color: var(--clr-dark);
+}
+.events-inner-background{
+  background-color: var(--clr-dark);
+  width: 225px;
+  height: 350px;
+  color: white;
+}
+.events-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition:0.5s;
+  position: relative
+}
+.events-txt{
+  position: relative;
+  bottom: 210px;
+  font-size: 1.25em;
+  width: 90%;
+  opacity: 0;
+  transition: 0.5s
+}
+#events-inner>a:hover .events-img{
+  opacity: 0.15;
+}
+#events-inner>a:hover .events-txt{
+  opacity: 1.0;
+}

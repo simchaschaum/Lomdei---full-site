@@ -11,6 +11,11 @@
   --clr-white: #f8f9fa;
   --clr-btnHov: #486274;
 }
+section{
+  position: relative;
+  min-height: 60vh;
+  border: 2px red solid;
+}
 /* Full page and footer*/
 #pageContainer{
   min-height: 100vh;
@@ -49,10 +54,20 @@ nav {
   justify-content: space-between;
   width: 100%;
 }
+
 .nav-link{
   color: var(--clr-dark) !important;
   font-size: 1.15em;
   transition: font-size 0.4s ease-in-out;
+}
+.nav-link:hover{
+  color: white !important;
+  background-color: var(--clr-dark);
+  box-shadow: 0 0 5px var(--clr-dark);
+}
+#login{
+  color: white !important;
+  background-color: var(--clr-dark);
 }
 /* for shrinking navbar on scroll */
 .nav-shrink #navbar-logo{
@@ -62,34 +77,72 @@ nav {
   font-size: 1em;
 }
 
-/* Intro Carousel */
+/* Home page - Intro Carousel */
 #intro-carousel{
   position: relative;
-  top: 70px
+  padding-top: 65px
 }
 .carousel-slide{
   width: 100%;
+  padding: 5% 10%;
   height: 450px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 100%);
+  justify-content: space-between;
+  background-color: var(--clr-dark);
 }
 .carousel-slide>div{
-  
-  z-index: 10;
-  width: 50%;
-  height: 80%;
-  background-color: white;
-  opacity: 0.5;
+  width: 60%;
+}
+.w-100{
+  width: 30% !important;
+  height: 140%;
+  object-fit: cover;
+}
+div#counters{
+  background-color: var(--clr-dark);
+  display: flex;
+  justify-content: space-between;
+}
+div#counters div{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div#counters *{
+  color: var(--clr-white)
+}
+@media only screen and (max-width:550px){
+  div#counters{
+    margin-bottom: 5%;
+  }
+  div#counters h3{
+    font-size: 22px;
+  }
+  div#counters h5{
+    font-size: 14px;
+    margin: 0;
+  }
+}
+@media only screen and (max-width:290px){
+  div#counters h3{
+    font-size: 18px;
+  }
+  div#counters h5{
+    font-size: 10px;
+    margin: 0;
+  }
+}
 
+/* Homepage -  mission section*/
+#intro-mission{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5%
 }
-.carousel-slide>img{
-  width: 100%;
-  object-fit: cover;
-}
-
 

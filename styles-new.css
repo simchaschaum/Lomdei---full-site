@@ -274,12 +274,14 @@ div#counters *{
 #events-inner{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 90%;
 }
 #events-inner>a{
   width: 25%;
   min-width: 250px;
+  margin: 5% 2.5%;
   text-decoration: none;    
   color: var(--clr-dark);
 }

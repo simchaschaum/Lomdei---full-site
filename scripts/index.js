@@ -4,10 +4,12 @@ window.addEventListener("scroll",()=>{
     if(width>975){
         scrollFunction()
     };
-    let countersSection = document.querySelector('#counters-section');
-    let position = countersSection.getBoundingClientRect();
-    if(position.bottom <= window.innerHeight){
-        count()
+    if(document.querySelector('#counters-section')){
+        let countersSection = document.querySelector('#counters-section');
+        let position = countersSection.getBoundingClientRect();
+        if(position.bottom <= window.innerHeight){
+            count()
+        };
     };
 })
 

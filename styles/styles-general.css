@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,900&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+:root {
+  --clr-light: #66bfff;
+  --clr-dark: #324c5d;
+  --clr-white: #f8f9fa;
+  --clr-btnHov: #486274;
+}
+body{
+    background: rgb(102,191,255);
+    background: linear-gradient(90deg, rgba(219,243,247,0.33657212885154064) 0%, rgba(50,76,93,0.5) 100%);
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+section{
+  position: relative;
+}
+/* Full page and footer*/
+#pageContainer{
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+footer#footer{
+  height: 100px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--clr-dark)
+}
+#footer-left{
+  display: flex;
+  flex-direction: column;
+}
+#footer-logo{
+  width: 200px;
+}
+#linkedin{
+  width: 50px;
+}
+
+/* Navbar */
+nav {
+  box-shadow: 0 0 7.5px var(--clr-dark);
+  z-index: 100;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0
+}
+.navbar-light{
+  font-size: 1.10em;
+}
+.navbar-brand{
+  width: 20%;
+}
+#navbar-logo{
+  width: 100%;
+  transition: width 0.4s ease-in-out;
+}
+#navbar-ul{
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-link{
+  color: var(--clr-dark) !important;
+  font-size: 1.15em;
+  transition: font-size 0.4s ease-in-out;
+}
+.nav-link:hover{
+  color: white !important;
+  background-color: var(--clr-dark);
+  box-shadow: 0 0 5px var(--clr-dark);
+}
+#login{
+  color: white !important;
+  background-color: var(--clr-dark);
+}
+/* for shrinking navbar on scroll */
+.nav-shrink #navbar-logo{
+  width: 75%;
+}
+.nav-shrink .nav-link{
+  font-size: 1em;
+}
+
+/* All Buttons */
+.learnMoreBtn{
+    margin-top: 25px;
+    /* margin: 0 auto 0 auto; */
+    border: none;
+    border-radius: 30px;
+    color: var(--clr-white);
+    background-color: var(--clr-dark);
+    max-width: 200px;
+    min-height: 50px;
+    padding: 5px 15px;
+    font-size: 25px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  .learnMoreBtn:hover{
+    background-color: var(--clr-btnHov);
+  }
+      
+      

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,900&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --clr-light: #66bfff;
+  --clr-dark: #324c5d;
+  --clr-white: #f8f9fa;
+  --clr-btnHov: #486274;
+}
+
+
+/* Home page - Intro Carousel */
+#intro-carousel{
+    position: relative;
+    padding-top: 65px
+  }
+  @media(max-width:1050px){
+    #intro-carousel{
+      padding-top: 55px;
+    }
+  }
+  .carousel-slide{
+    width: 100%;
+    height: 450px;
+    background-color: var(--clr-dark);
+  }
+  .carousel-img{
+    margin-top: 0;
+    width: 100%;
+    height: 60%;
+  }
+  .carousel-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .carousel-link{
+    width: 100%;
+    height: 30%;
+    padding: 1.5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 2.5%;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .carousel-link:hover{
+    color: var(--clr-light)
+  }
+  @media(max-width:600px){
+    .carousel-link h6{
+      font-size: 0.8em;
+    }
+  }
+  /* Lomdei Tool counter display */
+  .title{
+    min-height: 90%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .learnMoreBtn{
+    border: none;
+    background-color: var(--clr-dark);
+    color: white;
+    padding: 1.5%
+  }
+  .learnMoreBtn:hover{
+    box-shadow: 0 0 5px var(--clr-dark);
+  }
+  div#counters{
+    background-color: var(--clr-dark);
+    display: flex;
+    justify-content: space-between;
+  }
+  div#counters div{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div#counters *{
+    color: var(--clr-white)
+  }
+  @media only screen and (max-width:550px){
+    div#counters{
+      margin-bottom: 5%;
+    }
+    div#counters h3{
+      font-size: 22px;
+    }
+    div#counters h5{
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  @media only screen and (max-width:290px){
+    div#counters h3{
+      font-size: 18px;
+    }
+    div#counters h5{
+      font-size: 10px;
+      margin: 0;
+    }
+  }
+  
+  /* Homepage -  mission section*/
+  #intro-mission,
+  #intro-events{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #intro-mission>*{
+    margin-top: 2.5%
+  }
+  #intro-mission-inner{
+    position: static;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .intro-mission-half{
+    flex: 1;
+    position: relative;
+  }
+  .white-fade-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .intro-mission-txt{
+    position: absolute;
+    top: 25%;
+    z-index: 10;
+    width: 100%;
+    height: 60%;
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .intro-mission-txt>h2,
+  .intro-mission-half>img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover ;
+  }
+  .intro-mission-txt>a{
+    width: fit-content;
+    text-decoration: none;
+  }
+  .intro-mission-txt>a:hover{
+    text-decoration: none;
+    color: white;
+  }
+  /* Homepage - features section */
+  #intro-features{
+    background-color: var(--clr-dark);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+  }
+  .features-outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features-outer h2{
+    margin-bottom: 5%;
+  }
+  #services{
+    margin-bottom: 5%;
+  }
+  .features-inner{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .provide-feature{
+    margin: 0 auto;
+    width:  30%;
+    min-width: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .provide-feature>img{
+    width: 225px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* padding: 5px; */
+    box-shadow: 0 0 5px white;
+  }
+  #intro-events{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /* Homepage - events */
+  #intro-events{
+    padding: 5%
+  }
+  #events-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  #events-inner>a{
+    width: 25%;
+    min-width: 250px;
+    margin: 5% 2.5%;
+    text-decoration: none;    
+    color: var(--clr-dark);
+  }
+  .events-inner-background{
+    background-color: var(--clr-dark);
+    width: 225px;
+    height: 350px;
+    color: white;
+  }
+  .events-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition:0.5s;
+    position: relative
+  }
+  .events-txt{
+    position: relative;
+    bottom: 210px;
+    font-size: 1.25em;
+    width: 90%;
+    opacity: 0;
+    transition: 0.5s
+  }
+  #events-inner>a:hover .events-img{
+    opacity: 0.15;
+  }
+  #events-inner>a:hover .events-txt{
+    opacity: 1.0;
+  }
+  

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,900&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--clr-dark)
+}
+:root {
+  --clr-light: #66bfff;
+  --clr-dark: #324c5d;
+  --clr-white: #f8f9fa;
+  --clr-btnHov: #486274;
+}
+section{
+  position: relative;
+}
+
+
+
+/* ABOUT PAGE */
+.anchor{
+    position: absolute;
+    left: 0;
+    top: -65px;
+}
+section#aboutLomdei{
+    margin-top: 58px;
+    padding: 50px 20% 50px 10%;
+    min-height: 100vh;
+    /* Add background picture! */
+    background: url(../pics/lomdei_pic_8.JPG) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    text-align: left;
+}
+  @media only screen and (max-width: 700px){
+    section#aboutLomdei{
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+}
+section#aboutLomdei .title>div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.title{
+    margin-top: 3%;
+    min-height: 90%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3%;
+    background-color: rgba(248, 249, 250,0.70);
+  }
+  @media only screen and (max-width:1000px){
+      .title{
+          width: 100%;
+      }
+      .title h3{
+        /* font-size: 30px */
+      }
+  }
+
+
+section#promoVideos{
+    display: flex;
+    justify-content: space-around;
+}
+@media only screen and (max-width:900px){
+    section#promoVideos{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.link{
+  color: var(--clr-dark);
+  text-decoration: underline;
+}
+.link:hover{
+  color: var(--clr-dark);
+  text-decoration: none;
+}
+iframe.video{
+    height: 80vh;
+    width: 48%;
+    box-shadow: 0 0 5px var(--clr-dark);
+}
+@media only screen and (max-width:900px){
+    iframe.video{
+        width: 95%;
+        margin-bottom: 5%;
+    }
+}
+
+section#counters-section{
+    width: 90%;
+    margin: 5% auto;
+}
+#counters-section>h2{
+    font-size: 2.25em;
+    text-align: center;
+    margin-bottom: 5%;
+}
+#counters{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.counter{
+    font-size: 3em;
+}
+
+/* Info Section */
+#info>h2{
+    text-align: center;
+    margin: 2.5% auto;
+}
+#info h4{
+    width: 90%;
+    margin: 0 auto;
+  }
+  div.infoContainer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  
+      width: 90%;
+      margin: 0 auto;
+  }
+  div.info{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2em;
+  }
+  div.infoBox{
+      margin-bottom: 2.5%;
+      width: 100% !important;
+  }
+  @media only screen and (max-width: 900px) {
+      div.infoContainer   {
+          flex-direction: column;
+          align-items: center;
+      }
+      div.info{
+          width: 95%
+      }
+  }
+  
+  div.infoBox>div{
+      width: 100%;
+      font-size: 1.5em;
+  
+  }
+  div.infoBox>div>button{
+      height: 3em;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: left;
+  }
+  div.infoBox>div>button:hover{
+      background-color: var(--clr-dark);
+      color: var(--clr-white)
+  }
+  button.infoTitle{
+      border: none;
+      width: 100%;
+      padding: 1px 6px;
+  }
+  div.collapse{
+      width: 100%;
+  }
+  .bigbold{
+      font-weight: 900;
+      font-size: 1.75em;
+      transform: translateY(-3px);
+      margin-right: 5px;
+  }
+  div.infoBox>div>button:hover .bigbold{
+      color: var(--clr-white)
+  }
+  .card{
+      font-size: .75em;
+  }

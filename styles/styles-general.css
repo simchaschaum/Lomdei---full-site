@@ -27,7 +27,7 @@ section{
   position: relative;
 }
 /* Full page and footer*/
-#pageContainer{
+.pageContainer{
   min-height: 100vh;
   padding-bottom: 100px;
 }

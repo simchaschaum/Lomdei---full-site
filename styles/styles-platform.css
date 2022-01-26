@@ -283,4 +283,15 @@ section#counters-section{
       height: 250px;
     }
   }
+
+  /* Grants Section */
+section#grants{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  section#grants h3{
+    margin:5% 0;
+  }
+  
   

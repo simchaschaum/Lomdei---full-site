@@ -41,6 +41,7 @@ footer#footer{
   color: var(--clr-dark)
 }
 #footer-left{
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -49,8 +50,11 @@ footer#footer{
 }
 #linkedin{
   width: 50px;
+  margin-left: 20%;
 }
-
+#footer-right{
+    width: 100%;
+}
 /* Navbar */
 nav {
   box-shadow: 0 0 7.5px var(--clr-dark);

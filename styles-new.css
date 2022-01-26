@@ -13,7 +13,6 @@
 }
 section{
   position: relative;
-  min-height: 60vh;
 }
 /* Full page and footer*/
 #pageContainer{
@@ -81,29 +80,46 @@ nav {
   position: relative;
   padding-top: 65px
 }
+@media(max-width:1050px){
+  #intro-carousel{
+    padding-top: 55px;
+  }
+}
 .carousel-slide{
   width: 100%;
-  padding: 5% 10%;
   height: 450px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   background-color: var(--clr-dark);
 }
-.carousel-slide>div{
-  flex-grow: 4;
-  min-width: 400px;
-  position: relative;
-  left: 5%;
-  padding: 3%;
-  background-color: rgba(248, 249, 250, 1);
-}
-
-.carousel-slide>img{
+.carousel-img{
+  margin-top: 0;
   width: 100%;
-  height: 450px;
+  height: 60%;
+}
+.carousel-img img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+.carousel-link{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 2.5%;
+  cursor: pointer;
+  text-decoration: none;
+}
+.carousel-link:hover{
+  color: var(--clr-light)
+}
+@media(max-width:600px){
+  .carousel-link h6{
+    font-size: 0.8em;
+  }
 }
 /* Lomdei Tool counter display */
 .title{

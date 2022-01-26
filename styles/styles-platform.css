@@ -17,7 +17,6 @@ section{
 }
 
 
-
 /* ABOUT PAGE */
 .anchor{
     position: absolute;
@@ -198,7 +197,7 @@ section#counters-section{
   /* Videos page */
 /* HeaderSection is used by the headers for Videos, Schools */
 .headerSection{
-    margin-top: 58px;
+    margin: 58px 0 50px 0;
     width: 100%;
     min-height: 20vh;
     display: flex;
@@ -294,4 +293,29 @@ section#grants{
     margin:5% 0;
   }
   
-  
+  /* Schools Section */
+section#schools{
+    width: 90%;
+    min-height: 1000px;
+    margin: 0 auto;
+  }
+  div#schoolsDiv{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  div#schoolsDiv div{
+    margin-bottom: 5%;
+    width:350px;
+  }
+  div#schoolsDiv ul{
+    text-indent: -20px;
+    margin-left: 30px
+  }
+  div#schoolsDiv li{
+    list-style: none;
+  }
+  .country{
+    font-weight: 900;
+  }

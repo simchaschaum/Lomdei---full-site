@@ -5,148 +5,148 @@ export const pictures = [
             title: "December 13, 2021 - School Administrators Visit HALB to See Lomdei BPL in Action",
             shortTitle: "BPL in Action at HALB",
             video: false,
-            // first 10 pics have load: true - loads right away, never gets 'lazy' class
+            // first 6 or so pics have load: true - loads right away, never gets 'lazy' class
             pics: [
                 {
-                    url: '../pics/HALB Visit/IMG_0591.jpg',
+                    url: '/HALB Visit/IMG_0591.jpg',
                     alt: "HALB Visit",
                     load: true
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0594.jpg',
+                    url: '/HALB Visit/IMG_0594.jpg',
                     alt: "HALB Visit",
                     load: true
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0595.jpg',
+                    url: '/HALB Visit/IMG_0595.jpg',
                     alt: "HALB Visit",
                     load: true
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0596.jpg',
+                    url: '/HALB Visit/IMG_0596.jpg',
                     alt: "HALB Visit",
                     load: true
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0597.jpg',
+                    url: '/HALB Visit/IMG_0597.jpg',
                     alt: "HALB Visit",
                     load: true
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0598.jpg',
+                    url: '/HALB Visit/IMG_0598.jpg',
                     alt: "HALB Visit",
                     load: true
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0599.jpg',
+                    url: '/HALB Visit/IMG_0599.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0600.jpg',
+                    url: '/HALB Visit/IMG_0600.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0601.jpg',
+                    url: '/HALB Visit/IMG_0601.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0603.jpg',
+                    url: '/HALB Visit/IMG_0603.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0604.jpg',
+                    url: '/HALB Visit/IMG_0604.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0605.jpg',
+                    url: '/HALB Visit/IMG_0605.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0606.jpg',
+                    url: '/HALB Visit/IMG_0606.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0607.jpg',
+                    url: '/HALB Visit/IMG_0607.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0608.jpg',
+                    url: '/HALB Visit/IMG_0608.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0609.jpg',
+                    url: '/HALB Visit/IMG_0609.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0610.jpg',
+                    url: '/HALB Visit/IMG_0610.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0611.jpg',
+                    url: '/HALB Visit/IMG_0611.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0612.jpg',
+                    url: '/HALB Visit/IMG_0612.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0613.jpg',
+                    url: '/HALB Visit/IMG_0613.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0614.jpg',
+                    url: '/HALB Visit/IMG_0614.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0615.jpg',
+                    url: '/HALB Visit/IMG_0615.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0616.jpg',
+                    url: '/HALB Visit/IMG_0616.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0617.jpg',
+                    url: '/HALB Visit/IMG_0617.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0618.jpg',
+                    url: '/HALB Visit/IMG_0618.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0619.jpg',
+                    url: '/HALB Visit/IMG_0619.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0620.jpg',
+                    url: '/HALB Visit/IMG_0620.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0621.jpg',
+                    url: '/HALB Visit/IMG_0621.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0624.jpg',
+                    url: '/HALB Visit/IMG_0624.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0625.jpg',
+                    url: '/HALB Visit/IMG_0625.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0626.jpg',
+                    url: '/HALB Visit/IMG_0626.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0628.jpg',
+                    url: '/HALB Visit/IMG_0628.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0629.jpg',
+                    url: '/HALB Visit/IMG_0629.jpg',
                     alt: "HALB Visit",
                 },
                 {
-                    url: '../pics/HALB Visit/IMG_0630.jpg',
+                    url: '/HALB Visit/IMG_0630.jpg',
                     alt: "HALB Visit",
                 },
             ]
@@ -164,14 +164,14 @@ export const pictures = [
                     alt: "Mr. Altabe Talks Lomdei BPL at HALB",
                     caption: "Mr. Richard Altabe, Principal of HALB, discusses the benefits of Lomdei BPL at a principals' seminar at HALB, December 13, 2021",
                     video: true,
-                    altUrl: '../pics/HALB Visit/mr altabe video thumbnail.PNG'
+                    altUrl: '/HALB Visit/mr altabe video thumbnail.PNG'
                 },
                 {
                     url: 'https://player.vimeo.com/video/659616285?h=4dfc7a16d8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
                     caption: "Mrs. Chani Richmond presents Lomdei's PD program on BPL at a principals' seminar at HALB, December 13, 2021",
                     alt: "Mrs. Richmond Talks Lomdei BPL at HALB",
                     video: true,
-                    altUrl: '../pics/HALB Visit/chani video thumbnail.PNG'
+                    altUrl: '/HALB Visit/chani video thumbnail.PNG'
                 }
             ]
         }
@@ -184,27 +184,27 @@ export const pictures = [
             video: false,
             pics: [
                 {
-                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (1).jpeg',
+                    url: '/Dec 7 Visit/HALBVisit12_7_21 (1).jpeg',
                     alt: "Lomdei Visits HALB on December 7th"
                 },
                 {
-                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (2).jpeg',
+                    url: '/Dec 7 Visit/HALBVisit12_7_21 (2).jpeg',
                     alt: "Lomdei Visits HALB on December 7th"
                 },
                 {
-                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (3).jpeg',
+                    url: '/Dec 7 Visit/HALBVisit12_7_21 (3).jpeg',
                     alt: "Lomdei Visits HALB on December 7th"
                 },
                 {
-                    url:'../pics/Dec 7 Visit/HALBVisit12_7_21 (4).jpeg',
+                    url:'/Dec 7 Visit/HALBVisit12_7_21 (4).jpeg',
                     alt: "Lomdei Visits HALB on December 7th"
                 },
                 {
-                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (5).jpeg',
+                    url: '/Dec 7 Visit/HALBVisit12_7_21 (5).jpeg',
                     alt: "Lomdei Visits HALB on December 7th"
                 },
                 {
-                    url: '../pics/Dec 7 Visit/HALBVisit12_7_21 (7).jpeg',
+                    url: '/Dec 7 Visit/HALBVisit12_7_21 (7).jpeg',
                     alt: "Lomdei Visits HALB on December 7th"
                 }
             ]

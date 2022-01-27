@@ -101,6 +101,17 @@ nav {
 .nav-shrink .nav-link{
   font-size: 1em;
 }
+/* Header Section */
+.headerSection{
+    margin: 58px 0 50px 0;
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-light);
+  }
 
 /* All Buttons */
 .learnMoreBtn{

@@ -196,16 +196,7 @@ section#counters-section{
 
   /* Videos page */
 /* HeaderSection is used by the headers for Videos, Schools */
-.headerSection{
-    margin: 58px 0 50px 0;
-    width: 100%;
-    min-height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--clr-light);
-  }
+
   .list-group{
     width: 30%;
     float: right;

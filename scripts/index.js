@@ -11,12 +11,14 @@ window.addEventListener("scroll",()=>{
             count()
         };
     };
-    const contents = document.querySelector('#contents');
-    const contentsDropup = document.querySelector('#contentsDropup')
-    if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400){
-        contentsDropup.classList.add("showIt");
-    } else {
-        contentsDropup.classList.remove("showIt");
+    if(document.querySelector('#contents')){
+        const contents = document.querySelector('#contents');
+        const contentsDropup = document.querySelector('#contentsDropup')
+        if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400){
+            contentsDropup.classList.add("showIt");
+        } else {
+            contentsDropup.classList.remove("showIt");
+        }
     }
 })
 

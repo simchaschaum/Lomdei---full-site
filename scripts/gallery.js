@@ -1,4 +1,4 @@
-import {pictures} from './pictures.js'; 
+import {pictures} from './pictures.js'
 
 // Titles:
 const halbTitle = document.querySelector('#halb-visit-title');
@@ -83,11 +83,11 @@ function makeGallery(){
                         let pic = document.createElement("IMG");
                         // first 10 or so pics have loading:true attribute; rest get lazy loaded
                         if(eventObj[item].pics[index].load){
-                            pic.setAttribute("src",eventObj[item].pics[index].url);
+                            pic.setAttribute("src",`../../pics/${eventObj[item].pics[index].url}`);
                             pic.setAttribute("alt",eventObj[item].pics[index].alt);
                         } else {
                             pic.setAttribute("class","lazy");
-                            pic.setAttribute("data-src",eventObj[item].pics[index].url);
+                            pic.setAttribute("data-src",`../../pics/${eventObj[item].pics[index].url}`);
                             pic.setAttribute("data-alt", eventObj[item].pics[index].alt )
                         }
                         pic.setAttribute("onclick",`openLightbox("${item}",${index},${eventIndex})`)

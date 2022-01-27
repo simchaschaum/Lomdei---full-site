@@ -77,6 +77,11 @@ body{
 
 section{
     min-height: 60vh;
+    position: relative
+}
+section:nth-of-type(even){
+    background-color: var(--clr-dark);
+    color: white;
 }
 
   /* Intro Section */
@@ -122,8 +127,6 @@ section#advantage{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--clr-dark);
-    color: white;
 }
 #advantage>h2{
     font-size: calc(1.5rem + 1.5vw);
@@ -157,4 +160,42 @@ section#advantage{
 }
 .advantage-txt>p {
     font-size: calc(1.5vw + 0.25rem);
+}
+#lrnMore{
+    padding: 5% 0;
+}
+#lrnMore>h2{
+    text-align: center;
+}
+#lrnMoreLnks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.lrnMoreLnk{
+    margin: 2.5% 5%;
+    width: 250px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lrnMoreLnk:hover{
+    color: white;
+    text-decoration: underline;
+}
+.lrnMoreLnk>img{
+    width: 225px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* padding: 5px; */
+    box-shadow: 0 0 5px white;
+}
+.lrnMoreLnk>h5{
+    text-align: center;
+    margin: 2.5%;
 }

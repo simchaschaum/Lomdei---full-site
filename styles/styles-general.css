@@ -12,13 +12,6 @@
   --clr-white: #f8f9fa;
   --clr-btnHov: #486274;
 }
-body{
-    background: rgb(102,191,255);
-    background: linear-gradient(90deg, rgba(219,243,247,0.33657212885154064) 0%, rgba(50,76,93,0.5) 100%);
-    position: absolute;
-    background-attachment: fixed;
-    width: 100%;
-  }
 
   html{
     scroll-behavior: smooth;

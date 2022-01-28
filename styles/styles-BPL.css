@@ -199,3 +199,22 @@ section#advantage{
     text-align: center;
     margin: 2.5%;
 }
+/* Benefits page */
+#benefits-intro{
+    margin-top: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 30vh;
+}
+
+.benefits-dark{
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%
+}

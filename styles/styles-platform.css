@@ -259,6 +259,7 @@ section#counters-section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 65%;
   }
   .videoContainer{
     margin-bottom: 5%;
@@ -272,11 +273,15 @@ section#counters-section{
     height: 500px;
   }
   @media only screen and (max-width:800px){
+    section#tVideos{
+      width: 90%;
+      margin: 0 auto;
+    }
     .videoContainer{
       width: 95%;
     }
     iframe.tVideo{
-      height: 250px;
+      height: 300px;
     }
   }
 

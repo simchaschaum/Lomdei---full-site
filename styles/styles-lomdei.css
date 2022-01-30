@@ -400,3 +400,14 @@ section#contactUs{
     height: 1200px;
     margin: 25px;
   }
+  /*  Grants page*/
+.grants{
+  margin-top: 78px;
+  padding: 0 5%;
+ }
+ .grants:last-of-type{
+   text-align: center;
+ }
+ .grants h2{
+   margin-bottom: 5%;
+ }

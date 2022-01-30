@@ -18,11 +18,16 @@
   }
 section{
   position: relative;
+  width: 100%;
+}
+body{
+    width: 100%;
 }
 /* Full page and footer*/
 .pageContainer{
   min-height: 100vh;
   padding-bottom: 100px;
+  width: 100%;
 }
 footer#footer{
   height: 100px;
@@ -116,13 +121,15 @@ nav {
     background-color: var(--clr-dark);
     max-width: 200px;
     min-height: 50px;
-    padding: 5px 15px;
+    padding: 10px 15px;
     font-size: 25px;
     transition: background-color 0.3s;
     cursor: pointer;
+    text-decoration: none;
   }
   .learnMoreBtn:hover{
     background-color: var(--clr-btnHov);
+    color: white
   }
       
       

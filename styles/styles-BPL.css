@@ -11,7 +11,12 @@ body{
     height: 100%;
   }
 
- 
+  :root {
+    --clr-light: #66bfff;
+    --clr-dark: #324c5d;
+    --clr-white: #f8f9fa;
+    --clr-btnHov: #486274;
+  }
   
   /* To cover the image to give fade effect */
   .whiteFadeCover {
@@ -62,9 +67,7 @@ body{
   bottom: 10px;
   margin-right: 2%;
 }
-.hideBtn:hover{
-  background-color: var(--clr-btnHov);
-}
+
 /* Link Styling */
 .link{
   color: var(--clr-dark);
@@ -200,9 +203,10 @@ section#advantage{
     margin: 2.5%;
 }
 /* Benefits page */
-#benefits-intro{
+.BPL-intro{
     margin-top: 58px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -220,15 +224,123 @@ section#advantage{
 .benefits-personalized{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .benefits-personalized:nth-of-type(even){
     flex-direction: row-reverse;
 }
+.benefits-personalized>*{
+    padding: 2.5%
+}
+.benefits-txt{
+    flex: 1;
+}
 .benefits-pic{
     flex: 1;
-    min-width: 400px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
+.benefits-personalized:nth-of-type(even) .benefits-pic{
+    justify-content: flex-start;
+}
+
 .benefits-pic>img{
     max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
+    box-shadow: 0 0 5px var(--clr-dark);
+}
+@media(max-width: 800px){
+    .benefits-personalized,
+    .benefits-personalized:nth-of-type(even){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .benefits-pic{
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Examples Section */
+section#examples{
+    padding: 5% 0;
+    text-align: center;
+  }
+  @media only screen and (max-width:900px){
+    #examples{
+      margin-top: 50px;
+    }
+  }
+  #bplExamplesAnchor{
+    margin-top: -78px;
+  }
+  #examples h2{
+    margin-bottom: 50px;
+  }
+  #examplesDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .exampleDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 350px;
+    height: 300px;
+    /* border-radius: 3px; */
+    margin: 5px 5px 50px 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px var(--clr-light);
+    transition: box-shadow 0.3s;
+  }
+  .exampleDiv:hover{
+    box-shadow: 0 0 10px var(--clr-light);
+  }
+  .exampleDiv:hover .learnMoreBtn{
+    background-color: var(--clr-btnHov);
+  }
+  .exampleDiv img{
+    width: 180px;
+    height: 140px;
+    object-fit: cover
+  }
+  .exampleDiv h4{
+    margin-top: 5px
+  }
+  .exampleDiv button{
+    margin-bottom: 5px;
+  }
+#resources{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+}
+#BPL-resources{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2.5%
+}
+.resources-text{
+    flex:3;
+    padding: 2.5%
+}
+.resources-pic{
+    flex:1;
+    padding: 2.5%
+}
+.resources-pic>img{
+    max-width: 100%;
+    box-shadow: 0 0 5px var(--clr-dark);
 }

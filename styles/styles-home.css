@@ -63,58 +63,6 @@
       font-size: 0.8em;
     }
   }
-  /* Lomdei Tool counter display */
-  .title{
-    min-height: 90%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .learnMoreBtn{
-    border: none;
-    background-color: var(--clr-dark);
-    color: white;
-    padding: 1.5%
-  }
-  .learnMoreBtn:hover{
-    box-shadow: 0 0 5px var(--clr-dark);
-  }
-  div#counters{
-    background-color: var(--clr-dark);
-    display: flex;
-    justify-content: space-between;
-  }
-  div#counters div{
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  div#counters *{
-    color: var(--clr-white)
-  }
-  @media only screen and (max-width:550px){
-    div#counters{
-      margin-bottom: 5%;
-    }
-    div#counters h3{
-      font-size: 22px;
-    }
-    div#counters h5{
-      font-size: 14px;
-      margin: 0;
-    }
-  }
-  @media only screen and (max-width:290px){
-    div#counters h3{
-      font-size: 18px;
-    }
-    div#counters h5{
-      font-size: 10px;
-      margin: 0;
-    }
-  }
   
   /* Homepage -  mission section*/
   #intro-mission,
@@ -172,6 +120,14 @@
   }
   .intro-mission-txt>a:hover{
     text-decoration: none;
+    color: white;
+  }
+  .link-btn{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .link-btn:hover{
     color: white;
   }
   /* Homepage - features section */

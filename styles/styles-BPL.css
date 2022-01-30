@@ -208,7 +208,6 @@ section#advantage{
     text-align: center;
     min-height: 30vh;
 }
-
 .benefits-dark{
     min-height: 30vh;
     display: flex;
@@ -217,4 +216,19 @@ section#advantage{
     align-items: center;
     text-align: center;
     padding: 5%
+}
+.benefits-personalized{
+    display: flex;
+    flex-direction: row;
+}
+.benefits-personalized:nth-of-type(even){
+    flex-direction: row-reverse;
+}
+.benefits-pic{
+    flex: 1;
+    min-width: 400px;
+}
+.benefits-pic>img{
+    max-width: 100%;
+    object-fit: cover;
 }

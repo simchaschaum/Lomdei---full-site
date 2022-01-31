@@ -50,8 +50,7 @@
   }
   
   /* Homepage -  mission section*/
-  #intro-mission,
-  #intro-events{
+  #intro-mission{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,16 +158,6 @@
     justify-content: space-around;
     align-items: center;
   }
-  /* Homepage - events */
-  #intro-events{
-    padding: 5%
-  }
-  #events-inner{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-  }
+  
   
   

@@ -19,6 +19,9 @@ html{
 body{
     width: 100%;
 }
+h2{
+    font-size: 2.15em;
+}
 h4{
     font-size: 1.75em;
 }
@@ -52,7 +55,21 @@ p{
 }
 
 /* Events */
-#events-inner>a{
+.events{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.events-inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.events-inner>a{
     width: 25%;
     min-width: 250px;
     margin: 5% 2.5%;
@@ -80,10 +97,10 @@ p{
     opacity: 0;
     transition: 0.5s
   }
-  #events-inner>a:hover .events-img{
+  .events-inner>a:hover .events-img{
     opacity: 0.15;
   }
-  #events-inner>a:hover .events-txt{
+  .events-inner>a:hover .events-txt{
     opacity: 1.0;
   }
 

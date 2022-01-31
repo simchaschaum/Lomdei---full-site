@@ -1,0 +1,66 @@
+/* Team Section */
+section#team{
+    text-align: center;
+    margin-top: 10%;
+  }
+  #team img{
+    max-width: 200px;
+    height: 260px;
+    object-fit: cover;
+  }
+  #team .anchor{
+    padding: 0;
+  }
+  #teamContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .teamCard{
+    position: relative;
+    margin: 5px;
+    padding: 10px;
+    width: 325px;
+    transition: box-shadow 0.3s;
+  }
+  .teamCard:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--clr-dark);
+  }
+  .teamCard p{
+    margin-bottom: 30px;
+  }
+  .fullBio{
+    position: absolute;
+    width: 68px;
+    left: 50%;
+    margin-left: -34px;
+    bottom: 2px;
+    opacity:0;
+    transition: opacity 0.3s;
+  }
+  .teamCard:hover .fullBio{
+    opacity: 1.0;
+  }
+  @media only screen and (max-width: 700px){
+    #teamContainer{
+      flex-direction: column;
+      align-items: center;
+    }
+    .teamCard{
+      max-width: 90%;
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width:800px){
+    .teamCard{
+      box-shadow: 0 0 5px var(--clr-dark);
+    }
+    .fullBio{
+      opacity: 1.0;
+    }
+  }
+  .modal-body{
+    text-align: justify;
+  }
+  

@@ -36,12 +36,11 @@ p{
 
 /* All Buttons */
 .link-btn{
-    margin-top: 25px;
+    margin: 25px auto;
     border: none;
     border-radius: 30px;
     color: var(--clr-white);
     background-color: var(--clr-dark);
-    max-width: 200px;
     min-height: 50px;
     padding: 10px 15px;
     font-size: 25px;

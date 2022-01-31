@@ -23,6 +23,9 @@ section{
 body{
     width: 100%;
 }
+p{
+  font-size: 1.15em;
+}
 /* Full page and footer*/
 .pageContainer{
   min-height: 100vh;

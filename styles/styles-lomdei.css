@@ -14,11 +14,20 @@
 }
 section{
   position: relative;
+  min-height: 30vh;
 }
-
+/* About Lomdei Section */
+#about-lomdei{
+  margin: 78px auto;
+  width: 90%;
+  border: red solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* Team Section */
 section#team{
-    margin-top: 78px;
     text-align: center;
   }
   #team img{

@@ -12,112 +12,28 @@
   --clr-white: #f8f9fa;
   --clr-btnHov: #486274;
 }
-
-  html{
+html{
+    width: 100%;
     scroll-behavior: smooth;
-  }
-section{
-  position: relative;
-  width: 100%;
 }
 body{
     width: 100%;
 }
+h4{
+    font-size: 1.75em;
+}
 p{
-  font-size: 1.15em;
+    font-size: 1.15em;
 }
-/* Full page and footer*/
 .pageContainer{
-  min-height: 100vh;
-  padding-bottom: 100px;
-  width: 100%;
-}
-footer#footer{
-  height: 100px;
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  color: var(--clr-dark)
-}
-#footer-left{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-#footer-logo{
-  width: 200px;
-}
-#linkedin{
-  width: 50px;
-  margin-left: 20%;
-}
-#footer-right{
+    min-height: 100vh;
+    padding-bottom: 100px;
     width: 100%;
 }
-/* Navbar */
-nav {
-  box-shadow: 0 0 7.5px var(--clr-dark);
-  z-index: 100;
-}
-.navbar{
-  position: fixed;
-  width: 100%;
-  top: 0
-}
-.navbar-light{
-  font-size: 1.10em;
-}
-.navbar-brand{
-  width: 20%;
-}
-#navbar-logo{
-  width: 100%;
-  transition: width 0.4s ease-in-out;
-}
-#navbar-ul{
-  justify-content: space-between;
-  width: 100%;
-}
-
-.nav-link{
-  color: var(--clr-dark) !important;
-  font-size: 1.15em;
-  transition: font-size 0.4s ease-in-out;
-}
-.nav-link:hover{
-  color: white !important;
-  background-color: var(--clr-dark);
-  box-shadow: 0 0 5px var(--clr-dark);
-}
-#login{
-  color: white !important;
-  background-color: var(--clr-dark);
-}
-/* for shrinking navbar on scroll */
-.nav-shrink #navbar-logo{
-  width: 75%;
-}
-.nav-shrink .nav-link{
-  font-size: 1em;
-}
-/* Header Section */
-.headerSection{
-    margin: 58px 0 50px 0;
-    width: 100%;
-    min-height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--clr-light);
-  }
 
 /* All Buttons */
-.learnMoreBtn{
+.link-btn{
     margin-top: 25px;
-    /* margin: 0 auto 0 auto; */
     border: none;
     border-radius: 30px;
     color: var(--clr-white);
@@ -129,10 +45,118 @@ nav {
     transition: background-color 0.3s;
     cursor: pointer;
     text-decoration: none;
+}
+.link-btn:hover{
+  background-color: var(--clr-btnHov);
+  color: white
+}
+
+/* Events */
+#events-inner>a{
+    width: 25%;
+    min-width: 250px;
+    margin: 5% 2.5%;
+    text-decoration: none;    
+    color: var(--clr-dark);
   }
-  .learnMoreBtn:hover{
-    background-color: var(--clr-btnHov);
-    color: white
+  .events-inner-background{
+    background-color: var(--clr-dark);
+    width: 225px;
+    height: 350px;
+    color: white;
   }
-      
-      
+  .events-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition:0.5s;
+    position: relative
+  }
+  .events-txt{
+    position: relative;
+    bottom: 210px;
+    font-size: 1.25em;
+    width: 90%;
+    opacity: 0;
+    transition: 0.5s
+  }
+  #events-inner>a:hover .events-img{
+    opacity: 0.15;
+  }
+  #events-inner>a:hover .events-txt{
+    opacity: 1.0;
+  }
+
+  /* HEADER */
+  /* PAGES: about-lomdei */
+  section.header{
+    margin: 60px auto;
+    min-height: 30vh;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /*TEXT-PICTURES SIDE BY SIDE  */
+  /* PAGES: about-lomdei */
+  .text-pic-side{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .text-pic-side:nth-of-type(even){
+    flex-direction: row-reverse;
+  }
+  .text-pic-side>*{
+    padding: 2.5%
+  }
+  .tps-txt{
+    flex: 1
+  }
+  .tps-pic{
+    flex: 1;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .text-pic-side:nth-of-type(even) .tps-pic{
+    justify-content: flex-start;
+  }
+  .tps-pic img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 5px var(--clr-dark);
+  }
+  @media(max-width:800px){
+    .text-pic-side{
+      flex-direction: column;
+    }
+    .text-pic-side:nth-of-type(even){
+      flex-direction: column;
+    }
+    .tps-pic{
+      width: 100%
+    }
+  }
+
+  /* LEARN MORE */
+  /* PAGES: about-lomdei */
+  .learn-more{
+        width: 90%;
+        margin: 5% auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+  }
+  .learn-more h4{
+      text-align: center;
+  }
+  

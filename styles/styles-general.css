@@ -34,7 +34,7 @@ p{
     width: 100%;
 }
 
-/* All Buttons */
+/*Buttons and Links */
 .link-btn{
     margin: 25px auto;
     border: none;
@@ -52,7 +52,12 @@ p{
   background-color: var(--clr-btnHov);
   color: white
 }
-
+.link{
+    color: var(--clr-dark)
+}
+.link:hover{
+    color: var(--clr-light);
+}
 /* Events */
 .events{
     display: flex;
@@ -104,9 +109,9 @@ p{
   }
 
   /* HEADER */
-  /* PAGES: about-lomdei */
+  /* PAGES: about-lomdei, grants, contact, gallery, news */
   section.header{
-    margin: 60px auto;
+    margin: 60px auto 2.5% auto;
     min-height: 30vh;
     background-color: var(--clr-light);
     color: var(--clr-dark);
@@ -116,6 +121,15 @@ p{
     justify-content: center;
   }
 
+  /* INTRO TEXT */
+  /* PAGES: contact, grants */
+  .intro-text{
+      width: 90%;
+      margin: 5% auto;
+  }
+  .intro-text>*{
+      margin-bottom: 2.5%;
+  }
 
   /*TEXT-PICTURES SIDE BY SIDE  */
   /* PAGES: about-lomdei */
@@ -163,7 +177,7 @@ p{
   }
 
   /* LEARN MORE */
-  /* PAGES: about-lomdei */
+  /* PAGES: about-lomdei, grants */
   .learn-more{
         width: 90%;
         margin: 5% auto;

@@ -302,3 +302,14 @@ section#team{
     }
   }
   
+  /* Contact Page */
+   /* For Google form */
+#contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact-us iframe{
+    height: 1200px;
+    margin: 25px;
+}

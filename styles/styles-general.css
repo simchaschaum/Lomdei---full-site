@@ -115,7 +115,7 @@ p{
 
   /* HEADER */
   /* PAGES: about-lomdei, grants, contact, gallery, news */
-  section.header{
+  .header{
     margin: 60px auto 2.5% auto;
     min-height: 30vh;
     background-color: var(--clr-light);
@@ -125,6 +125,9 @@ p{
     align-items: center;
     justify-content: center;
   }
+  .no-margin-bottom{
+    margin-bottom: 0;
+}
     /* LEARN MORE */
   /* PAGES: about-lomdei, grants, schools */
   .learn-more{

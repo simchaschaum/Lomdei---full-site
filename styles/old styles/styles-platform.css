@@ -134,7 +134,7 @@ section#counters-section{
     width: 90%;
     margin: 0 auto;
   }
-  div.infoContainer{
+.infoContainer{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -166,7 +166,6 @@ section#counters-section{
   div.infoBox>div{
       width: 100%;
       font-size: 1.5em;
-  
   }
   div.infoBox>div>button{
       height: 3em;

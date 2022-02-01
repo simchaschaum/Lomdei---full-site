@@ -108,8 +108,6 @@
   }
   /* Homepage - features section */
   #intro-features{
-    background-color: var(--clr-dark);
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

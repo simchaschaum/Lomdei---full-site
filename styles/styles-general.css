@@ -125,6 +125,27 @@ p{
     align-items: center;
     justify-content: center;
   }
+    /* LEARN MORE */
+  /* PAGES: about-lomdei, grants, schools */
+  .learn-more{
+    width: 90%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.learn-more h4{
+  text-align: center;
+}
+/* Dark background section */
+.bkg-dark{
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 5%;
+    background-color: var(--clr-dark);
+    color: var(--clr-white);
+}
 
   /* INTRO TEXT */
   /* PAGES: contact, grants */
@@ -181,17 +202,5 @@ p{
     }
   }
 
-  /* LEARN MORE */
-  /* PAGES: about-lomdei, grants, schools */
-  .learn-more{
-        width: 90%;
-        margin: 5% auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-  }
-  .learn-more h4{
-      text-align: center;
-  }
+
   

@@ -313,3 +313,32 @@ section#team{
     height: 1200px;
     margin: 25px;
 }
+
+/* Schools page */
+#schools{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.schools-div{
+  margin: 2.5% auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.schools-div div{
+  margin-bottom: 5%;
+  width:350px;
+}
+.schools-div ul{
+  text-indent: -20px;
+  margin-left: 30px
+}
+.schools-div li{
+  list-style: none;
+}
+.country{
+  font-weight: 900;
+}

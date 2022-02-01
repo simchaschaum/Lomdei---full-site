@@ -17,6 +17,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    background: rgb(102,191,255);
+    background: linear-gradient(90deg, rgba(219,243,247,0.33657212885154064) 0%, rgba(50,76,93,0.5) 100%);
+    position: absolute;
+    background-attachment: fixed;
     width: 100%;
 }
 h2{
@@ -28,6 +32,7 @@ h4{
 p{
     font-size: 1.15em;
 }
+
 .pageContainer{
     min-height: 100vh;
     padding-bottom: 100px;
@@ -177,7 +182,7 @@ p{
   }
 
   /* LEARN MORE */
-  /* PAGES: about-lomdei, grants */
+  /* PAGES: about-lomdei, grants, schools */
   .learn-more{
         width: 90%;
         margin: 5% auto;

@@ -20,6 +20,7 @@
     padding: 1.5% 10% 0 10%;
     color: var(--clr-white);
     text-decoration: none;
+    text-align: center;
   }
   .carousel-link:hover{
     color: var(--clr-light)

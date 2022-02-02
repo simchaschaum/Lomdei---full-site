@@ -1,74 +1,9 @@
-/* Home page - Intro Carousel */
-/* #intro-carousel{
-    position: relative;
-    padding-top: 65px;
-  }
-  @media(max-width:1050px){
-    #intro-carousel{
-      padding-top: 55px;
-    }
-  }
-  .carousel-indicators{
-    bottom: 20;
-  }
-  .carousel-item{
-    height: 50vh;
-    background-color: var(--clr-dark);
-  }
-  @media(max-width:500px){
-    .carousel-item{
-      height: 40vh;
-    }
-  }
-  .carousel-slide{
-    width: 100%;
-    height: 75% 
-  }
-  .carousel-img{
-    margin-top: 0;
-    width: 100%;
-    height: 40%;
-  }
-  .carousel-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .carousel-link{
-    width: 100%;
-    height: 30%;
-    padding: 1.5% 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding-top: 2.5%;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .carousel-link:hover{
-    color: var(--clr-light)
-  }
-  .carousel-title{
-    margin-top: 5%;
-    padding: 15% 5% 5% 5%;
-  }
-  @media(max-width:600px){
-    .carousel-link h2{
-      font-size: 1.15em;
-    }
-    .carousel-link h6{
-      font-size: 0.8em;
-    }
-  } */
+/* Carousel */
 
   .carousel{
     margin-top: 60px;
   }
   .carousel-slide{
-    border: red 1px solid;
     display: flex;
     flex-direction: column;
     padding-bottom: 7.5%;

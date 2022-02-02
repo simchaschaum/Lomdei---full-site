@@ -16,7 +16,7 @@
     object-fit: cover;
   }
   .carousel-link{
-    min-height: 15vh;
+    height: 20vh;
     padding: 1.5% 10% 0 10%;
     color: var(--clr-white);
     text-decoration: none;
@@ -38,12 +38,19 @@
   #intro-mission>*{
     margin-top: 2.5%
   }
-  #intro-mission-inner{
-    position: static;
-    height: 500px;
+ #intro-mission-inner{
+    position: relative;
+    min-height: 500px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+  }
+  @media(max-width:800px){
+    #intro-mission-inner{
+      flex-direction: column;
+      height: 1000px;
+    }
+  
   }
   .intro-mission-half{
     flex: 1;
@@ -77,15 +84,19 @@
     object-fit: cover ;
   }
   .intro-mission-txt>a{
-    width: fit-content;
     text-decoration: none;
   }
   .intro-mission-txt>a:hover{
     text-decoration: none;
     color: white;
-  }
+  } 
+  
+
+
+
   /* Homepage - features section */
   #intro-features{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

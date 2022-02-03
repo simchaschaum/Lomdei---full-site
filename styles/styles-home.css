@@ -28,6 +28,11 @@
   .carousel-indicators{
     bottom: 0
   }
+  .carousel-control-next-icon, 
+  .carousel-control-prev-icon{
+    position: relative;
+    top: 100
+  }
   /* Homepage -  mission section*/
   #intro-mission{
     display: flex;

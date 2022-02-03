@@ -65,6 +65,7 @@ p{
   color: var(--clr-white)
 }
 .link{
+    cursor: pointer;
     color: var(--clr-dark)
 }
 .link:hover{

@@ -17,7 +17,8 @@
   }
   .carousel-link{
     height: 20vh;
-    padding: 0 10%;
+    min-height: 85px;
+    padding: 1% 10%;
     color: var(--clr-white);
     text-decoration: none;
     text-align: center;
@@ -46,6 +47,8 @@
   }
   /* Homepage -  mission section*/
   #intro-mission{
+    width: 95%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

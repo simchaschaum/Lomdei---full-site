@@ -3,7 +3,7 @@
 #aboutLomdei{
     margin-top: 58px;
     padding: 50px 20% 50px 10%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* Add background picture! */
     background: url(../pics/IMG_0609.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -55,11 +55,22 @@ section#aboutLomdei .title>div{
     margin-bottom: 5%;
 }
 #counters{
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+#counters>div{
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+.counters-inner{
+  margin: 0 1.5%;
 }
 .counter{
     font-size: 3em;

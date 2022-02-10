@@ -23,6 +23,7 @@ nav {
   }
   #navbar-ul{
     justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
   .nav-item:last-of-type{
@@ -34,6 +35,9 @@ nav {
     color: var(--clr-dark) !important;
     font-size: 1.15em;
     transition: font-size 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .nav-link:hover{
     color: white !important;

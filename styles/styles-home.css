@@ -34,8 +34,8 @@
   }
   .carousel-control-next-icon, 
   .carousel-control-prev-icon{
-    position: relative;
-    top: 100
+    position: absolute;
+    bottom: 15%
   }
   @media (max-width:700px) {
     .carousel-slide h2{

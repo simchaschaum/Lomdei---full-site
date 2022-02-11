@@ -32,17 +32,21 @@ export const pictures = [
                     alt: "HALB Visit",
                     load: true
                 },
-                {
-                    url: '/HALB Visit/IMG_0598.jpg',
-                    alt: "HALB Visit",
-                    load: true
-                },
-                {
-                    url: '/HALB Visit/IMG_0599.jpg',
-                    alt: "HALB Visit",
-                },
+                // {
+                //     url: '/HALB Visit/IMG_0598.jpg',
+                //     alt: "HALB Visit",
+                //     load: true
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0599.jpg',
+                //     alt: "HALB Visit",
+                // },
                 {
                     url: '/HALB Visit/IMG_0600.jpg',
+                    alt: "HALB Visit",
+                },
+                {
+                    url: '/HALB Visit/IMG_0602.jpg',
                     alt: "HALB Visit",
                 },
                 {
@@ -61,18 +65,18 @@ export const pictures = [
                     url: '/HALB Visit/IMG_0605.jpg',
                     alt: "HALB Visit",
                 },
-                {
-                    url: '/HALB Visit/IMG_0606.jpg',
-                    alt: "HALB Visit",
-                },
-                {
-                    url: '/HALB Visit/IMG_0607.jpg',
-                    alt: "HALB Visit",
-                },
-                {
-                    url: '/HALB Visit/IMG_0608.jpg',
-                    alt: "HALB Visit",
-                },
+                // {
+                //     url: '/HALB Visit/IMG_0606.jpg',
+                //     alt: "HALB Visit",
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0607.jpg',
+                //     alt: "HALB Visit",
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0608.jpg',
+                //     alt: "HALB Visit",
+                // },
                 {
                     url: '/HALB Visit/IMG_0609.jpg',
                     alt: "HALB Visit",
@@ -81,18 +85,18 @@ export const pictures = [
                     url: '/HALB Visit/IMG_0610.jpg',
                     alt: "HALB Visit",
                 },
-                {
-                    url: '/HALB Visit/IMG_0611.jpg',
-                    alt: "HALB Visit",
-                },
-                {
-                    url: '/HALB Visit/IMG_0612.jpg',
-                    alt: "HALB Visit",
-                },
-                {
-                    url: '/HALB Visit/IMG_0613.jpg',
-                    alt: "HALB Visit",
-                },
+                // {
+                //     url: '/HALB Visit/IMG_0611.jpg',
+                //     alt: "HALB Visit",
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0612.jpg',
+                //     alt: "HALB Visit",
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0613.jpg',
+                //     alt: "HALB Visit",
+                // },
                 {
                     url: '/HALB Visit/IMG_0614.jpg',
                     alt: "HALB Visit",
@@ -109,22 +113,22 @@ export const pictures = [
                     url: '/HALB Visit/IMG_0617.jpg',
                     alt: "HALB Visit",
                 },
-                {
-                    url: '/HALB Visit/IMG_0618.jpg',
-                    alt: "HALB Visit",
-                },
-                {
-                    url: '/HALB Visit/IMG_0619.jpg',
-                    alt: "HALB Visit",
-                },
+                // {
+                //     url: '/HALB Visit/IMG_0618.jpg',
+                //     alt: "HALB Visit",
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0619.jpg',
+                //     alt: "HALB Visit",
+                // },
                 {
                     url: '/HALB Visit/IMG_0620.jpg',
                     alt: "HALB Visit",
                 },
-                {
-                    url: '/HALB Visit/IMG_0621.jpg',
-                    alt: "HALB Visit",
-                },
+                // {
+                //     url: '/HALB Visit/IMG_0621.jpg',
+                //     alt: "HALB Visit",
+                // },
                 {
                     url: '/HALB Visit/IMG_0624.jpg',
                     alt: "HALB Visit",
@@ -141,14 +145,14 @@ export const pictures = [
                     url: '/HALB Visit/IMG_0628.jpg',
                     alt: "HALB Visit",
                 },
-                {
-                    url: '/HALB Visit/IMG_0629.jpg',
-                    alt: "HALB Visit",
-                },
-                {
-                    url: '/HALB Visit/IMG_0630.jpg',
-                    alt: "HALB Visit",
-                },
+                // {
+                //     url: '/HALB Visit/IMG_0629.jpg',
+                //     alt: "HALB Visit",
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0630.jpg',
+                //     alt: "HALB Visit",
+                // },
             ]
         },
     },

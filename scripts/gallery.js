@@ -1,5 +1,6 @@
 import {pictures} from './pictures.js'
 
+
 // Titles:
 const halbTitle = document.querySelector('#halb-visit-title');
 const dec7Title = document.querySelector('#dec7-title');
@@ -155,9 +156,9 @@ function closeLightbox(){
 
 function makeLightbox(){
     if(pictures[currentEventIndex][currentEvent].video){
-        lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].altUrl);
+        lightboxPic.setAttribute("src",`../../pics/${pictures[currentEventIndex][currentEvent].pics[currentPic].altUrl}`);
     } else {
-        lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].url);
+        lightboxPic.setAttribute("src",`../../pics/${pictures[currentEventIndex][currentEvent].pics[currentPic].url}`);
     }
     lightboxPic.setAttribute("alt",pictures[currentEventIndex][currentEvent].pics[currentPic].alt);
     if(pictures[currentEventIndex][currentEvent].pics[currentPic].caption){

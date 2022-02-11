@@ -59,10 +59,18 @@ p{
     transition: background-color 0.3s;
     cursor: pointer;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .link-btn:hover{
   background-color: var(--clr-btnHov);
   color: var(--clr-white)
+}
+.mini{
+  padding: 5px 10px;
+  font-size: 16px;
+  min-height: 25px;
 }
 .link{
     cursor: pointer;
@@ -130,6 +138,7 @@ p{
   /* PAGES: about-lomdei, grants, contact, gallery, news */
   .header{
     margin: 60px auto 0 auto;
+    position: relative;
     min-height: 30vh;
     background-color: var(--clr-light);
     color: var(--clr-dark);
@@ -140,11 +149,17 @@ p{
   }
   .no-margin-bottom{
     margin-bottom: 0;
-}
+  }
+ 
+/* Anchor for links to same page */
   .anchor{
     display: block;
     position: relative;
-    top: -70px
+    top: -50px
+  }
+  .anchor-alt{
+    margin-top: -70px;
+    padding-top: 70px
   }
     /* LEARN MORE */
   /* PAGES: about-lomdei, grants, schools */

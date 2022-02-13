@@ -80,6 +80,7 @@ section#aboutLomdei .title>div{
 #promoVideos{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 5%;
 }
 @media only screen and (max-width:900px){
     section#promoVideos{
@@ -98,7 +99,10 @@ iframe.video{
         margin-bottom: 5%;
     }
 }
-
+/* footer - supplementary only; see nav-header-footer for main styles */
+footer#footer{
+  margin-top: 5%;
+}
 /* About lomdei - benefits and features */
 .infoContainer{
     display: flex;

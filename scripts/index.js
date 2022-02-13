@@ -1,3 +1,4 @@
+
 // Scroll functions:
 window.addEventListener("scroll",()=>{
     let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -21,6 +22,8 @@ window.addEventListener("scroll",()=>{
         }
     }
 })
+
+
 
 // navbar shrink on scroll:
 
@@ -59,3 +62,10 @@ const count = ()=>{
     })
 }
 
+if(document.querySelector('#counters-section')){
+    let countersSection = document.querySelector('#counters-section');
+    let position = countersSection.getBoundingClientRect();
+    if(position.bottom <= window.innerHeight){
+        count()
+    };
+};

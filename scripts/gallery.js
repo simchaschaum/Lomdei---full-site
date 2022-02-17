@@ -69,7 +69,6 @@ function makeGallery(){
                         vid.setAttribute("src", eventObj[item].pics[index].url);
                         vid.setAttribute("frameborder","0");
                         vid.setAttribute("allow","autoplay; fullscreen; picture-in-picture");
-                        vid.setAttribute("allowfullscreen","");
                         vid.setAttribute("title", eventObj[item].pics[index].title);
                         let vidCap = document.createElement("p");
                         vidCap.textContent = eventObj[item].pics[index].alt;

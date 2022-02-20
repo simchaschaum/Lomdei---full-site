@@ -105,6 +105,9 @@ p{
     margin: 5% 2.5%;
     text-decoration: none;    
     color: var(--clr-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .events-inner-background{
     background-color: var(--clr-dark);
@@ -132,6 +135,19 @@ p{
   }
   .events-inner>a:hover .events-txt{
     opacity: 1.0;
+  }
+  @media(max-width:800px){
+    .events-txt{
+      position: static;
+      opacity: 1;
+      color: var(--clr-dark)
+    }
+    .events-inner>a{
+      margin-bottom: 76px;
+    }
+    .events-inner>a:hover .events-img{
+      opacity: 1;
+    }
   }
 
   /* HEADER */

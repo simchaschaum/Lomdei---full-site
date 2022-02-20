@@ -61,7 +61,7 @@ nav {
 footer#footer{
     height: 100px;
     width: 90%;
-    margin: 0 auto;
+    margin: 10% auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

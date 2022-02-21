@@ -68,7 +68,7 @@
   @media(max-width:800px){
     #intro-mission-inner{
       flex-direction: column;
-      height: 1000px;
+      min-height: 1000px;
     }
   
   }
@@ -104,6 +104,11 @@
     height: 100%;
     object-fit: cover ;
   }
+  @media(max-width:800px){
+    .intro-mission-half>img{
+      max-width: none;
+    }
+  }
   .intro-mission-txt>a{
     text-decoration: none;
   }
@@ -111,9 +116,19 @@
     text-decoration: none;
     color: white;
   } 
-  
-
-
+  .intro-mission-half .btn-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .intro-mission-half .btn-box>button{
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--clr-dark);
+    min-width: 40px;
+  }
 
   /* Homepage - features section */
   #intro-features{

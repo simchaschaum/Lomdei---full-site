@@ -47,7 +47,7 @@
   }
   /* Homepage -  mission section*/
   #intro-mission{
-    width: 95%;
+    width: 65%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -65,12 +65,18 @@
     display: flex;
     flex-wrap: wrap;
   }
+  #intro-mission li{
+    list-style-type: none
+  }
+  #intro-mission h3,
+  #intro-mission h2{
+    text-align: justify;
+  }
   @media(max-width:800px){
     #intro-mission-inner{
       flex-direction: column;
       min-height: 1000px;
     }
-  
   }
   .intro-mission-half{
     flex: 1;

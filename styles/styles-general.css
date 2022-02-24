@@ -129,7 +129,7 @@ p{
 .events-inner a{
     width: 25%;
     min-width: 250px;
-    margin: 5% 2.5%;
+    margin: 1% 1% 2.5% 0;
     text-decoration: none;    
     color: var(--clr-dark);
     display: flex;

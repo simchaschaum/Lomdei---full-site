@@ -99,6 +99,13 @@ p{
   align-items: center;
   width: 90%;
 }
+.events-inner>button{
+  width: 25%;
+  min-width: 250px;
+  margin: 5% 2.5%;
+  text-decoration: none;    
+  color: var(--clr-white);
+}
 .events-inner>a{
     width: 25%;
     min-width: 250px;

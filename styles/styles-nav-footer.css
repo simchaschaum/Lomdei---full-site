@@ -1,3 +1,22 @@
+/* TOP NAVBAR */
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 20px;
+  background-color: var(--clr-dark);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header>a{
+  color: var(--clr-white);
+}
+header>a:hover{
+  color: var(--clr-white);
+  text-decoration: none;
+}
 /* NAVBAR */
 nav {
     box-shadow: 0 0 7.5px var(--clr-dark);
@@ -6,7 +25,7 @@ nav {
   .navbar{
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 20px;
   }
 
   .navbar-light{

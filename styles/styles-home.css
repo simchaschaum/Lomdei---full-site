@@ -129,7 +129,8 @@
     flex-direction: row;
     justify-content: space-around;
   }
-  .intro-mission-half .btn-box>button{
+  .intro-mission-half .btn-box>button,
+  .intro-mission-half .btn-box>a{
     padding: 1%;
     border-radius: 5px;
     box-shadow: 0 0 5px var(--clr-dark);

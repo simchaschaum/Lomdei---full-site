@@ -1,7 +1,7 @@
 /* Team Section */
 section#team{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 2.5%
   }
   #team img{
     max-width: 200px;
@@ -20,8 +20,18 @@ section#team{
     position: relative;
     margin: 5px;
     padding: 10px;
-    width: 325px;
+    width: 225px;
     transition: box-shadow 0.3s;
+  }
+  .teamCard h4{
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+  .teamCard h5{
+    font-size: 1.10em;
+  }
+  .teamCard p{
+    font-size: 1em;
   }
   .teamCard:hover{
     cursor: pointer;

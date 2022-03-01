@@ -23,8 +23,6 @@ window.addEventListener("scroll",()=>{
     }
 })
 
-
-
 // navbar shrink on scroll:
 
 const navbar = document.querySelector('.navbar');

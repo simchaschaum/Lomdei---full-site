@@ -213,6 +213,43 @@ export const pictures = [
                 }
             ]
         }    
+    },
+    {
+        feb16:{
+            title: "February 16, 2022 - Lomdei Visit to Yeshiva Toras Chaim Toras Emes",
+            shortTitle: "Lomdei Visits YTCTE",
+            video: false,
+            pics: [
+                {
+                    url: 'Miami Visit/miami1.jpg',
+                    alt: "Lomdei Visits YTCTE on Feb 16th"
+                },
+                {
+                    url: 'Miami Visit/miami2.jpg',
+                    alt: "Lomdei Visits YTCTE on Feb 16th"
+                },
+                {
+                    url: 'Miami Visit/miami3.jpg',
+                    alt: "Lomdei Visits YTCTE on Feb 16th"
+                },
+                {
+                    url: 'Miami Visit/miami4.jpg',
+                    alt: "Lomdei Visits YTCTE on Feb 16th"
+                },
+                {
+                    url: 'Miami Visit/miami5.jpg',
+                    alt: "Lomdei Visits YTCTE on Feb 16th"
+                },
+                {
+                    url: 'Miami Visit/miami6.jpg',
+                    alt: "Lomdei Visits YTCTE on Feb 16th"
+                },
+                {
+                    url: 'Miami Visit/miami7.jpg',
+                    alt: "Lomdei Visits YTCTE on Feb 16th"
+                }
+            ]
+        }
     }
 ]
 

@@ -69,7 +69,8 @@
     list-style-type: none
   }
   #intro-mission .long-rec-btn{
-    width: 100%;
+    width: 40%;
+    font-size: 1.25em;
   }
   @media(max-width:800px){
     #intro-mission-inner{
@@ -82,9 +83,16 @@
     position: relative;
     max-width: 100vw;
   }
-  .intro-mission-half:first-of-type{
-    border-right: solid var(--clr-dark) 0.1px;
+  /* FINDING A WAY TO DIFFERENTIATE BETWEEN THE TWO HALVES: */
+  /* .intro-mission-half:first-of-type{
+    color: var(--clr-white)
   }
+  .intro-mission-half:first-of-type a{
+    color: var(--clr-white)
+  }
+  .intro-mission-half:first-of-type .white-fade-cover{
+      background-color: rgba(50, 76, 93, 0.7);
+  } */
   .white-fade-cover{
     position: absolute;
     top: 0;
@@ -106,6 +114,7 @@
     align-items: center;
     justify-content: space-between;
   }
+
   .intro-mission-half>img{
     max-width: 100%;
     height: 600px;

@@ -39,7 +39,7 @@
   }
   @media (max-width:700px) {
     .carousel-slide h2{
-      font-size: 1.75rem;
+      font-size: 1.25rem;
     }
     .carousel-slide h6{
       font-size: 0.75rem;
@@ -85,6 +85,10 @@
     #intro-mission-inner{
       flex-direction: column;
       min-height: 1200px;
+    }
+    #intro-mission>div{
+      flex-direction: column;
+      align-items: center;
     }
   }
   .intro-mission-half{

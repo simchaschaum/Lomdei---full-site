@@ -1,338 +1,462 @@
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Lomdei - Blended and Personalized Learning Program</title>
-    <link rel="shortcut icon" href="https://images.squarespace-cdn.com/content/v1/5e73d22e4df9007170bfabac/1584713631516-0KPJGLN16KRE0A4B7F8U/ke17ZwdGBToddI8pDm48kMpagLdZPgiW6yD5i4KsS9VZw-zPPgdn4jUwVcJE1ZvW3Ek6fZXYmUh2T6pKy8CAPiJz4vYg48fcPCuGX417dnZuUf97iszYYQLvux8ZVj2OCZHlFJ3B6MstDcgnpkF-Jiqa9MJYUWOzdYdgr30K9JE/favicon.ico?format=50w">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div id="pageContainer">
-    <nav class="navbar navbar-expand-xl navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#intro">
-          <img src="https://static1.squarespace.com/static/5e73d22e4df9007170bfabac/t/60184ec5771dd6651c6c7499/1614965138939/?format=1500w" alt="Lomdei Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <div class="dropdown">
-                <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    About
-                  </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item nav-link" href="./pages/about.html">About Lomdei</a></li>
-                  <li><a class="dropdown-item nav-link" href="./pages/news.html">Lomdei News</a></li>
-                  <li><a class="dropdown-item nav-link" href="./pages/gallery.html">Gallery</a></li>
-                </ul>
-            </div>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/video.html">Video Tutorials</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/PD.html">Professional Development</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/grants.html">Government Grants</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/schools.html">Lomdei Schools</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="login" href="https://thumbprintapp.org/webapp2/index.html">Log in</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-  
-    </nav>
-  
-    <!-- Intro section -->
-      <section id="intro">
-        <div class="title">
-            <div id="counters">
-                <div>
-                    <h3 id="schoolsNum" class="counter" data-target="50">0</h3>
-                    <h5>Schools</h5>
-                </div>
-                <div>
-                    <h3 id="studentsNum" class="counter" data-target="8540">0</h3>
-                    <h5>Students</h5>
-                </div>
-                <div>
-                    <h3 id="classesNum" class="counter" data-target="640">0</h3>
-                    <h5>Classes</h5>
-                </div>
-                <div>
-                    <h3 id="teachersNum" class="counter" data-target="275">0</h3>
-                    <h5>Teachers</h5>
-                </div>
-            </div>
-            <h1><strong>Leading Blended and Personalized Learning  Program for Limudei Kodesh</strong></h1>
-            <h3>Lomdei delivers a simple yet powerful tool, empowering teachers to provide the most effective personalized limudei Kodesh learning experience students can receive.</h3>
-            <div id="introButtons">
-                <a href="#infoAnchor"><button id="learnMore" class="learnMoreBtn">Learn More</button></a>
-                <a href="./pages/about.html#videoAnchor"><button id="promoVideo" class="learnMoreBtn">Lomdei Video</button></a>    
-            </div>
-        </div>
-      </section>
-  
-      <!-- Info Section -->
-      <section id="info">
-          <span id="infoAnchor" class="anchor"></span>
-          <h4>
-            <em>The Lomdei Program, highly recommended and endorsed by Torah Umesorah (<a href="./../Torah_Umesorah_Letter.pdf" class="link">Click here to view Rabbi Nojowitz's letter</a>), is aimed at delivering a simple yet powerful Limudei Kodesh educational tool focused on skill building, formative and summative assessments and rich data tracking for both teachers and their students. </em>
-          </h4>
-          <div class="infoContainer">
-              <div class="info" id="features">
-                  <h2>Features</h2>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
-                              <strong class="bigbold">+</strong> Library of Material
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse1">
-                        <div class="card card-body">
-                          Lomdei provides a massive library of ready to use limudei kodesh skill building assessments including Chumash, Navi, Mishna, Gemara, Yomim Tovim, Yedios Klalios, Ivrit and more.                      </div>
-                      </div>
-                  </div>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
-                              <strong class="bigbold">+</strong> Formative & Summative Assessments
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse2">
-                        <div class="card card-body">
-                          Teachers are using Lomdei in many different ways in their class.
-                          <ul>
-                              <li>
-                                  Kids go through parts of the program as a pre teach
-                              </li>
-                              <li>
-                                  Using it as a chazara & formative assessments once the materials have been taught.
-                              </li>
-                              <li>
-                                  Using it as summative assessments as well as for homework.
-                              </li>
-                              <li>
-                                  Predominantly, we have observed teachers use it as a tool to break up their class, thus enabling them to teach to a smaller group of students with more personalized attention as others are on their Lomdei accounts doing work that is all accounted for.
-                              </li>
-                          </ul>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
-                              <strong class="bigbold">+</strong> Real-Time Rich Analytical Data
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse3">
-                          <div class="card card-body">
-                              The Lomdei program, with its rich analytical data system, measures all of a student’s achievements, regardless of age, grade or subject.
-                              <ul>
-                                  <li>
-                                      Students get instant feedback on the work they are doing.
-                                  </li>
-                                  <li>
-                                      Teachers can view in real time the data that is being gathered through the reporting.
-                                  </li>
-                                  <li>
-                                      There is no marking required by teachers as the program self marks and collects the data in our reporting system.
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseExample">
-                              <strong class="bigbold">+</strong> Personalize Materials - Easy to Modify Content
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse4">
-                          <div class="card card-body">
-                              Teachers can either use the already created content to send to students, and are also able to easily modify the assessment questions so that it speaks in the way the teacher would want to teach it to their class. The updates and modifications they make in their account automatically get updated in the student’s accounts.
-                          </div>
-                      </div>
-                  </div>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseExample">
-                              <strong class="bigbold">+</strong> Passive and Active Learning
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse5">
-                          <div class="card card-body">
-                              Teachers can access lessons that have both passive learning including audio, video and reading sheets to help explain the lesson as well as active learning using formative and summative assessments.                        </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="info" id="Benefits">
-                  <h2>Benefits</h2>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseExample">
-                              <strong class="bigbold">+</strong> Personal Learning Experience
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse6">
-                          <div class="card card-body">
-                              Lomdei provides teachers a wealth of content that does not have to be created or marked, enabling them to provide students materials suited to their level of learning. Students go through the materials and can have specific content sent to their account thus allowing a differentiated instructional experience.                        </div>
-                      </div>
-                  </div>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapseExample">
-                              <strong class="bigbold">+</strong> Reduces the Need For Remedial & SpecEd
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse7">
-                          <div class="card card-body">
-                              Our data has shown that students need for remedial or Special Ed has been minimized when using Lomdei to individualize their learning in class. This has many benefits.
-                          </div>
-                      </div>
-                  </div>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapseExample">
-                              <strong class="bigbold">+</strong> Provides Accountability
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse8">
-                          <div class="card card-body">
-                              Principals and teachers are able to access broad based and specific reporting in order to track overall student achievement and progress and provide accountability for teachers.
-                          </div>
-                      </div>
-                  </div>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapseExample">
-                              <strong class="bigbold">+</strong> Motivates Students to Achieve
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse9">
-                          <div class="card card-body">
-                              With its built in real time feedback, students are able to learn from their mistakes and correct them. Students retain this information for longer and it also motivates them to do better when they are able to see their successes right away.                        </div>
-                      </div>
-                  </div>
-              </div>
-      
-          </div>        
-          <div class="infoContainer">
-              <div class="info" id="services">
-                  <h2>Services</h2>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapseExample">
-                              <strong class="bigbold">+</strong> Support Staff
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse10">
-                        <div class="card card-body">
-                          Lomdei is here to ensure that as teachers, all your questions and clarifications are being dealt with. 
-                          Over the course of the school year, we provide a Lomdei rebbe who is available Sun-Thursday for 2 hours in the evenings to deal with any questions that may come up from teachers. 
-                          Additionally, each teacher will be provided with 4 pre-scheduled one-on-one meetings, over the course of the school year, with a Lomdei representative.                    
-                        </div>
-                      </div>
-                  </div>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapseExample">
-                              <strong class="bigbold">+</strong> Lomdei Community
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse11">
-                        <div class="card card-body">
-                          With close to 300 teachers in 60 schools using Lomdei, we are providing opportunities for teachers to 
-                          connect with other teachers and learn and share best practices regarding Lomdei usage in their class. 
-                          These mini sessions are provided over the course of the year so teachers can stay current and connected.
-                        </div>
-                      </div>
-                  </div>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapseExample">
-                              <strong class="bigbold">+</strong> Custom materials
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse12">
-                          <div class="card card-body">
-                              Upon request, teachers can use the “Lomdei service” to provide their own materials that will be loaded on to their account by the Lomdei team, thus saving them the time of uploading their materials.
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="info" id="kosherdevices">
-                  <h2>Kosher Devices</h2>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                              <strong class="bigbold">+</strong> Kosher Devices
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse13">
-                          <div class="card card-body">
-                              Under the guidance of Da’as Torah & Torah Umesorah, we have tried our best to service as many backgrounds of Yeshivos and Bais Yaakov’s as possible regarding their allowed use of technology in and out of school. The Lomdei program is available through the different options below:                        </div>
-                          </div>
-                  </div>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                              <strong class="bigbold">+</strong> Offline
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse14">
-                          <div class="card card-body">
-                              As an offline version on laptops or devices that have no internet connected to them. The students go through the materials in their accounts without needing to connect to the internet. This accommodates schools who have no wifi in their classrooms.                        </div>
-                      </div>
-                  </div>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
-                              <strong class="bigbold">+</strong> White List
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse15">
-                          <div class="card card-body">
-                              The program is controlled on a white list that the school provides - allowing kid’s access to their accounts without the ability of them accessing the internet.                        </div>
-                      </div>
-                  </div>
-                  <div class="infoBox" >
-                      <div>
-                          <button class="infoTitle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
-                              <strong class="bigbold">+</strong> Locked Devices
-                          </button>
-                      </div>    
-                      <div class="collapse" id="collapse16">
-                          <div class="card card-body">
-                              We have created an app (Google and Apple) that will work on locked down devices like the KPhone device so that kids can go into their Lomdei app on these devices to do their work without the ability to access the internet.                         </div>
-                      </div>
-                  </div>
-              </div>
-      
-          </div>   
-      </section>
-  
+    <!DOCTYPE html>
+        <html lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lomdei - Blended and Personalized Learning </title>
+        <link rel="shortcut icon" href="https://images.squarespace-cdn.com/content/v1/5e73d22e4df9007170bfabac/1584713631516-0KPJGLN16KRE0A4B7F8U/ke17ZwdGBToddI8pDm48kMpagLdZPgiW6yD5i4KsS9VZw-zPPgdn4jUwVcJE1ZvW3Ek6fZXYmUh2T6pKy8CAPiJz4vYg48fcPCuGX417dnZuUf97iszYYQLvux8ZVj2OCZHlFJ3B6MstDcgnpkF-Jiqa9MJYUWOzdYdgr30K9JE/favicon.ico?format=50w">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/styles-general.css">
+        <link rel="stylesheet" href="./styles/styles-nav-footer.css">
+        <link rel="stylesheet" href="./styles/styles-home.css">
+</head>
 
-  </div>
-  <div id="footer">
-    <a href="https://www.lomdei.com/index.html">
-        <img id="footer-logo" src="https://static1.squarespace.com/static/5e73d22e4df9007170bfabac/t/60184ec5771dd6651c6c7499/1614965138939/?format=1500w" alt="Lomdei Logo">
-    </a>
-    <a href="https://www.linkedin.com/company/lomdei">
-        <img id="linkedin" src="./pics/linkedin.png" alt="linkedin">
-    </a>
-  </div>
-  <script src="./scripts/index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<body>
+    <div id="pageContainer">
+        <header>
+            <a href="./pages/lomdei/news.html">
+                <em>Check Out The Latest News and Events at Lomdei!</em>
+            </a>
+        </header>
+        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#intro">
+                    <img src="./pics/lomdei_logo.png" alt="Lomdei Logo" id="navbar-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-ul">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Lomdei
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item nav-link" href="./pages/lomdei/about-lomdei.html">About
+                                        Lomdei</a></li>
+                                        <li><a class="dropdown-item nav-link" href="./pages/lomdei/our-team.html">Our Team</a>
+                                        </li>
+                                <li><a class="dropdown-item nav-link" href="./pages/lomdei/news.html">Lomdei News</a>
+                                </li>
+                                <li><a class="dropdown-item nav-link" href="./pages/lomdei/gallery.html">Gallery</a>
+                                </li>
+                                <li><a class="dropdown-item nav-link" href="./pages/lomdei/grants.html">Title
+                                        Dollars</a></li>
+                                <li><a class="dropdown-item nav-link" href="./pages/lomdei/schools.html">Schools Using
+                                        Lomdei Services</a></li>
+                                <li><a class="dropdown-item nav-link" href="./pages/lomdei/contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Lomdei Learning Platform
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item nav-link" href="./pages/platform/about-platform.html">About
+                                        the Learning Platform</a></li>
+                                <li><a class="dropdown-item nav-link" href="./pages/platform/benefits.html">Benefits of
+                                        the Learning Platform</a></li>
+                                <li><a class="dropdown-item nav-link" href="./pages/platform/features.html">Features of
+                                        the Learning Platform</a></li>
+                                <li><a class="dropdown-item nav-link" href="./pages/platform/kosher-devices.html">Use of
+                                        the Learning Platform on Kosher Devices</a></li>
+                                <li><a class="dropdown-item nav-link" href="./pages/platform/services.html">Lomdei
+                                        Platform Services</a></li>
+                                <li><a class="dropdown-item nav-link" href="./pages/platform/video.html">Video
+                                        Tutorials</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Lomdei BPL Program
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item nav-link" href="./pages/BPL/about-BPL.html">Lomdei's BPL
+                                        Advantage</a></li>
+                                <li><a class="dropdown-item nav-link" href="./pages/BPL/pd-program.html">Lomdei's PD
+                                        Program</a></li>
+                                <li><a class="dropdown-item nav-link" href="./pages/BPL/benefits.html">Benefits of
+                                        BPL</a></li>
+                                <li><a class="dropdown-item nav-link"
+                                        href="./pages/BPL/examples-resources.html">Examples and Resources for BPL</a>
+                                </li>
+                                <li><a class="dropdown-item nav-link"
+                                        href="https://sites.google.com/view/thebplclassroom/home" target="_blank">Lomdei
+                                        Learning Lab</a></li>
+                            </ul>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" id="login" href="https://thumbprintapp.org/webapp2/index.html">Log in to
+                                Learning Platform</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- Intro Carousel -->
+        <section id="intro-carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7500">
+                <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="none"> -->
+                <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div> -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-slide">
+                            <div class="carousel-img">
+                                <img src="./pics/homepage/miami1.jpg" alt="School administrators work together at a Lomdei Principals Seminar">
+                            </div>
+                            <a class="carousel-link" href="./pages/BPL/about-BPL.html">
+                                <div class="title carousel-title">
+                                    <h2>
+                                        <strong>
+                                            The Lomdei Advantage: Shared Values
+                                        </strong>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-slide">
+                            <div class="carousel-img">
+                                <img src="./pics/homepage/IMG_0597.jpg" alt="Teacher supports students in small group">
+                            </div>
+                            <a href="./pages/BPL/pd-program.html" class="carousel-link">
+                                <div>
+                                    <h2>
+                                        <strong>
+                                            Comprehensive Support: Coaching, Resources, and Community
+                                        </strong>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-slide">
+                            <div class="carousel-img">
+                                <img src="./pics/homepage/IMG_0606.jpg"
+                                    alt="Children learn with the Lomdei Learning Platform">
+                            </div>
+                            <a href="./pages/platform/about-platform.html" class="carousel-link">
+                                <div class="title carousel-text">
+                                    <h2>
+                                        <strong>
+                                            The Lomdei Learning Platform: Simple, Powerful Learning Software
+                                        </strong>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-slide">
+                            <div class="carousel-img">
+                                <img src="./pics/homepage/IMG_0594.jpg" alt="BPL in action in a classroom">
+                            </div>
+                            <a href="./pages/BPL/about-BPL.html" class="carousel-link">
+                                <div class="title carousel-text">
+                                    <h2>
+                                        <strong>
+                                            The Lomdei BPL Program: <br/>
+                                            Cutting-Edge Professional Development for Rebbeim and Moros
+                                        </strong>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section>
+            <div id="intro-mission-inner">
+                <div class="intro-mission-half">
+                    <div class="intro-mission-txt">
+                        <div>
+                            <h2><strong>Learning Platform</strong></h2>
+                            <h4>
+                                The Premier Torah-Learning Software Platform in Jewish Day Schools 
+                            </h4>
+                            <h4>
+                                Equipped With a Library of Skill-Building Limudei Kodesh Content
+                                <br>
+                                <a class="link link-dark" target="_blank" href="./Torah_Umesorah_Letter.pdf">Endorsed by
+                                    Torah Umesorah</a>
+                            </h4>
+                            <div class="btn-box">
+                                <a href="./pages/platform/about-platform.html" class="link-btn">Learn More</a>
+                                <button type="button" class="link-btn" data-bs-toggle="modal" data-bs-target="#PVideoModal">
+                                    Watch the Video
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-fade-cover"></div>
+                    <img src="./pics/homepage/lomdei_pic_1.JPG" alt="Closeup of Lomdei Learning Platform screen">
+                </div>
+                <!-- Popup for Platform Video -->
+                <div class="modal fade" id="PVideoModal" tabindex="-1" aria-labelledby="pVideoLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <!-- <h5 class="modal-title" id="pVideo1Label">Lomdei Platform Video</h5> -->
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe class="home-video" src="https://www.youtube.com/embed/gfV5DNG4yJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="intro-mission-half">
+                    <div class="intro-mission-txt">
+                        <div>
+                            <h2><strong>BPL Program</strong></h2>
+                            <h4>
+                                Lomdei’s Blended and Personalized Learning (BPL) Professional Development Program
+                            </h4>
+                            <h4>
+                                 Geared Towards the Curricular Needs and Religious Values of Jewish Schools and Mosdos Torah
+                            </h4>
+                            <div class="btn-box">
+                                <a href="./pages/BPL/about-BPL.html" class="link-btn">Learn More</a>
+                                <button type="button" class="link-btn" data-bs-toggle="modal" data-bs-target="#BPLVideoModal">
+                                    Watch the Video
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-fade-cover"></div>
+                    <img src="./pics/homepage/group work.jpg" alt="Students learning collaboratively in a small group">
+                </div>
+            </div>
+            <!-- Popup for BPL Video -->
+            <div class="modal fade" id="BPLVideoModal" tabindex="-1" aria-labelledby="BplVideoLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <!-- <h5 class="modal-title" id="BplVideoLabel">Lomdei Platform Video</h5> -->
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe class="home-video" src="https://player.vimeo.com/video/646548530?h=3f5d4e6f27&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Lomdei BPL PD"></iframe>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section id="intro-mission">
+            <h1>
+                Lomdei is leading the way, empowering each rebbe and morah to create the most <strong>dynamic</strong>, <strong>personalized</strong>, and <strong>educationally sound</strong> 
+                experience for their students! 
+            </h1>
+            <h2><strong>להגדיל תורה ולהאדירה</strong></h2>
+            <div>
+                <a class="long-rec-btn" href="./pages/lomdei/schools.html">
+                    <p>See a List of Current Lomdei Schools</p>
+                </a>
+                <a class="long-rec-btn" href="./pages/lomdei/contact.html">
+                    <p>Contact Us to Learn More or Get Started</p>
+                </a>
+            </div>
+        </section>
+        <section id="intro-features" class="bkg-dark">
+            <div id="unique" class="features-outer">
+                <h2>What Makes Lomdei Unique</h2>
+                <div class="features-inner">
+                    <div class="provide-feature">
+                        <img src="./pics/homepage/IMG_0605.jpg" alt="A rebbe leads learning in small group">
+                        <h5>Custom BPL Program developed by expert mechanchim and geared for Rabbaim and Moros</h5>
+                    </div>
+                    <div class="provide-feature">
+                        <img src="./pics/homepage/IMG_0615.jpg" alt="A student learns with the Lomdei Platform">
+                        <h5>Unique Torah Learning Platform with thousands of skill-building questions</h5>
+                    </div>
+                    <div class="provide-feature">
+                        <img src="./pics/homepage/IMG-20211223-WA0001.jpg"
+                            alt="Students and teacher learn in a small group">
+                        <h5>Options for use without internet access</h5>
+                    </div>
+                    <div class="provide-feature">
+                        <img src="./pics/homepage/experts.jpg" alt="Mrs. Chani Richmond meets with school heads">
+                        <h5>BPL Coaching Training Program for Rabbaim and Moros</h5>
+                    </div>
+                    <div class="provide-feature">
+                        <img src="./pics/homepage/LCoT Dec 21 (6).PNG" alt="Lomdei Community of Teachers Zoom screen">
+                        <h5>Supportive community of Lomdei BPL and Platform users</h5>
+                    </div>
+                    <div class="provide-feature">
+                        <img src="./pics/homepage/lomdei_pic_1.JPG" alt="Closeup of Lomdei Learning Platform screen">
+                        <h5>Comprehensive teacher support and data-driven feedback for Principals</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="events">
+            <!-- <h1>The Latest at Lomdei</h1> -->
+            <div class="events-inner">
+                <button type="button" class="long-rec-btn" data-bs-toggle="modal" data-bs-target="#newsModal">
+                    <h4>Read Lomdei's Newsletters</h4>
+                </button>
+                <button type="button" class="long-rec-btn" data-bs-toggle="modal" data-bs-target="#eventsModal">
+                    <h4>Check Out Lomdei's Events</h4>
+                </button>
+            </div>
+            <!-- Popup for Newsletters -->
+            <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title  news-events-modal-title">
+                            <h5 class="modal-title" id="newsModalLabel">Lomdei Newsletters</h5>
+                            <p>Click to read</p>
+                        </div>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body news-events-modal-body">
+                        <a href="./pics/homepage/Newsletter HTML.html" target="_blank">
+                            <div class="events-inner-background">
+                                <img class="events-img" src="./pics/homepage/Newsletter 1.PNG" alt="Lomdei's Newsletter 1">
+                                <p class="events-txt">November 2021</p>
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Popup for Events -->
+            <div class="modal fade" id="eventsModal" tabindex="-1" aria-labelledby="eventsModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title  news-events-modal-title">
+                            <h5 class="modal-title" id="eventsModalLabel">Lomdei Events</h5>
+                            <p>Click to read more</p>
+                        </div>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body news-events-modal-body">
+                        <a href="https://www.linkedin.com/posts/jeremy-hartstein-5b56878_jewisheducation-blendedlearning-personalizedlearning-activity-6881287034078543872-zlf8"
+                    target="_blank">
+                    <div class="events-inner-background">
+                        <img class="events-img"
+                            src="https://www.torahumesorah.org/images/db/6218-School-Culture-Ad2-01-01-01.png"
+                            alt="Torah Umesorah Conference Flier">
+                        <p class="events-txt">Lomdei at the Torah Umesorah Conference</p>
+                    </div>
+                </a>
+                <a href="./pics/homepage/CoT Flier.jpg" target="_blank">
+                    <div class="events-inner-background">
+                        <img class="events-img" src="./pics/homepage/CoT Flier.jpg" alt="Community of Teachers Flier">
+                        <p class="events-txt">Lomdei Community of Teachers</p>
+                    </div>
+                </a>
+                <a href="./gallery.html" target="_blank">
+                    <div class="events-inner-background">
+                        <img class="events-img" src="./pics/news/Principals Info Seminar - HALB.png"
+                            alt="Lomdei Principal Information Seminar at HALB Flier">
+                        <p class="events-txt">Lomdei Principal Information Seminar - HALB</p>
+                    </div>
+                </a>
+                <a href="./gallery.html" target="_blank">
+                    <div class="events-inner-background">
+                        <img class="events-img" src="./pics/news/Principals Info Seminar - FLA.png"
+                            alt="Lomdei Principal Information Seminar at Miami Flier">
+                        <p class="events-txt">Lomdei Principal Information Seminar - Yeshiva Toras Chaim Toras Emes</p>
+                    </div>
+                </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- <div class="events-inner">
+                <a href="./pics/homepage/Newsletter HTML.html" target="_blank">
+                    <div class="events-inner-background">
+                        <img class="events-img" src="./pics/homepage/Newsletter 1.PNG" alt="Lomdei's Newsletter 1">
+                        <p class="events-txt">Lomdei's Latest Newsletter</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/posts/jeremy-hartstein-5b56878_jewisheducation-blendedlearning-personalizedlearning-activity-6881287034078543872-zlf8"
+                    target="_blank">
+                    <div class="events-inner-background">
+                        <img class="events-img"
+                            src="https://www.torahumesorah.org/images/db/6218-School-Culture-Ad2-01-01-01.png"
+                            alt="Torah Umesorah Conference Flier">
+                        <p class="events-txt">Lomdei at the Torah Umesorah Conference</p>
+                    </div>
+                </a>
+                <a href="./pics/homepage/CoT Flier.jpg" target="_blank">
+                    <div class="events-inner-background">
+                        <img class="events-img" src="./pics/homepage/CoT Flier.jpg" alt="Community of Teachers Flier">
+                        <p class="events-txt">Lomdei Community of Teachers</p>
+                    </div>
+                </a>
+                <a href="./gallery.html" target="_blank">
+                    <div class="events-inner-background">
+                        <img class="events-img" src="./pics/news/Principals Info Seminar - HALB.png"
+                            alt="Lomdei Principal Information Seminar at HALB Flier">
+                        <p class="events-txt">Lomdei Principal Information Seminar - HALB</p>
+                    </div>
+                </a>
+                <a href="./gallery.html" target="_blank">
+                    <div class="events-inner-background">
+                        <img class="events-img" src="./pics/news/Principals Info Seminar - FLA.png"
+                            alt="Lomdei Principal Information Seminar at Miami Flier">
+                        <p class="events-txt">Lomdei Principal Information Seminar - Yeshiva Toras Chaim Toras Emes</p>
+                    </div>
+                </a>
+            </div> -->
+        </section>
+
+    </div>
+    <footer id="footer">
+        <div id="footer-left">
+            <div>
+                <a href="https://www.lomdei.com/index.html">
+                    <img id="footer-logo" src="./pics/lomdei_logo.png" alt="Lomdei Logo">
+                </a>
+                <a href="https://www.linkedin.com/company/lomdei">
+                    <img id="linkedin" src="./pics/linkedin.png" alt="linkedin">
+                </a>
+            </div>
+            <div>
+                &copy; Lomdei
+            </div>
+        </div>
+        <div id="footer-right">
+
+        </div>
+    </footer>
+    <script src="./scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
-  </html>
+
+</html>

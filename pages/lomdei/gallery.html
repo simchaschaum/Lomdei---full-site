@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lomdei - Events Gallery</title>
+  <link rel="shortcut icon" href="https://images.squarespace-cdn.com/content/v1/5e73d22e4df9007170bfabac/1584713631516-0KPJGLN16KRE0A4B7F8U/ke17ZwdGBToddI8pDm48kMpagLdZPgiW6yD5i4KsS9VZw-zPPgdn4jUwVcJE1ZvW3Ek6fZXYmUh2T6pKy8CAPiJz4vYg48fcPCuGX417dnZuUf97iszYYQLvux8ZVj2OCZHlFJ3B6MstDcgnpkF-Jiqa9MJYUWOzdYdgr30K9JE/favicon.ico?format=50w">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../styles/styles-nav-footer.css">
+  <link rel="stylesheet" href="../../styles/styles-general.css">
+  <link rel="stylesheet" href="../../styles/styles-lomdei.css">
+
+</head>
+<body>
+  <div class="pageContainer">
+    <header>
+      <a href="../lomdei/news.html">
+        <em>Check Out The Latest News and Events at Lomdei!</em>
+      </a>
+    </header>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../pics/lomdei_logo.png" alt="Lomdei Logo" id="navbar-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-ul">
+            <div class="dropdown">
+                <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    About Lomdei
+                  </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item nav-link" href="../lomdei/about-lomdei.html">About Lomdei</a></li>
+                  <li><a class="dropdown-item nav-link" href="../lomdei/our-team.html">Our Team</a></li>
+                  <li><a class="dropdown-item nav-link" href="../lomdei/news.html">Lomdei News</a></li>
+                  <li><a class="dropdown-item nav-link disabled" href="../lomdei/gallery.html">Gallery</a></li>
+                  <li><a class="dropdown-item nav-link" href="../lomdei/grants.html">Title Dollars</a></li>
+                  <li><a class="dropdown-item nav-link" href="../lomdei/schools.html">Schools Using Lomdei Services</a></li>
+                  <li><a class="dropdown-item nav-link" href="../lomdei/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Lomdei Learning Platform
+                  </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item nav-link" href="../platform/about-platform.html">About the Learning Platform</a></li>
+                  <li><a class="dropdown-item nav-link" href="../platform/benefits.html">Benefits of the Learning Platform</a></li>
+                  <li><a class="dropdown-item nav-link" href="../platform/features.html">Features of the Learning Platform</a></li>
+                  <li><a class="dropdown-item nav-link" href="../platform/kosher-devices.html">Use of the Learning Platform on Kosher Devices</a></li>
+                  <li><a class="dropdown-item nav-link" href="../platform/services.html">Lomdei Platform Services</a></li>
+                  <li><a class="dropdown-item nav-link" href="../platform/video.html">Video Tutorials</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Lomdei BPL Program
+                  </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item nav-link" href="../BPL/about-BPL.html">Lomdei's BPL Advantage</a></li>
+                  <li><a class="dropdown-item nav-link" href="../BPL/pd-program.html">Lomdei's BPL Program</a></li>
+                  <li><a class="dropdown-item nav-link" href="../BPL/benefits.html">Benefits of BPL</a></li>
+                  <li><a class="dropdown-item nav-link" href="../BPL/examples-resources.html">Examples and Resources for BPL</a></li>
+                  <li><a class="dropdown-item nav-link" href="https://sites.google.com/view/thebplclassroom/home" target="_blank">Lomdei Learning Lab</a></li>
+                </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" id="login" href="https://thumbprintapp.org/webapp2/index.html">Log in to Learning Platform</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+    </nav>
+    <!-- Low Dropdown Button - only available on scroll -->
+    <div class="dropdown" id="lowDropdownBtn">
+      <a class="btn link-btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        All Events
+      </a>
+      <ul id="low-gallery-dropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+        <li><a href="#gallery-section" class="dropdown-item">Back to Top</a></li>
+        <!-- Dropdown items added dynamically -->
+      </ul>
+    </div>
+
+    <section id="gallery-header" class="header">
+          <h2>Lomdei Event Gallery</h2>
+          <div class="dropdown" id="dropdownBtn">
+            <a class="btn link-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Click Here for All Lomdei Events
+            </a>
+            <ul id="gallery-dropdown" class="dropdown-menu show-low" aria-labelledby="dropdownMenuButton1">
+              <!-- Dropdown items added dynamically -->
+            </ul>
+          </div>
+    </section>
+    <section id="gallery-section">
+        <div id="gallery-container">
+          <div id="halb" class="gallery-event">
+            <span id="halb-anchor" class="gallery-anchor"></span>
+            <h4 id="halb-visit-title"> 
+              <!-- title added dynamically -->
+            </h4>
+            <div id="halb-container">
+              <!-- HALB visit pictures go here dynamically -->
+            </div>
+          </div>
+          <div id="halb-videos" class="gallery-event">
+            <span id="halbVideos-anchor" class="gallery-anchor"></span>
+            <h4 id="halb-video-title"> 
+              <!-- Title added dynamically -->
+            </h4>
+            <div id="halb-video-inner" class="video-container">
+              <!-- Videos added here, dynamically -->
+            </div>
+          </div>
+          <div id="dec7" class="gallery-event"> 
+            <span id="dec7-anchor" class="gallery-anchor"></span>
+            <h4 id="dec7-title">
+              <!-- title added dynamically -->
+            </h4>
+            <div id="dec7-container"> 
+              <!-- Dec 7 Visit pictures go here dynamically -->
+            </div>
+          </div>
+          <div id="feb16" class="gallery-event"> 
+            <span id="feb16-anchor" class="gallery-anchor"></span>
+            <h4 id="feb16-title">
+              <!-- title added dynamically -->
+            </h4>
+            <div id="feb16-container"> 
+              <!-- feb 16 Visit pictures go here dynamically -->
+            </div>
+          </div>
+        </div>
+        <div id="lightbox">
+            <span id="close-modal-wide" class="cursor close-modal" onclick="closeLightbox()">&times;</span>
+            <div id="modal-content">
+                <a class="prev slide-arrow" onclick="picAdvance('back')">&#10094;</a>
+                <img id="lightboxPic" src="" alt="" onclick="fullSize()">
+                <a class="next slide-arrow" onclick="picAdvance('for')">&#10095;</a>
+            </div>
+            <p id="modal-caption"></p>
+            <div id="mobile-slide-arrows">
+                <a class="prev mobile-slide-arrow" onclick="picAdvance('back')">&#10094;</a>
+                <span id="close-modal-mobile" class="close-modal cursor" onclick="closeLightbox()">&times;</span>
+                <a class="next mobile-slide-arrow" onclick="picAdvance('for')">&#10095;</a>
+            </div>
+        </div>
+    </section>
+    
+
+  </div>
+  <footer id="footer">
+    <div id="footer-left">
+        <div>
+          <a href="https://www.lomdei.com/index.html">
+              <img id="footer-logo" src="../../pics/lomdei_logo.png" alt="Lomdei Logo">
+          </a>
+          <a href="https://www.linkedin.com/company/lomdei">
+              <img id="linkedin" src="../../pics/linkedin.png" alt="linkedin">
+          </a>
+        </div>
+        <div >
+          &copy; Lomdei
+        </div>
+    </div>
+    <div id="footer-right">
+
+    </div>
+</footer>
+  <script src="../../scripts/index.js"></script>
+  <script type="module" src="../../scripts/gallery.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,15 +1,19 @@
-import {pictures} from './pictures.js'; 
+import {pictures} from './pictures.js'
+
 
 // Titles:
 const halbTitle = document.querySelector('#halb-visit-title');
 const dec7Title = document.querySelector('#dec7-title');
 const halbVideoTitle = document.querySelector('#halb-video-title');
+const feb16Title = document.querySelector('#feb16-title');
+
 
 
 // Galleries:
 const halbGallery = document.querySelector('#halb-container');
 const halbVideoGallery = document.querySelector('#halb-video-inner');
 const dec7Gallery = document.querySelector('#dec7-container');
+const feb16Gallery = document.querySelector('#feb16-container');
 const lightbox = document.querySelector('#lightbox');
 const lightboxPic = document.querySelector('#lightboxPic');
 const lightboxCap = document.querySelector('#modal-caption');
@@ -48,6 +52,8 @@ function makeGallery(){
             dec7Title.textContent = title;
         } else if (e[0] === "halbVideos"){
             halbVideoTitle.textContent = title;
+        } else if (e[0] === "feb16"){
+            feb16Title.textContent = title;
         }
         let link = document.createElement("LI");
         let anchor = document.createElement("A");
@@ -64,11 +70,10 @@ function makeGallery(){
                     if(eventObj[item].video){
                         let vid = document.createElement("iframe");
                         vid.setAttribute("class", "gallery-video");
-                        vid.setAttribute("loading","lazy");
+                        // vid.setAttribute("loading","lazy");
                         vid.setAttribute("src", eventObj[item].pics[index].url);
                         vid.setAttribute("frameborder","0");
                         vid.setAttribute("allow","autoplay; fullscreen; picture-in-picture");
-                        vid.setAttribute("allowfullscreen","");
                         vid.setAttribute("title", eventObj[item].pics[index].title);
                         let vidCap = document.createElement("p");
                         vidCap.textContent = eventObj[item].pics[index].alt;
@@ -83,11 +88,11 @@ function makeGallery(){
                         let pic = document.createElement("IMG");
                         // first 10 or so pics have loading:true attribute; rest get lazy loaded
                         if(eventObj[item].pics[index].load){
-                            pic.setAttribute("src",eventObj[item].pics[index].url);
+                            pic.setAttribute("src",`../../pics/${eventObj[item].pics[index].url}`);
                             pic.setAttribute("alt",eventObj[item].pics[index].alt);
                         } else {
                             pic.setAttribute("class","lazy");
-                            pic.setAttribute("data-src",eventObj[item].pics[index].url);
+                            pic.setAttribute("data-src",`../../pics/${eventObj[item].pics[index].url}`);
                             pic.setAttribute("data-alt", eventObj[item].pics[index].alt )
                         }
                         pic.setAttribute("onclick",`openLightbox("${item}",${index},${eventIndex})`)
@@ -95,6 +100,8 @@ function makeGallery(){
                             halbGallery.appendChild(pic);
                         } else if(item === "dec7"){
                             dec7Gallery.appendChild(pic);
+                        } else if(item === "feb16"){
+                            feb16Gallery.appendChild(pic);
                         }
                     }
                 })
@@ -155,9 +162,9 @@ function closeLightbox(){
 
 function makeLightbox(){
     if(pictures[currentEventIndex][currentEvent].video){
-        lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].altUrl);
+        lightboxPic.setAttribute("src",`../../pics/${pictures[currentEventIndex][currentEvent].pics[currentPic].altUrl}`);
     } else {
-        lightboxPic.setAttribute("src",pictures[currentEventIndex][currentEvent].pics[currentPic].url);
+        lightboxPic.setAttribute("src",`../../pics/${pictures[currentEventIndex][currentEvent].pics[currentPic].url}`);
     }
     lightboxPic.setAttribute("alt",pictures[currentEventIndex][currentEvent].pics[currentPic].alt);
     if(pictures[currentEventIndex][currentEvent].pics[currentPic].caption){

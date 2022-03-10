@@ -189,6 +189,22 @@
     width: 100%;
     height: 100%;
   }
+  .modal-dialog-bpl{
+      max-width: 95% !important;
+  }
+  .modal-body-bpl{
+    display: flex;
+    justify-content: space-between;
+  }
+  .modal-body-bpl .home-video{
+    flex: 1;
+  }
+  @media(max-width: 800px){
+    .modal-body-bpl{
+      flex-direction: column;
+    }
+  }
+
   /* Homepage - features section */
   #intro-features{
     position: relative;

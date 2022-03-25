@@ -56,3 +56,64 @@
 #advantage{
     text-align: center;
 }
+
+/* PD packages */
+.packages-header{
+  padding-top: 50px;
+  height: 275px;
+}
+#pd-packages-section h2{
+  text-align: center;
+  font-weight: bold;
+}
+#pd-packages-section .tps-txt{
+  padding: 5%;
+  background-color: rgba(255, 237, 231, 0.7);
+}
+#pd-packages-section .tps-txt:nth-of-type(2){
+  background-color: rgba(50,	76,	93, 0.7);
+}
+#pd-packages-section .thin-border{
+  border: 1px solid var(--clr-white);
+  padding: 5%;
+  height: 100%;
+}
+#packages-include{ 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#packages-include h2{
+  text-align: center;
+  height: 120px;
+}
+.pckg12-include{
+  flex: 2;
+  min-width: 400px;
+}
+.pckg3-include{
+  flex: 1;
+  border-left: 1px solid var(--clr-dark);
+  min-width: 225px;
+}
+@media(max-width:1000px) {
+  .pckg3-include{
+    border-left: none;
+  }
+}
+.includes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.includes-inner{
+  min-width: 200px;
+  max-width: 300px;
+  margin: 1.5%;
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  padding: 1.5%;
+  box-shadow: 0 0 10px var(--clr-dark);
+}

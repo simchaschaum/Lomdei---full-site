@@ -61,8 +61,8 @@ nav {
   }
   .nav-link:hover{
     color: white !important;
-    background-color: var(--clr-dark);
-    box-shadow: 0 0 5px var(--clr-dark);
+    background-color: rgba(	50,	76,	93, 0.7);
+    /* box-shadow: 0 0 5px var(--clr-dark); */
   }
   #login{
     color: white !important;

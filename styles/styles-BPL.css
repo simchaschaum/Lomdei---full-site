@@ -57,21 +57,25 @@
     text-align: center;
 }
 
-/* PD packages */
+/* BPL packages */
 .packages-header{
+  background-color: (var(--clr-dark));
   padding-top: 50px;
-  height: 275px;
 }
 #pd-packages-section h2{
   text-align: center;
   font-weight: bold;
+  font-size: 1.65em;
 }
 #pd-packages-section .tps-txt{
   padding: 5%;
-  background-color: rgba(255, 237, 231, 0.7);
+  background-color: rgba(72, 98, 116,0.5);
 }
 #pd-packages-section .tps-txt:nth-of-type(2){
-  background-color: rgba(50,	76,	93, 0.7);
+  background-color: rgba(145, 92, 74, 0.5);
+}
+#pd-packages-section .tps-txt:nth-of-type(3){
+  background-color: rgba(145, 127, 74, 0.5);
 }
 #pd-packages-section .thin-border{
   border: 1px solid var(--clr-white);
@@ -86,7 +90,8 @@
 }
 #packages-include h2{
   text-align: center;
-  height: 120px;
+  height: 100px;
+  margin-top: 5%;
 }
 .pckg12-include{
   flex: 2;
@@ -109,8 +114,7 @@
   align-items: flex-start;
 }
 .includes-inner{
-  min-width: 200px;
-  max-width: 300px;
+  width: 90%;
   margin: 1.5%;
   background-color: var(--clr-dark);
   color: var(--clr-white);

@@ -91,7 +91,7 @@
 #packages-include h2{
   text-align: center;
   height: 100px;
-  margin-top: 5%;
+  margin-top: 20px
 }
 .pckg12-include{
   flex: 2;
@@ -115,7 +115,7 @@
 }
 .includes-inner{
   width: 90%;
-  margin: 1.5%;
+  margin:10px;
   background-color: var(--clr-dark);
   color: var(--clr-white);
   padding: 1.5%;

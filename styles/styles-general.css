@@ -276,5 +276,17 @@ p{
     margin: 2.5%;
 }
 
+#comingSoon{
+  border: 3px solid black;
+  margin: 50px auto;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
 
   

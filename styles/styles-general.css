@@ -277,6 +277,7 @@ p{
 }
 
 #comingSoon{
+  border: 3px solid black;
   margin: 50px auto;
   padding: 15px;
   display: flex;

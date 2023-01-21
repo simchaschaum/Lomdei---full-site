@@ -7,21 +7,21 @@ export const pictures = [
             video: false,
             // first 6 or so pics have load: true - loads right away, never gets 'lazy' class
             pics: [
-                {
-                    url: '/HALB Visit/IMG_0591.jpg',
-                    alt: "HALB Visit",
-                    load: true
-                },
-                {
-                    url: '/HALB Visit/IMG_0594.jpg',
-                    alt: "HALB Visit",
-                    load: true
-                },
-                {
-                    url: '/HALB Visit/IMG_0595.jpg',
-                    alt: "HALB Visit",
-                    load: true
-                },
+                // {
+                //     url: '/HALB Visit/IMG_0591.jpg',
+                //     alt: "HALB Visit",
+                //     load: true
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0594.jpg',
+                //     alt: "HALB Visit",
+                //     load: true
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0595.jpg',
+                //     alt: "HALB Visit",
+                //     load: true
+                // },
                 {
                     url: '/HALB Visit/IMG_0596.jpg',
                     alt: "HALB Visit",
@@ -44,14 +44,17 @@ export const pictures = [
                 {
                     url: '/HALB Visit/IMG_0600.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '/HALB Visit/IMG_0602.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '/HALB Visit/IMG_0601.jpg',
                     alt: "HALB Visit",
+                    load: true
                 },
                 {
                     url: '/HALB Visit/IMG_0603.jpg',
@@ -77,14 +80,14 @@ export const pictures = [
                 //     url: '/HALB Visit/IMG_0608.jpg',
                 //     alt: "HALB Visit",
                 // },
-                {
-                    url: '/HALB Visit/IMG_0609.jpg',
-                    alt: "HALB Visit",
-                },
-                {
-                    url: '/HALB Visit/IMG_0610.jpg',
-                    alt: "HALB Visit",
-                },
+                // {
+                //     url: '/HALB Visit/IMG_0609.jpg',
+                //     alt: "HALB Visit",
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0610.jpg',
+                //     alt: "HALB Visit",
+                // },
                 // {
                 //     url: '/HALB Visit/IMG_0611.jpg',
                 //     alt: "HALB Visit",
@@ -105,10 +108,10 @@ export const pictures = [
                     url: '/HALB Visit/IMG_0615.jpg',
                     alt: "HALB Visit",
                 },
-                {
-                    url: '/HALB Visit/IMG_0616.jpg',
-                    alt: "HALB Visit",
-                },
+                // {
+                //     url: '/HALB Visit/IMG_0616.jpg',
+                //     alt: "HALB Visit",
+                // },
                 {
                     url: '/HALB Visit/IMG_0617.jpg',
                     alt: "HALB Visit",
@@ -121,30 +124,30 @@ export const pictures = [
                 //     url: '/HALB Visit/IMG_0619.jpg',
                 //     alt: "HALB Visit",
                 // },
-                {
-                    url: '/HALB Visit/IMG_0620.jpg',
-                    alt: "HALB Visit",
-                },
+                // {
+                //     url: '/HALB Visit/IMG_0620.jpg',
+                //     alt: "HALB Visit",
+                // },
                 // {
                 //     url: '/HALB Visit/IMG_0621.jpg',
                 //     alt: "HALB Visit",
                 // },
-                {
-                    url: '/HALB Visit/IMG_0624.jpg',
-                    alt: "HALB Visit",
-                },
-                {
-                    url: '/HALB Visit/IMG_0625.jpg',
-                    alt: "HALB Visit",
-                },
-                {
-                    url: '/HALB Visit/IMG_0626.jpg',
-                    alt: "HALB Visit",
-                },
-                {
-                    url: '/HALB Visit/IMG_0628.jpg',
-                    alt: "HALB Visit",
-                },
+                // {
+                //     url: '/HALB Visit/IMG_0624.jpg',
+                //     alt: "HALB Visit",
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0625.jpg',
+                //     alt: "HALB Visit",
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0626.jpg',
+                //     alt: "HALB Visit",
+                // },
+                // {
+                //     url: '/HALB Visit/IMG_0628.jpg',
+                //     alt: "HALB Visit",
+                // },
                 // {
                 //     url: '/HALB Visit/IMG_0629.jpg',
                 //     alt: "HALB Visit",
@@ -199,14 +202,14 @@ export const pictures = [
                     url: '/Dec 7 Visit/HALBVisit12_7_21 (3).jpeg',
                     alt: "Lomdei Visits HALB on December 7th"
                 },
-                {
-                    url:'/Dec 7 Visit/HALBVisit12_7_21 (4).jpeg',
-                    alt: "Lomdei Visits HALB on December 7th"
-                },
-                {
-                    url: '/Dec 7 Visit/HALBVisit12_7_21 (5).jpeg',
-                    alt: "Lomdei Visits HALB on December 7th"
-                },
+                // {
+                //     url:'/Dec 7 Visit/HALBVisit12_7_21 (4).jpeg',
+                //     alt: "Lomdei Visits HALB on December 7th"
+                // },
+                // {
+                //     url: '/Dec 7 Visit/HALBVisit12_7_21 (5).jpeg',
+                //     alt: "Lomdei Visits HALB on December 7th"
+                // },
                 {
                     url: '/Dec 7 Visit/HALBVisit12_7_21 (7).jpeg',
                     alt: "Lomdei Visits HALB on December 7th"
@@ -236,14 +239,14 @@ export const pictures = [
                     url: 'Miami Visit/miami4.jpg',
                     alt: "Lomdei Visits YTCTE on Feb 16th"
                 },
-                {
-                    url: 'Miami Visit/miami5.jpg',
-                    alt: "Lomdei Visits YTCTE on Feb 16th"
-                },
-                {
-                    url: 'Miami Visit/miami6.jpg',
-                    alt: "Lomdei Visits YTCTE on Feb 16th"
-                },
+                // {
+                //     url: 'Miami Visit/miami5.jpg',
+                //     alt: "Lomdei Visits YTCTE on Feb 16th"
+                // },
+                // {
+                //     url: 'Miami Visit/miami6.jpg',
+                //     alt: "Lomdei Visits YTCTE on Feb 16th"
+                // },
                 {
                     url: 'Miami Visit/miami7.jpg',
                     alt: "Lomdei Visits YTCTE on Feb 16th"

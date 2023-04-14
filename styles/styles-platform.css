@@ -182,13 +182,16 @@ button.infoTitle{
   }
   #contentsDropup{
     display: none;
-    font-size: 0.75em !important;
+    font-size: 12px !important;
     position: fixed;
     z-index: 99;
     bottom: 2.5%;
     right: 2.5%;
     box-shadow: 0 0 5px var(--clr-dark);
     border-radius: .25rem;
+  }
+  #contentsDropup .dropdown-menu{
+    font-size: 1rem !important;
   }
   #dropupButton{
     background-color: var(--clr-dark);

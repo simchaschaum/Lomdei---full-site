@@ -81,7 +81,7 @@
       min-height: 800px;
     }
   }
-  @media(max-width:800px){
+  @media(max-width:900px){
     #intro-mission-inner{
       flex-direction: column;
       min-height: 1200px;

@@ -121,3 +121,24 @@
   padding: 1.5%;
   box-shadow: 0 0 10px var(--clr-dark);
 }
+
+/* Popup modals on top of page */
+.modal-body{
+  height: 75vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.events-inner-background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-text{
+  color: white;
+  text-align: center;
+}
+.home-video{
+  width: 45%;
+  height: 100%;
+}

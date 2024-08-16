@@ -253,7 +253,49 @@ export const pictures = [
                 }
             ]
         }
+    },
+    {
+        cojds:{
+            title: "Lomdei Presents at Think Tank IX Conference - CoJDS",
+            shortTitle: "Lomdei at CoJDS",
+            video: false,
+            pics: [
+                {
+                    url: 'Lomdei at CoJDS Think Tank Conference (1).jpg',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'Lomdei at CoJDS Think Tank Conference (2).jpg',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'Lomdei at CoJDS Think Tank Conference (3).jpg',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'Lomdei at CoJDS Think Tank Conference (4).jpg',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'Lomdei at CoJDS Think Tank Conference (5).jpg',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'Lomdei at CoJDS Think Tank Conference (6).jpg',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'Lomdei at CoJDS Think Tank Conference (7).jpg',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'Lomdei at CoJDS Think Tank Conference (8).jpg',
+                    alt: "Lomdei at CoJDS"
+                },
+            ]
+        }
     }
+
 ]
 
 

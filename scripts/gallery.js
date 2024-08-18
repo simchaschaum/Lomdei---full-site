@@ -57,7 +57,7 @@ function makeGallery(){
         } else if (e[0] === "feb16"){
             feb16Title.textContent = title;
         } else if (e[0] === "cojds"){
-            cojdsTitleTitle.textContent = title;
+            cojdsTitle.textContent = title;
         } 
         let link = document.createElement("LI");
         let anchor = document.createElement("A");

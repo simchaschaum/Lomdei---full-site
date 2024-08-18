@@ -261,31 +261,31 @@ export const pictures = [
             video: false,
             pics: [
                 {
-                    url: 'Lomdei at CoJDS Think Tank Conference (1).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (1).jpg',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'Lomdei at CoJDS Think Tank Conference (2).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (2).jpg',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'Lomdei at CoJDS Think Tank Conference (3).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (3).jpg',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'Lomdei at CoJDS Think Tank Conference (4).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (4).jpg',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'Lomdei at CoJDS Think Tank Conference (5).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (5).jpg',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'Lomdei at CoJDS Think Tank Conference (6).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (6).jpg',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'Lomdei at CoJDS Think Tank Conference (7).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (7).jpg',
                     alt: "Lomdei at CoJDS"
                 },
                 {

@@ -99,22 +99,23 @@
             </button>
             <!-- Popup for PD Brochures-->
                 <div class="modal fade" id="PDBrochures" tabindex="-1" aria-labelledby="PDBrochuresLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-bpl">
+                    <div class="modal-dialog modal-dialog-bpl" id="pd-modal-dialog-brochures">
                         <div class="modal-content">
                             <div class="modal-header">
+                                <h4>Click On Either Brochure to Open</h4>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <a href="https://drive.google.com/file/d/1N1ZWGHm2NKMINkr0f0YDSmXgi3SvDqWp/view?usp=drive_link" target="_blank">
                                     <div class="events-inner-background">
-                                        <!-- <img class="events-img" src="https://www.torahumesorah.org/images/db/6218-School-Culture-Ad2-01-01-01.png" alt="Torah Umesorah Conference"> -->
-                                        <p class="modal-text">Lomdei PD Brochure</p>
+                                        <!-- <img class="events-img" src="../../pics/PD Brochures/PD and Coaching Brochure.jpg" alt="PD and Coaching Brochure"> -->
+                                        <p class="modal-text">PD and Coaching Brochure</p>
                                     </div>
                                 </a>
                                 <a href="https://drive.google.com/file/d/1jSOCh-djlrhuhisq7G1Ijx2tWdBd0x6t/view?usp=drive_link" target="_blank">
                                     <div class="events-inner-background">
-                                        <!-- <img class="events-img" src="https://www.torahumesorah.org/images/db/6218-School-Culture-Ad2-01-01-01.png" alt="Torah Umesorah Conference"> -->
-                                        <p class="modal-text">Information on BPL and Coaching</p>
+                                        <!-- <img class="events-img" src="../../pics/PD Brochures/In-Depth Summary of Lomdei PD and Coaching.jpg" alt="In-Depth Summary of Lomdei PD and Coaching"> -->
+                                        <p class="modal-text">In-Depth Summary of Lomdei PD and Coaching</p>
                                     </div>
                                 </a>
                             </div>
@@ -126,20 +127,22 @@
                 </button>
                 <!-- Popup for PD Videos-->
                     <div class="modal fade" id="PDVideos" tabindex="-1" aria-labelledby="PDVideoLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-bpl">
+                        <div class="modal-dialog modal-dialog-bpl" id="pd-modal-dialog-videos">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <iframe class="home-video"
-                                        src="https://drive.google.com/file/d/1aeL8p_KIrh8BWM5bBvGr1zPmgidRmtaN/view?usp=drive_link"
-                                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-                                        title="Lomdei PD Video">
+                                        src="https://drive.google.com/file/d/1aeL8p_KIrh8BWM5bBvGr1zPmgidRmtaN/preview" 
+                                        frameborder="0" 
+                                        allow="autoplay; fullscreen; picture-in-picture"
+                                        title="Lomdei PD - Promo Video">
                                     </iframe>
                                     <iframe class="home-video"
-                                        src="https://drive.google.com/file/d/1HuloBrQBlz68ZPC_KcaoC_BmaBuGlWnl/view?usp=drive_link"
+                                        src="https://drive.google.com/file/d/1HuloBrQBlz68ZPC_KcaoC_BmaBuGlWnl/preview" 
                                         frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                        allow="autoplay"
                                         title="Lomdei BPL - End of Year Celebration 2023">
                                     </iframe>
                                 </div>
@@ -150,15 +153,45 @@
             </div>
         </section>
 
+        <section id="counters-section" class="bkg-dark">
+            <h2>Lomdei PD and Coaching is Currently Being Used By:</h2>
+            <div id="counters">
+                <div>
+                  <div class="counters-inner">
+                      <h3 id="schoolsNum" class="counter" data-target="300">0</h3>
+                      <h5>Schools</h5>
+                  </div>
+                  <div class="counters-inner">
+                      <h3 id="studentsNum" class="counter" data-target="8540">0</h3>
+                      <h5>Students</h5>
+                  </div>
+                </div>
+                <div>
+                  <div class="counters-inner">
+                      <h3 id="classesNum" class="counter" data-target="640">0</h3>
+                      <h5>Classes</h5>
+                  </div>
+                  <div class="counters-inner">
+                      <h3 id="teachersNum" class="counter" data-target="300">0</h3>
+                      <h5>Teachers</h5>
+                  </div>
+                </div>
+             </div>
+          </section>
+
         <section>
             <span id="advantage-anchor" class="anchor"></span>
             <div class="text-pic-side">
                 <div class="tps-txt">
-                    <h3><strong>Lomdei's Customized PD Advantage</strong></h3>
+                    <h3><strong>Lomdei’s Customized  PD & Coaching Advantage</strong></h3>
                     <p>
-                        In recent years, the benefits of Blended and Personalized Learning (or Student-Centered Learning) have become clear to an ever-increasing number of educators and educational institutions across the spectrum.  
-                        While there are many professional development companies that offer training in Blended and Personalized Learning, <strong>very few of them are familiar with the specific needs and Jewish day schools and mosdos Torah</strong>.
-                        As a result, a Limudei Kodesh or General tudies who strives to develop knowledge and expertise in this new educational method is often left stranded as they struggle to apply this method without guidance or examples specifically geared to Torah study.  Additionally, these professional development companies may not appreciate a yeshiva’s specific religious values, such as the need to limit, or eliminate, the use of the internet or computer technology in general. 
+                        In recent years, the benefits of PD & Coaching have become clear to an ever-increasing number of 
+                        educational institutions across the spectrum. While there are many PD companies that offer training, 
+                        very few are familiar with the specific needs and methods of Jewish day schools. 
+                        As a result, a Limudei Kodesh or General Studies teacher who strives to develop knowledge and expertise in 
+                        new methodologies of teaching are often left stranded and struggle to apply these methods to their relevant classrooms in 
+                        Jewish schools. Additionally, other PD companies may not appreciate a Jewish school's specific religious values, 
+                        such as the need to limit, or eliminate, the use of internet or computer technology.  
                     </p>
                 </div>
                 <div class="tps-pic">
@@ -167,12 +200,12 @@
             </div>
             <div class="text-pic-side">
                 <div class="tps-txt">
-                    <h3><strong>Lomdei is here to fill the gap.</strong></h3>
+                    <h3><strong>Lomdei PD & Coaching is here to fill the gap.</strong></h3>
                     <p>
-                        Lomdei's background in, and familiarity with, frum learning environments makes it particularly equipped to introduce the methods of 
-                        Blended and Personalized Learning to schools who teach Limudei Kodesh and General Studies, who aim to impart the Torah's rich values and lifestyle.  
+                        Lomdei’s background in, and familiarity with, frum schools makes it particularly equipped to provide effective and relatable PD & Coaching to 
+                        schools who teach Limudei Kodesh and General Studies and aim to impart the Torah’s rich values and lifestyle. 
                         Lomdei's program is developed and implemented by teachers with many years' experience teaching a range of subjects in both departments, 
-                        along with the training necessary to implement Blended and Personalized Learning in the class.  
+                        along with the training necessary to provide PD and coaching for our teachers.  
                         Our intimate <strong>familiarity with Limudei Kodesh</strong> allows us to provide specific, concrete, and complete <strong>examples 
                         of lesson units</strong> in all areas of Limudei Kodesh and General Studies.  
                     </p>
@@ -184,7 +217,7 @@
             <div class="text-pic-side">
                 <div class="tps-txt">
                     <p>
-                        Additionally, we are  able to provide specific, concrete, and personal <strong>support</strong> to each rebbe and morah as they plan and implement their lessons using Blended and Personalized Learning. 
+                        Additionally, we are  able to provide specific, concrete, and personal <strong>support</strong> to each teacher as they plan and implement their lessons. 
                         These <strong>concrete examples</strong> and <strong>specific support</strong> are often crucial to becoming comfortable and familiar with the goals and the implementation of new educational methods such as Personalized or Blended Learning.  
                         Furthermore, we are able to understand and identify with the many nuanced cultural and religious considerations of frum schools, and are more able to find solutions that fit these considerations and needs. 
                     </p>

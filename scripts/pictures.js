@@ -289,7 +289,7 @@ export const pictures = [
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'Lomdei at CoJDS Think Tank Conference (8).JPG',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (8).JPG',
                     alt: "Lomdei at CoJDS"
                 },
             ]

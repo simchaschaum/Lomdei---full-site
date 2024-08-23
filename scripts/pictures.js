@@ -261,35 +261,35 @@ export const pictures = [
             video: false,
             pics: [
                 {
-                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (1).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (1).JPG',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (2).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (2).JPG',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (3).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (3).JPG',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (4).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (4).JPG',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (5).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (5).JPG',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (6).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (6).JPG',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (7).jpg',
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (7).JPG',
                     alt: "Lomdei at CoJDS"
                 },
                 {
-                    url: 'Lomdei at CoJDS Think Tank Conference (8).jpg',
+                    url: 'Lomdei at CoJDS Think Tank Conference (8).JPG',
                     alt: "Lomdei at CoJDS"
                 },
             ]

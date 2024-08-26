@@ -66,6 +66,18 @@
   background-color: (var(--clr-dark));
   padding-top: 50px;
 }
+.packages-header-btn-container{
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.packages-header-btn-container .link-btn{
+  margin: 2.5% 5%;
+  width: 10rem;
+  height: 8rem;
+  font-size: 1.2rem;
+}
 #pd-packages-section h2{
   text-align: center;
   font-weight: bold;

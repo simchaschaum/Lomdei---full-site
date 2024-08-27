@@ -41,7 +41,7 @@ function scrollFunction(){
 
 const count = ()=>{
     const counters = document.querySelectorAll('.counter');
-    const speed = 50;
+    const speed = 30;
     counters.forEach(counter => {
         const updateCount = () => {
             const target = parseInt(counter.getAttribute('data-target'));

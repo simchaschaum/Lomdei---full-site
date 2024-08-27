@@ -6,6 +6,7 @@ const halbTitle = document.querySelector('#halb-visit-title');
 const dec7Title = document.querySelector('#dec7-title');
 const halbVideoTitle = document.querySelector('#halb-video-title');
 const feb16Title = document.querySelector('#feb16-title');
+const cojdsTitle = document.querySelector('#cojds-title');
 
 
 
@@ -14,6 +15,7 @@ const halbGallery = document.querySelector('#halb-container');
 const halbVideoGallery = document.querySelector('#halb-video-inner');
 const dec7Gallery = document.querySelector('#dec7-container');
 const feb16Gallery = document.querySelector('#feb16-container');
+const cojdsGallery = document.querySelector('#cojds-container');
 const lightbox = document.querySelector('#lightbox');
 const lightboxPic = document.querySelector('#lightboxPic');
 const lightboxCap = document.querySelector('#modal-caption');
@@ -54,7 +56,9 @@ function makeGallery(){
             halbVideoTitle.textContent = title;
         } else if (e[0] === "feb16"){
             feb16Title.textContent = title;
-        }
+        } else if (e[0] === "cojds"){
+            cojdsTitle.textContent = title;
+        } 
         let link = document.createElement("LI");
         let anchor = document.createElement("A");
         anchor.setAttribute("class","dropdown-item");
@@ -102,6 +106,8 @@ function makeGallery(){
                             dec7Gallery.appendChild(pic);
                         } else if(item === "feb16"){
                             feb16Gallery.appendChild(pic);
+                        } else if(item === "cojds"){
+                            cojdsGallery.appendChild(pic);
                         }
                     }
                 })

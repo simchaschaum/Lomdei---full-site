@@ -253,7 +253,49 @@ export const pictures = [
                 }
             ]
         }
+    },
+    {
+        cojds:{
+            title: "July 2, 2024 - Lomdei Presents at Think Tank IX Conference - CoJDS",
+            shortTitle: "Lomdei at CoJDS",
+            video: false,
+            pics: [
+                {
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (1).JPG',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (2).JPG',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (3).JPG',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (4).JPG',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (5).JPG',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (6).JPG',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (7).JPG',
+                    alt: "Lomdei at CoJDS"
+                },
+                {
+                    url: 'CoJDS Conference/Lomdei at CoJDS Think Tank Conference (8).JPG',
+                    alt: "Lomdei at CoJDS"
+                },
+            ]
+        }
     }
+
 ]
 
 

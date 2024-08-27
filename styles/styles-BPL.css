@@ -35,6 +35,11 @@
     justify-content: space-around;
     background-color: rgba(248, 249, 250,0.70);
   }
+  #title-buttons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
   @media only screen and (max-width:1000px){
     #title{
@@ -56,11 +61,26 @@
 #advantage{
     text-align: center;
 }
+#pd-modal-dialog-videos, #pd-modal-dialog-brochures{
+  max-width: 95% !important;
+}
+
 
 /* BPL packages */
 .packages-header{
   background-color: (var(--clr-dark));
   padding-top: 50px;
+}
+.packages-header-btn-container{
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.packages-header-btn-container .link-btn{
+  margin: 2.5% 5%;
+  min-width: 303px;
+  font-size: 1.2rem;
 }
 #pd-packages-section h2{
   text-align: center;
@@ -120,4 +140,90 @@
   color: var(--clr-white);
   padding: 1.5%;
   box-shadow: 0 0 10px var(--clr-dark);
+}
+
+/* Popup modals on top of page */
+.modal-body{
+  height: 75vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.events-inner-background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.events-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition:0.5s;
+  position: relative
+}
+.events-txt{
+  position: relative;
+  bottom: 210px;
+  font-size: 1.25em;
+  width: 90%;
+  opacity: 0;
+  transition: 0.5s
+}
+.events-inner>a:hover .events-img{
+  opacity: 0.15;
+}
+.events-inner>a:hover .events-txt{
+  opacity: 1.0;
+}
+.modal-text{
+  color: white;
+  text-align: center;
+}
+.modal-body>div{
+  width: 45%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+@media(max-width:700px) {
+  .modal-body>div{
+    justify-content: space-between;
+  }
+}
+.home-video{
+  width: 100%;
+  height: 80%;
+  padding: 2.5%;
+}
+
+/* About Lomdei - counters  */
+#counters-section{
+  width: 90%;
+  margin: 5% auto;
+}
+#counters-section>h2{
+  font-size: 2.25em;
+  text-align: center;
+  margin-bottom: 5%;
+}
+#counters{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+}
+#counters>div{
+flex: 1;
+min-width: 300px;
+display: flex;
+justify-content: space-around;
+}
+.counters-inner{
+margin: 0 1.5%;
+}
+.counter{
+  font-size: 3em;
 }

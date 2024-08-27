@@ -79,7 +79,7 @@
 }
 .packages-header-btn-container .link-btn{
   margin: 2.5% 5%;
-  /* width: 10rem; */
+  min-width: 303px;
   font-size: 1.2rem;
 }
 #pd-packages-section h2{

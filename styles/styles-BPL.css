@@ -179,9 +179,21 @@
   color: white;
   text-align: center;
 }
-.home-video{
+.modal-body>div{
   width: 45%;
-  height: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+@media(max-width:700px) {
+  .modal-body>div{
+    justify-content: space-between;
+  }
+}
+.home-video{
+  width: 100%;
+  height: 80%;
+  padding: 2.5%;
 }
 
 /* About Lomdei - counters  */

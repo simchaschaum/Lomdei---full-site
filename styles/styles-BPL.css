@@ -35,6 +35,11 @@
     justify-content: space-around;
     background-color: rgba(248, 249, 250,0.70);
   }
+  #title-buttons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
   @media only screen and (max-width:1000px){
     #title{
@@ -74,8 +79,7 @@
 }
 .packages-header-btn-container .link-btn{
   margin: 2.5% 5%;
-  width: 10rem;
-  height: 8rem;
+  /* width: 10rem; */
   font-size: 1.2rem;
 }
 #pd-packages-section h2{

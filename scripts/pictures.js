@@ -256,7 +256,7 @@ export const pictures = [
     },
     {
         cojds:{
-            title: "Lomdei Presents at Think Tank IX Conference - CoJDS",
+            title: "July 2, 2024 - Lomdei Presents at Think Tank IX Conference - CoJDS",
             shortTitle: "Lomdei at CoJDS",
             video: false,
             pics: [

@@ -41,18 +41,8 @@ export function loadHeader() {
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 <li><a class="dropdown-item nav-link" href="./pages/platform/about-platform.html">About
                                         the Learning Platform</a></li>
-                                <li><a class="dropdown-item nav-link" href="./pages/platform/benefits.html">Benefits of
-                                        the Learning Platform</a></li>
-                                <li><a class="dropdown-item nav-link" href="./pages/platform/packages.html">Platform
-                                        Software Package</a></li>
-                                <li><a class="dropdown-item nav-link" href="./pages/platform/features.html">Features of
-                                        the Learning Platform</a></li>
-                                <li><a class="dropdown-item nav-link" href="./pages/platform/kosher-devices.html">Use of
-                                        the Learning Platform on Kosher Devices</a></li>
-                                <li><a class="dropdown-item nav-link" href="./pages/platform/services.html">Lomdei
-                                        Platform Services</a></li>
-                                <li><a class="dropdown-item nav-link" href="./pages/platform/video.html">Video
-                                        Tutorials</a></li>
+                                <li><a class="dropdown-item nav-link" href="./pages/platform/about-platform.html">What Educators Have to Say
+                                About the Learning Platform</a></li>
                             </ul>
                         </div>
                         <div class="dropdown">
